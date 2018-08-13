@@ -1,0 +1,18 @@
+@import "bootstrap_overrides";
+@import "~bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "sidebar";
+
+body {
+  background: #eee;
+  padding-top: $navbar-height;
+}
+
+a {
+  cursor: pointer;
+}
+
+.content {
+  padding: 10px;
+}
