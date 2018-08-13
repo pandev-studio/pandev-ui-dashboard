@@ -1,0 +1,38 @@
+// Buttons
+$btn-padding-y: 0.25rem;
+$btn-padding-x: 0.70rem;
+
+// Cards
+$card-spacer-x: 15px;
+
+// Colors
+$primary: #0277bd;
+
+// Navbar
+$navbar-padding-y: 0.4rem;
+$navbar-padding-x: 0.5rem;
+
+// Pagination
+$pagination-padding-y: 0.25rem;
+$pagination-padding-x: 0.6rem;
+
+// Reboot
+$line-height-base: 1;
+
+// Tables
+//$table-cell-padding-sm: .35rem;
+.table {
+  .badge-cell {
+    vertical-align: middle;
+    padding: 0;
+
+    .badge {
+      width: 100%;
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  width: 1em !important;
+  height: 1em !important;
+}
