@@ -5,12 +5,111 @@
 {% set pages = [ 'page1', 'page2', 'page3' ] %}
 
 {% block content %}
-    <h1 class="js-suffix">Pages</h1>
-    <div class="plus-one"></div>
-    <ul>
-        <li><a href="/styleguide">Styleguide</a></li>
-        {% for path in pages %}
-            <li><a href="{{ path }}.html">{{ path }}</a></li>
-        {% endfor %}
-    </ul>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">
+                        Informazioni di base
+                        <a data-toggle="modal" data-target="#edit_contact_info_modal" href="#">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    </h5>
+                    <dl class="row mb-0">
+                        <dt class="col-12 col-md-3">Nome</dt>
+                        <dd class="col-12 col-md-9">Umberto</dd>
+                        <dt class="col-12 col-md-3">Cognome</dt>
+                        <dd class="col-12 col-md-9">Peserico</dd>
+                        <dt class="col-12 col-md-3">E-mail</dt>
+                        <dd class="col-12 col-md-9">umberto.peserico@pandevstudio.com</dd>
+                        <dt class="col-12 col-md-3">Telefono</dt>
+                        <dd class="col-12 col-md-9">0445400000</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h5 class="mb-3">Lista istanze servizi</h5>
+                    <h6>
+                        <b>Smartoo Website</b>
+                        <a data-toggle="modal" data-target="#instance_modal" href="#">
+                            <i class="fas fa-plus-circle"></i>
+                        </a>
+                    </h6>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="id-col">
+                                    #
+                                </th>
+                                <th scope="col">
+                                    Stato
+                                </th>
+                                <th scope="col">
+                                    Descrizione
+                                </th>
+                                <th scope="col">
+                                    Dominio
+                                </th>
+                                <th scope="col" class="align-top">
+                                    Link interno
+                                </th>
+                                <th scope="col" class="align-top">
+                                    Impostazioni
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for i in range(0, 10) %}
+                                <tr>
+                                    <th scope="row">
+                                        <a href="#">sw001</a>
+                                    </th>
+                                    <td class="badge-cell">
+                                        {% if i%3 == 0 %}
+                                            <span class="badge badge-success badge-table">Attivo</span>
+                                            {% elif  i%3 == 1 %}
+                                            <span class="badge badge-warning badge-table">Past due</span>
+                                        {% else %}
+                                            <span class="badge badge-danger badge-table">Non attivo</span>
+                                        {% endif %}
+
+                                    </td>
+                                    <td class="text-truncate">Sito web per la presentazione del nuovo locale</td>
+                                    <td>www.nuovosito.it</td>
+                                    <td>
+                                        <a href="#">Apri</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Apri</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination m-0 mt-3 justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

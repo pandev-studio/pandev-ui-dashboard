@@ -27,6 +27,7 @@ const
     JS_ALL = [
         `${NPM}/jquery/dist/jquery.js`,
         `${NPM}/popper.js/dist/umd/popper.js`,
+        `${NPM}/bootstrap/dist/js/bootstrap.js`,
         `${JS_BASE}/**/*.js`
     ],
     JS_VENDOR_ALL = `${JS_BASE}/vendor/**/*.js`,
