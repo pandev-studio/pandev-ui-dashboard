@@ -5,42 +5,72 @@
 {% set pages = [ 'page1', 'page2', 'page3' ] %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-lg-6 col-sm-12">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">
-                        Informazioni di base
-                        <a data-toggle="modal" data-target="#edit_contact_info_modal" href="#">
-                            <i class="fas fa-edit"></i>
-                        </a>
-                    </h5>
-                    <dl class="row mb-0">
-                        <dt class="col-12 col-md-3">Nome</dt>
-                        <dd class="col-12 col-md-9">Umberto</dd>
-                        <dt class="col-12 col-md-3">Cognome</dt>
-                        <dd class="col-12 col-md-9">Peserico</dd>
-                        <dt class="col-12 col-md-3">E-mail</dt>
-                        <dd class="col-12 col-md-9">umberto.peserico@pandevstudio.com</dd>
-                        <dt class="col-12 col-md-3">Telefono</dt>
-                        <dd class="col-12 col-md-9">0445400000</dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="card mt-2">
         <div class="card-body">
             <div class="row">
                 <div class="col">
-                    <h5 class="mb-3">Lista istanze servizi</h5>
-                    <h6>
-                        <b>Smartoo Website</b>
+                    <h5 class="mb-3">
+                        Lista istanze servizi
                         <a data-toggle="modal" data-target="#instance_modal" href="#">
                             <i class="fas fa-plus-circle"></i>
                         </a>
-                    </h6>
+                    </h5>
+                    <form action="#" class="search-box">
+                        <div class="row">
+                            <div class="col-md-5 col-lg-3">
+
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="text"
+                                               class="form-control"
+                                               placeholder="Cerca">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary"
+                                                    type="button">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-5 col-lg-2">
+                                <div class="form-group">
+                                    <input type="text"
+                                           placeholder="Data inizio"
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-2">
+                                <div class="form-group">
+                                    <input type="text"
+                                           placeholder="Data fine"
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-2">
+                                <div class="form-group">
+                                    <select name="status" id="status" class="form-control">
+                                        <option>Attivo</option>
+                                        <option>Non attivo</option>
+                                        <option>Past due</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-2">
+                                <div class="form-group">
+                                    <select name="status" id="status" class="form-control">
+                                        <option>Attivo</option>
+                                        <option>Non attivo</option>
+                                        <option>Past due</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-12">
+
+                            </div>
+                        </div>
+                    </form>
                     <div class="table-responsive">
                         <table class="table table-sm table-striped table-hover">
                             <thead>
@@ -66,7 +96,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            {% for i in range(0, 10) %}
+                            {% for i in range(0, 20) %}
                                 <tr>
                                     <th scope="row">
                                         <a href="#">sw001</a>
@@ -94,20 +124,28 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="d-flex justify-content-end">
+                        <select class="form-control" style="width: auto;">
+                            <option>10</option>
+                            <option>20</option>
+                            <option>25</option>
+                            <option>50</option>
+                        </select>
+                        <nav aria-label="Page navigation example" class="justify-content-end">
+                            <ul class="pagination m-0 mt-0 justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination m-0 mt-3 justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
