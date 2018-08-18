@@ -22,18 +22,44 @@ body.with-sidebar-fixed {
 
   ul {
     list-style: none;
-    padding-left: 10px;
+    padding: 10px 10px 0 10px;
 
-    li {
-      margin: 2px 0;
-      padding: 8px 16px;
+    li.divider {
+      margin: 10px 0 0 -10px;
+      padding: 10px 10px 10px 10px;
+
+      font-weight: 900;
+    }
+
+    li:not(.divider) {
+
+      border-radius: 3px;
+
+      a {
+        color: #616161;
+        padding: 14px 28px;
+        display: block;
+        font-size: .85rem;
+
+        i{
+          width: 20px;
+          margin-right: 12px;
+        }
+      }
 
       &:hover {
-        background: #ddd;
+        background-color: rgba(0, 0, 0, .03);
+        a {
+          color: #212121;
+        }
       }
 
       &.active {
-        background: #ccc;
+        background-color: rgba(0, 0, 0, .05);
+        a {
+          color: #212121;
+          font-weight: 700;
+        }
       }
     }
   }
