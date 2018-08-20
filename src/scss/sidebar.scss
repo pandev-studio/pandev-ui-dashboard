@@ -22,21 +22,26 @@ body.with-sidebar-fixed {
 
   ul {
     list-style: none;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0 0;
 
     li.divider {
-      margin: 10px 0 0 -10px;
+      margin: 10px 0 0 0;
       padding: 10px 10px 10px 10px;
 
+      font-size: 12px;
+      letter-spacing: 1.1px;
       font-weight: 900;
+      text-transform: uppercase;
+      color: $title-color;
     }
 
     li:not(.divider) {
 
-      border-radius: 3px;
+      border-radius: 0 3px 3px 0;
 
       a {
-        color: #616161;
+        text-transform: capitalize;
+        color: #34495e;
         padding: 14px 28px;
         display: block;
         font-size: .85rem;
@@ -50,12 +55,33 @@ body.with-sidebar-fixed {
       &:hover {
         background-color: rgba(0, 0, 0, .03);
         a {
-          color: #212121;
+          color: #2c3e50;
         }
+
+        &:before{
+          content: '';
+          border-left: 3px solid $primary;
+
+          position: absolute;
+          left: 0;
+
+          height: 42px;
+        }
+
       }
 
       &.active {
         background-color: rgba(0, 0, 0, .05);
+
+        &:before{
+          content: '';
+          border-left: 3px solid darken($primary, 30%);
+
+          position: absolute;
+          left: 0;
+
+          height: 42px;
+        }
         a {
           color: #212121;
           font-weight: 700;

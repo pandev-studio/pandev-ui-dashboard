@@ -1,0 +1,10 @@
+.input-group{
+
+  .form-control{
+    height: 38px;
+
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}

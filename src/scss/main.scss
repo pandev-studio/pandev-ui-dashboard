@@ -5,11 +5,15 @@
 
 @import "variables";
 @import "sidebar";
+@import "card";
+@import "button";
+@import "form";
+@import "table";
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif !important;
 
-  background-color: #f2f2f2;
+  background-color: #ecf0f1;
   padding-top: $navbar-height;
 }
 
