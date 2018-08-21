@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 
 @import "bootstrap_overrides";
 @import "~bootstrap/scss/bootstrap";
@@ -9,9 +9,10 @@
 @import "button";
 @import "form";
 @import "table";
+@import "stepper";
 
 body {
-  font-family: 'Lato', sans-serif !important;
+  font-family: 'Montserrat', sans-serif;
 
   background-color: #ecf0f1;
   padding-top: $navbar-height;
