@@ -6,7 +6,10 @@ $btn-padding-x: 0.70rem;
 $card-spacer-x: 15px;
 
 // Colors
-$primary: #0277bd;
+$primary: #2185d0;
+$danger: #db2828;
+$success: #21ba45;
+$warning: #fbbd08;
 
 // Navbar
 $navbar-padding-y: 0.4rem;
@@ -21,16 +24,6 @@ $line-height-base: 1;
 
 // Tables
 //$table-cell-padding-sm: .35rem;
-.table {
-  .badge-cell {
-    vertical-align: middle;
-    padding: 0;
-
-    .badge {
-      width: 100%;
-    }
-  }
-}
 
 .navbar-toggler-icon {
   width: 1em !important;

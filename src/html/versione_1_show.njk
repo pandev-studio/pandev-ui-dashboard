@@ -1,0 +1,129 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Index page" %}
+
+{% set pages = [ 'page1', 'page2', 'page3' ] %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-tabs stepper">
+                <li class="done">
+                    <div>
+                        <span class="stepper-id">1</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="active">
+                    <div>
+                        <span class="stepper-id">2</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">3</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">4</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">5</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">6</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-pills bg-light">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/versione_1_show.html">Versione 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/versione_2_show.html">Versione 2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title">Informazioni <a href="#"><i class="fas fa-edit ml-1"></i></a></h6>
+                </div>
+                <div class="card-body">
+                    <style>
+                        dt, dd {
+                            border-bottom: 1px solid #eee;
+                        }
+                    </style>
+                    <dl class="row">
+                        <dt class="col-md-4 col-lg-5 mb-2">ID</dt>
+                        <dd class="col-md-8 col-lg-7">#DASFFASDF</dd>
+
+                        <dt class="col-md-4 col-lg-5 mb-2">Aperto da</dt>
+                        <dd class="col-md-8 col-lg-7">Umberto Peserico</dd>
+
+                        <dt class="col-md-6 col-lg-5 mb-2">Creato il</dt>
+                        <dd class="col-md-8 col-lg-7">12 Mag 2018</dd>
+                    </dl>
+                    <dl class="row">
+                        <dt class="col-md-4 col-lg-5 mb-2">Assegnato a</dt>
+                        <dd class="col-md-8 col-lg-7 mb-2">Umberto Peserico</dd>
+
+                        <dt class="col-md-4 col-lg-5 mb-2">Scadenza</dt>
+                        <dd class="col-md-8 col-lg-7">&nbsp;</dd>
+
+                        <dt class="col-md-4 col-lg-5 mb-2">Sprint</dt>
+                        <dd class="col-md-8 col-lg-7 mb-w">&nbsp;</dd>
+                    </dl>
+                    <dl class="row">
+                        <dt class="col-md-4 col-lg-5 mb-2">Tags</dt>
+                        <dd class="col-md-8 col-lg-7">&nbsp;</dd>
+
+                        <dt class="col-md-4 col-lg-5 mb-2">Branch</dt>
+                        <dd class="col-md-8 col-lg-7">&nbsp;</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

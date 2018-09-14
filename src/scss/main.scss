@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
 @import "bootstrap_overrides";
 @import "~bootstrap/scss/bootstrap";
+@import "~rfs/scss/rfs";
 
 @import "variables";
+@import "typography";
 @import "sidebar";
+@import "navbar";
+@import "card";
+@import "pagination";
+@import "button";
+@import "form";
+@import "table";
+@import "stepper";
+@import "tags";
 
 body {
-  background: #eee;
-  padding-top: $navbar-height;
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #ecf0f1;
+  padding-top: $pandev-ui-header-min-height;
 }
 
-a {
-  cursor: pointer;
-}
 
 .content {
   padding: 10px;

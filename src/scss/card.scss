@@ -1,0 +1,136 @@
+.card {
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 3px;
+
+  -webkit-box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.75);
+
+  .card-header,
+  .card-body,
+  .card-footer {
+    background-color: #fff;
+  }
+
+  .card-header,
+  .card-footer {
+    border: none;
+  }
+
+  .card-header {
+    padding: 15px 15px 0 15px;
+
+    .card-title {
+      @include rfs($pandev-ui-card-title-size);
+
+      color: $pandev-card-title-color;
+      letter-spacing: $pandev-card-title-letter-spacing;
+      font-weight: 900;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .card-body.vertical-label {
+    padding: 25px;
+
+    dl {
+      dt {
+        color: $title-color;
+      }
+      dd {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  .card-footer {
+    padding: 0 15px 15px 15px;
+  }
+
+  //  CARD DOCK & INFORMATION LIST MIX
+  &.card-dock, &.card-information-list, &.card-vertical-stepper{
+    .card-header {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-bottom: 1px solid #dee2e6;
+
+      .card-title{
+        @include rfs($pandev-ui-card-title-size);
+
+        color: $pandev-card-title-color;
+        letter-spacing: $pandev-card-title-letter-spacing;
+        margin-bottom: 0;
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+
+        i{
+          color: #1c70af;
+        }
+      }
+
+      .btn-group {
+        a {
+          border: 0;
+          background-color: #f8f9fa;
+          color: #868e96;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          margin: 0;
+
+          &:first-letter {
+            text-transform: uppercase;
+          }
+
+          &.btn-warning{
+            background-color: #F49917;
+            color: #fff;
+          }
+
+          &:hover,
+          &.active{
+            background-color: #e9ecef;
+
+            &.btn-warning{
+              background-color: #da850a;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //  CARD DOCK
+  &.card-dock {
+    .card-body{
+
+      .card-statistics{
+        p{
+
+        }
+      }
+    }
+  }
+
+  //  CARD LIST INFORMATION
+  &.card-information-list{
+    .card-body{
+      padding: 10px 20px;
+
+      p{
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,2 +1,93 @@
-$sidebar-width: 250px !default;
-$navbar-height: 45px !default;
+:root {
+  font-size: 14px;
+}
+
+$background-main: #e9ecef;
+
+//  COLORS
+$pandev-ui-cyan: #00dcd7;
+$pandev-ui-blue: #2f88cf;
+$pandev-ui-red: #ff5b5b;
+$pandev-ui-green: #5bff71;
+$pandev-ui-yellow: #fff05b;
+
+//  FONTS SIZE
+
+$pandev-ui-h1-size: 38;
+$pandev-ui-h2-size: 28;
+$pandev-ui-h3-size: 24;
+$pandev-ui-h4-size: 20;
+$pandev-ui-h5-size: 17;
+$pandev-ui-h6-size: 15;
+
+$pandev-ui-p-size: 15;
+$pandev-ui-a-size: 15;
+$pandev-ui-span-size: 15;
+$pandev-ui-label-size: 14;
+
+//  Table
+//------------------------------
+$pandev-ui-th-size: 12;
+$pandev-ui-td-size: 15;
+$pandev-ui-td-a-size: 15;
+$pandev-ui-td-a-size: 15;
+
+//  Sidebar
+//------------------------------
+$pandev-ui-sidebar-a-size: 15;
+$pandev-ui-sidebar-divider-size: 10;
+
+//  Card
+//------------------------------
+$pandev-ui-card-title-size: 16;
+
+//  Button
+//------------------------------
+$pandev-ui-button-text-size: 12;
+
+//  FONTS COLOR
+
+$pandev-ui-label-color: #868ba1;
+$pandev-ui-label-font-weight: 500;
+$pandev-ui-label-letter-spacing: .3px;
+
+$pandev-ui-p-color: #343a40;
+$pandev-ui-p-font-weight: 400;
+$pandev-ui-p-letter-spacing: normal;
+
+$pandev-ui-a-color: $pandev-ui-blue;
+$pandev-ui-a-color-hover: darken($pandev-ui-blue, 15%);
+$pandev-ui-a-font-weight: 400;
+$pandev-ui-a-letter-spacing: normal;
+
+
+//  HEADER
+$pandev-ui-header-min-height: 45px;
+$header-background: #fff;
+$header-color: #343a40;
+$header-color-hover: #495057;
+$header-color-active: #495057;
+
+//  SIDEBAR
+$pandev-ui-sidebar-background: #1D2939;
+$pandev-ui-sidebar-background-hover: #18222f;
+$pandev-ui-sidebar-background-active: #00b297;
+$pandev-ui-sidebar-font-size: 1.2rem;
+$pandev-ui-sidebar-font-weight: 700;
+$pandev-ui-sidebar-color: #adb5bd;
+$pandev-ui-sidebar-color-hover: #fff;
+$pandev-ui-sidebar-color-active: #fff;
+$pandev-ui-sidebar-color-divider: #fff;
+$pandev-ui-sidebar-width: 250px;
+
+//  TITLE for card - divider sidebar -
+$title-size: 16px;
+$title-color: #7f8c8d;
+$title-letter-spacing: 1px;
+
+//  CARD
+$pandev-card-title-color:#343a40;
+$pandev-card-title-font-size: 1.4rem;
+$pandev-card-title-font-weight: 600;
+$pandev-card-title-letter-spacing: .5px;
+

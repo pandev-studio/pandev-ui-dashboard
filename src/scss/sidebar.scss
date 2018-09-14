@@ -1,39 +1,98 @@
 body.with-sidebar-fixed {
   @media (min-width: 768px) {
     .content {
-      padding-left: $sidebar-width;
+      padding-left: $pandev-ui-sidebar-width;
     }
   }
 }
 
 .sidebar {
-  width: $sidebar-width;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  background-color: $pandev-ui-sidebar-background;
+
+  width: $pandev-ui-sidebar-width;
   position: fixed;
-  height: calc(100vh - #{$navbar-height});
+  height: calc(100vh - #{$pandev-ui-header-min-height});
   z-index: 100;
   transform: translateX(-100%);
   transition: 0.3s ease-in-out;
-
-  @media (max-width: 768px) {
-    background: white;
-  }
 
   overflow: scroll;
 
   ul {
     list-style: none;
-    padding-left: 10px;
+    padding: 10px;
 
-    li {
-      margin: 2px 0;
-      padding: 8px 16px;
+    li.divider {
+      @include rfs($pandev-ui-sidebar-divider-size);
+
+      margin: 10px 0 0 0;
+      padding: 10px 10px 10px 10px;
+
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: $pandev-ui-sidebar-color-divider;
+      opacity: .3;
+      white-space: nowrap;
+    }
+
+    li:not(.divider) {
+
+      border-radius: 3px;
+      transition: all .2s ease-in-out;
+
+      a {
+        @include rfs($pandev-ui-sidebar-a-size);
+
+        color: $pandev-ui-sidebar-color;
+        padding: 14px 28px;
+        display: block;
+        transition: all .2s ease-in-out;
+
+        i {
+          width: 20px;
+          margin-right: 12px;
+        }
+      }
 
       &:hover {
-        background: #ddd;
+        background-color: $pandev-ui-sidebar-background-hover;
+        a {
+          color: $pandev-ui-sidebar-color-hover;
+        }
+
+        &:before {
+          content: '';
+
+          position: absolute;
+          left: 0;
+
+          height: 42px;
+        }
+
       }
 
       &.active {
-        background: #ccc;
+        background-color: $pandev-ui-sidebar-background-active;
+        a {
+          color: $pandev-ui-sidebar-color-active;
+          font-weight: 700;
+        }
+
+        &:before {
+          content: '';
+
+          position: absolute;
+          left: 0;
+
+          height: 42px;
+        }
       }
     }
   }
@@ -54,7 +113,7 @@ body.with-sidebar-fixed {
   }
 
   .divider {
-    border-bottom: solid 1px #ddd;
+    //border-bottom: solid 1px #ddd;
     padding: 8px 16px;
   }
 }

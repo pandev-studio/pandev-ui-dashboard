@@ -1,0 +1,251 @@
+.nav-tabs {
+  &.stepper {
+    padding: 0 25px;
+
+    background-color: transparent;
+    width: 100%;
+    margin: 1em auto;
+    border-radius: .25em;
+    clear: both;
+    border-bottom: none;
+
+    li {
+      background-color: #fff;
+
+      position: relative;
+
+      width: 215px;
+      height: 105px;
+
+      margin-bottom: 3px;
+      padding: 10px 15px;
+
+      margin-right: 29px;
+
+      &.done {
+        background-color: $success;
+
+        &::before {
+          border-left: 25px solid transparent;
+          border-top: 52.5px solid $success;
+          border-bottom: 52.5px solid $success;
+        }
+
+        &::after {
+          border-left: 25px solid $success;
+          border-top: 52.5px solid transparent;
+          border-bottom: 52.5px solid transparent;
+        }
+      }
+
+      &.active {
+        background-color: $primary;
+
+        &::before {
+          border-left: 25px solid transparent;
+          border-top: 52.5px solid $primary;
+          border-bottom: 52.5px solid $primary;
+        }
+
+        &::after {
+          border-left: 25px solid $primary;
+          border-top: 52.5px solid transparent;
+          border-bottom: 52.5px solid transparent;
+        }
+
+      }
+
+      &.active,
+      &.done {
+
+        span.stepper-id {
+          color: #fff;
+
+          border: 1px dashed #fff;
+        }
+
+        .description {
+
+          h6 {
+            color: #fff;
+          }
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: -25px;
+
+        border-left: 25px solid transparent;
+        border-top: 52.5px solid #fff;
+        border-bottom: 52.5px solid #fff;
+      }
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        right: -25px;
+
+        border-left: 25px solid #fff;
+        border-top: 52.5px solid transparent;
+        border-bottom: 52.5px solid transparent;
+      }
+
+      span.stepper-id {
+        position: absolute;
+        top: 13.5px;
+        left: 5px;
+
+        padding: 3px;
+
+        text-align: center;
+        font-size: 1.4rem;
+        color: #2c3e50;
+
+        width: 30px;
+        height: 30px;
+
+        border-radius: 50%;
+        border: 1px dashed #2c3e50;
+      }
+
+      .description {
+        padding-left: 30px;
+
+        h6 {
+          font-weight: 700;
+          color: #2c3e50;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        p {
+          color: #7f8c8d;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+//  STEPPER VERTICALE
+.vertical-stepper {
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: block;
+      position: relative;
+
+      a {
+        display: block;
+        padding: 10px 10px 10px 40px;
+
+        p {
+          padding-top: 5px;
+
+          display: block;
+
+          text-transform: none;
+        }
+
+        i {
+          position: absolute;
+          left: 20px;
+
+          text-align: center;
+
+          width: 16px;
+          height: 16px;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &:hover{
+        background-color: #f8f9fa;
+      }
+
+      &.complete {
+        a {
+          i {
+            color: #5cb85c;
+          }
+        }
+      }
+      &.current {
+        a {
+          i {
+            color: #5bc0de;
+          }
+        }
+      }
+      &.next {
+        a {
+          i {
+            color: #ffe357;
+          }
+        }
+      }
+      &.locked {
+        a {
+          i {
+            color: #7f8c8d;
+          }
+        }
+      }
+    }
+    li:not(:last-child) {
+
+      a::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: calc(100% - 25px);
+        left: 27px;
+        bottom: -4px;
+        z-index: 3;
+      }
+
+      &.complete {
+        a {
+          &::before {
+            background-color: #5cb85c;
+          }
+        }
+      }
+      &.current {
+        a {
+          &::before {
+            background-color: #5bc0de;
+          }
+        }
+      }
+      &.next {
+        a {
+          &::before {
+            background-color: #ffe357;
+          }
+        }
+      }
+      &.locked {
+        a {
+          &::before {
+            background-color: #7f8c8d;
+          }
+        }
+      }
+    }
+  }
+}

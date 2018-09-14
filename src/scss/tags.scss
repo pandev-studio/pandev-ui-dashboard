@@ -1,0 +1,22 @@
+ul.card-tags{
+  padding-left: 0;
+
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
+  li.card-tag{
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 2px;
+
+    margin-bottom: 4px;
+
+    color: #868ba1;
+
+    &:hover{
+      background-color: #e9ecef;
+    }
+  }
+}
