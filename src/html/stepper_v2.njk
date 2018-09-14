@@ -1,0 +1,81 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Index page" %}
+
+{% set pages = [ 'page1', 'page2', 'page3' ] %}
+
+{% block content %}
+    <div class="row">
+
+        <div class="col-12">
+            <ul class="nav nav-pills bg-light">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stepper_v1.html">Stepper large</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stepper_v2.html">Stepper vertical</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stepper_v3.html">Stepper small</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/table.html">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cards.html">Cards</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-md-3">
+            <div class="card card-vertical-stepper">
+                <div class="card-header">
+                    <div class="card-title">Status</div>
+                    <div class="btn-group" role="group" aria-label="">
+                        <a href="#" class="btn active">attivo</a>
+                    </div>
+                </div>
+                <div class="card-body px-0">
+                    <div class="vertical-stepper">
+                        <ul>
+                            <li class="px-3 complete">
+                                <a href="#">Overview <i class="ico fa fa-check ico-green"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque.</p>
+                                </a>
+                            </li>
+
+                            <li class="px-3 complete">
+                                <a href="#">Details <i class="ico fa fa-check ico-green"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque.</p>
+                                </a>
+                            </li>
+                            <li class="px-3 current">
+                                <a href="#">Meta <i class="fas fa-bell"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque.</p>
+                                </a>
+                            </li>
+                            <li class="px-3 next">
+                                <a href="#">Attributes <i class="fas fa-exclamation-triangle"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque.</p>
+                                </a>
+                            </li>
+                            <li class="px-3 locked">
+                                <a href="#">Locked <i class="fa fa-lock"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque.</p>
+                                </a>
+                            </li>
+                            <li class="px-3 locked">
+                                <a href="#">Images <i class="fa fa-lock"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

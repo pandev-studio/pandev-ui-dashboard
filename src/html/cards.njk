@@ -1,0 +1,217 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Index page" %}
+
+{% set pages = [ 'page1', 'page2', 'page3' ] %}
+
+{% block content %}
+    <div class="row">
+
+        <div class="col-12">
+            <ul class="nav nav-pills bg-light">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stepper_v1.html">Stepper large</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stepper_v2.html">Stepper vertical</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stepper_v3.html">Stepper small</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/table.html">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cards.html">Cards</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-12">
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card card-dock">
+                        <div class="card-header">
+                            <div class="card-title">Statistiche</div>
+                            <div class="btn-group" role="group" aria-label="">
+                                <a href="#" class="btn active">Oggi</a>
+                                <a href="#" class="btn">Questa settimana</a>
+                                <a href="#" class="btn">Questo mese</a>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="row no-gutters">
+                                <div class="col-4 py-4 pl-4 card-statistics">
+                                    <p>
+                                        le tue statistiche sono le seguenti
+                                    </p>
+                                </div>
+                                <div class="col-2 py-4 card-statistics border-right text-center">
+                                    <h5>20</h5>
+                                    <p>Task</p>
+                                </div>
+                                <div class="col-2 py-4 card-statistics border-right text-center">
+                                    <h5>18</h5>
+                                    <p>incomplete</p>
+                                </div>
+                                <div class="col-2 py-4 card-statistics border-right text-center">
+                                    <h5>5</h5>
+                                    <p>in scadenza</p>
+                                </div>
+                                <div class="col-2 py-4 card-statistics text-center">
+                                    <h5>3</h5>
+                                    <p>Importanti</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-12 col-md-6">
+                    <div class="card card-information-list">
+                        <div class="card-header">
+                            <div class="card-title">Informazioni</div>
+                            <div class="btn-group" role="group" aria-label="">
+                                <a href="#" class="btn btn-warning active"><i class="fas fa-edit mr-1"></i>Modifica</a>
+                                <a href="#" class="btn">Altro</a>
+                                <a href="#" class="btn">Altro</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-4 py-1">
+                                    <label class="">id</label>
+                                    <p>#98d878w4</p>
+                                </div>
+                                <div class="col-12 col-md-4 py-1">
+                                    <label class="">aperto da</label>
+                                    <p>Umberto Peserico</p>
+                                </div>
+                                <div class="col-12 col-md-4 py-1">
+                                    <label class="">Assegrato a</label>
+                                    <p>Alessio Bussolari</p>
+                                </div>
+                                <div class="col-12 col-md-4 py-1">
+                                    <label class="">apertura</label>
+                                    <p>12.08.2018</p>
+                                </div>
+                                <div class="col-12 col-md-4 py-1">
+                                    <label class="">Scadenza</label>
+                                    <p>18.08.2018</p>
+                                </div>
+                                <div class="col-12 col-md-4 py-1">
+                                    <label class="">Sprint</label>
+                                    <p><i class="fas fa-tachometer-alt"></i><a href="#">sprint di prova</a></p>
+                                </div>
+                                <div class="col-12 col-md-8 py-1">
+                                    <label>Tags</label>
+                                    <ul class="card-tags">
+                                        <li class="card-tag"><p class="mb-0">#prova</p></li>
+                                        <li class="card-tag"><p class="mb-0">#tag</p></li>
+                                        <li class="card-tag"><p class="mb-0">#pippo</p></li>
+                                        <li class="card-tag"><p class="mb-0">#lapo</p></li>
+                                        <li class="card-tag"><p class="mb-0">#whoaaaa</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-4 py-1">
+                                    <label class="">branch</label>
+                                    <p><i class="fas fa-code-branch ml-1"></i><a href="#">brach di prova</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card card-information-list">
+                        <div class="card-header">
+                            <div class="card-title">Informazioni <a href="#"><i class="fas fa-edit ml-1"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row no-gutters">
+                                <div class="col-12 py-1">
+                                    <label class="">id</label>
+                                    <p>#98d878w4</p>
+                                </div>
+                                <div class="col-12 py-1">
+                                    <label class="">aperto da</label>
+                                    <p>Umberto Peserico</p>
+                                </div>
+                                <div class="col-12 py-1">
+                                    <label class="">apertura</label>
+                                    <p>12.08.2018</p>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mt-4">
+                                <div class="col-12 py-1">
+                                    <label class="">Assegrato a</label>
+                                    <div class="form-group">
+                                        <select name="status" id="status" class="form-control selectpicker">
+                                            <option>Alessio Bussolari</option>
+                                            <option>Umberto Peserico</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 py-1">
+                                    <label class="">Scadenza</label>
+                                    <div class="form-group">
+                                        <select name="status" id="status" class="form-control selectpicker">
+                                            <option>18.08.2018</option>
+                                            <option>19.08.2018</option>
+                                            <option>20.08.2018</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 py-1">
+                                    <label class="">Sprint</label>
+                                    <p><i class="fas fa-tachometer-alt"></i><a href="#">sprint di prova</a></p>
+                                    <div class="form-group">
+                                        <select name="status" id="status" class="form-control selectpicker">
+                                            <option>Sprint 1</option>
+                                            <option>Sprint 2</option>
+                                            <option>Sprint 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 py-1">
+                                    <label class="">branch</label>
+                                    <p><i class="fas fa-code-branch ml-1"></i><a href="#">brach di prova</a></p>
+                                    <div class="form-group">
+                                        <select name="status" id="status" class="form-control selectpicker">
+                                            <option>Branch 1</option>
+                                            <option>Branch 2</option>
+                                            <option>Branch 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mt-4">
+                                <div class="col-12 py-1">
+                                    <label>Tags</label>
+                                    <ul class="card-tags">
+                                        <li class="card-tag"><p class="mb-0">#prova</p></li>
+                                        <li class="card-tag"><p class="mb-0">#tag</p></li>
+                                        <li class="card-tag"><p class="mb-0">#pippo</p></li>
+                                        <li class="card-tag"><p class="mb-0">#lapo</p></li>
+                                        <li class="card-tag"><p class="mb-0">#whoaaaa</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

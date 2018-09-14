@@ -1,0 +1,40 @@
+.pagination {
+
+  .page-item {
+    margin: 0 2px;
+
+    .page-link {
+      border: 0;
+
+      min-width: 35px;
+      height: 30px;
+      text-align: center;
+
+      padding: 8px;
+
+      background-color: #e9ecef;
+      color: #495057;
+
+      border-radius: 0;
+
+      &:hover,
+      &:focus {
+        background-color: #dee2e6;
+      }
+    }
+
+    &.active .page-link {
+      background-color: #17A2B8;
+      color: #fff
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+
+      a {
+        background-color: lighten(#dee2e6, 5%);
+        color: darken(#dee2e6, 15%)
+      }
+    }
+  }
+}

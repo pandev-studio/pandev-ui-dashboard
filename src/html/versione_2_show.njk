@@ -1,0 +1,137 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Index page" %}
+
+{% set pages = [ 'page1', 'page2', 'page3' ] %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-tabs stepper">
+                <li class="done">
+                    <div>
+                        <span class="stepper-id">1</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="active">
+                    <div>
+                        <span class="stepper-id">2</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">3</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">4</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">5</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div>
+                        <span class="stepper-id">6</span>
+                        <div class="description">
+                            <h6>Titolo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-pills bg-light">
+                <li class="nav-item">
+                    <a class="nav-link" href="/versione_1_show.html">Versione 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/versione_2_show.html">Versione 2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="card card-information-list">
+                <div class="card-header">
+                    <div class="card-title">Informazioni <a href="#"><i class="fas fa-edit ml-1"></i></a></div>
+                </div>
+                <div class="card-body">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-4 py-1">
+                            <label class="">id</label>
+                            <p>#98d878w4</p>
+                        </div>
+                        <div class="col-12 col-md-4 py-1">
+                            <label class="">Aperto da</label>
+                            <p>Umberto Peserico</p>
+                        </div>
+                        <div class="col-12 col-md-4 py-1">
+                            <label class="">Assegrato a</label>
+                            <p>Alessio Bussolari</p>
+                        </div>
+                        <div class="col-12 col-md-4 py-1">
+                            <label class="">apertura</label>
+                            <p>12.08.2018</p>
+                        </div>
+                        <div class="col-12 col-md-4 py-1">
+                            <label class="">Scadenza</label>
+                            <p>18.08.2018</p>
+                        </div>
+                        <div class="col-12 col-md-4 py-1">
+                            <label class="">Sprint</label>
+                            <p><i class="fas fa-tachometer-alt"></i><a href="#">sprint di prova</a></p>
+                        </div>
+                        <div class="col-12 col-md-8 py-1">
+                            <label>Tags</label>
+                            <ul class="card-tags">
+                                <li class="card-tag"><p class="mb-0">#prova</p></li>
+                                <li class="card-tag"><p class="mb-0">#tag</p></li>
+                                <li class="card-tag"><p class="mb-0">#pippo</p></li>
+                                <li class="card-tag"><p class="mb-0">#lapo</p></li>
+                                <li class="card-tag"><p class="mb-0">#whoaaaa</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 py-1">
+                            <label class="">branch</label>
+                            <p><i class="fas fa-code-branch ml-1"></i><a href="#">brach di prova</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

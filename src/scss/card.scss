@@ -24,11 +24,15 @@
     padding: 15px 15px 0 15px;
 
     .card-title {
-      color: $title-color;
-      font-size: $title-size;
-      letter-spacing: $title-letter-spacing;
-      text-transform: uppercase;
+      @include rfs($pandev-ui-card-title-size);
+
+      color: $pandev-card-title-color;
+      letter-spacing: $pandev-card-title-letter-spacing;
       font-weight: 900;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
     }
   }
   .card-body.vertical-label {
@@ -37,10 +41,8 @@
     dl {
       dt {
         color: $title-color;
-        font-size: 14px;
       }
       dd {
-        font-size: 18px;
         margin-bottom: 1.5rem;
       }
     }
@@ -49,4 +51,86 @@
     padding: 0 15px 15px 15px;
   }
 
+  //  CARD DOCK & INFORMATION LIST MIX
+  &.card-dock, &.card-information-list, &.card-vertical-stepper{
+    .card-header {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-bottom: 1px solid #dee2e6;
+
+      .card-title{
+        @include rfs($pandev-ui-card-title-size);
+
+        color: $pandev-card-title-color;
+        letter-spacing: $pandev-card-title-letter-spacing;
+        margin-bottom: 0;
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+
+        i{
+          color: #1c70af;
+        }
+      }
+
+      .btn-group {
+        a {
+          border: 0;
+          background-color: #f8f9fa;
+          color: #868e96;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          margin: 0;
+
+          &:first-letter {
+            text-transform: uppercase;
+          }
+
+          &.btn-warning{
+            background-color: #F49917;
+            color: #fff;
+          }
+
+          &:hover,
+          &.active{
+            background-color: #e9ecef;
+
+            &.btn-warning{
+              background-color: #da850a;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //  CARD DOCK
+  &.card-dock {
+    .card-body{
+
+      .card-statistics{
+        p{
+
+        }
+      }
+    }
+  }
+
+  //  CARD LIST INFORMATION
+  &.card-information-list{
+    .card-body{
+      padding: 10px 20px;
+
+      p{
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }

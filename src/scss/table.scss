@@ -7,4 +7,50 @@
       width: 100%;
     }
   }
+
+  &.table-bordered-pandev-ui {
+    thead {
+      tr {
+        th {
+          @include rfs($pandev-ui-th-size);
+
+          padding: .65rem;
+
+          font-weight: 700;
+          letter-spacing: .5px;
+          text-transform: uppercase;
+
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+
+          border: 1px solid #dee2e6;
+        }
+      }
+    }
+    tbody {
+      tr {
+        th, td {
+          @include rfs($pandev-ui-td-size);
+
+          padding: .25rem .45rem;
+          line-height: 14px;
+          color: #343a40;
+          border: 1px solid #dee2e6;
+
+          vertical-align: middle;
+
+          .badge {
+            border-radius: 0;
+            min-height: 18px;
+
+            line-height: 13px;
+          }
+
+          a {
+            @include rfs($pandev-ui-td-a-size);
+          }
+        }
+      }
+    }
+  }
 }
