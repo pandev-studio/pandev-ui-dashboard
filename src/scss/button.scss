@@ -1,4 +1,6 @@
 .btn {
+  @include rfs($pandev-ui-button-text-size);
+
   padding: 6px 13px;
 
   border-radius: 3px;

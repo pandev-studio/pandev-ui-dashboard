@@ -1,66 +1,74 @@
 body.with-sidebar-fixed {
   @media (min-width: 768px) {
     .content {
-      padding-left: $sidebar-width;
+      padding-left: $pandev-ui-sidebar-width;
     }
   }
 }
 
 .sidebar {
-  width: $sidebar-width;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  background-color: $pandev-ui-sidebar-background;
+
+  width: $pandev-ui-sidebar-width;
   position: fixed;
-  height: calc(100vh - #{$navbar-height});
+  height: calc(100vh - #{$pandev-ui-header-min-height});
   z-index: 100;
   transform: translateX(-100%);
   transition: 0.3s ease-in-out;
-
-  @media (max-width: 768px) {
-    background: white;
-  }
 
   overflow: scroll;
 
   ul {
     list-style: none;
-    padding: 10px 10px 0 0;
+    padding: 10px;
 
     li.divider {
+      @include rfs($pandev-ui-sidebar-divider-size);
+
       margin: 10px 0 0 0;
       padding: 10px 10px 10px 10px;
 
-      font-size: 12px;
-      letter-spacing: 1.1px;
-      font-weight: 900;
+      font-size: 10px;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      color: $title-color;
+      font-weight: normal;
+      color: $pandev-ui-sidebar-color-divider;
+      opacity: .3;
+      white-space: nowrap;
     }
 
     li:not(.divider) {
 
-      border-radius: 0 3px 3px 0;
+      border-radius: 3px;
+      transition: all .2s ease-in-out;
 
       a {
-        text-transform: capitalize;
-        color: #34495e;
+        @include rfs($pandev-ui-sidebar-a-size);
+
+        color: $pandev-ui-sidebar-color;
         padding: 14px 28px;
         display: block;
-        font-size: .85rem;
+        transition: all .2s ease-in-out;
 
-        i{
+        i {
           width: 20px;
           margin-right: 12px;
         }
       }
 
       &:hover {
-        background-color: rgba(0, 0, 0, .03);
+        background-color: $pandev-ui-sidebar-background-hover;
         a {
-          color: #2c3e50;
+          color: $pandev-ui-sidebar-color-hover;
         }
 
-        &:before{
+        &:before {
           content: '';
-          border-left: 3px solid $primary;
 
           position: absolute;
           left: 0;
@@ -71,20 +79,19 @@ body.with-sidebar-fixed {
       }
 
       &.active {
-        background-color: rgba(0, 0, 0, .05);
+        background-color: $pandev-ui-sidebar-background-active;
+        a {
+          color: $pandev-ui-sidebar-color-active;
+          font-weight: 700;
+        }
 
-        &:before{
+        &:before {
           content: '';
-          border-left: 3px solid darken($primary, 30%);
 
           position: absolute;
           left: 0;
 
           height: 42px;
-        }
-        a {
-          color: #212121;
-          font-weight: 700;
         }
       }
     }
@@ -106,7 +113,7 @@ body.with-sidebar-fixed {
   }
 
   .divider {
-    border-bottom: solid 1px #ddd;
+    //border-bottom: solid 1px #ddd;
     padding: 8px 16px;
   }
 }

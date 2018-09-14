@@ -1,0 +1,48 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {@include rfs($pandev-ui-h1-size);}
+h2 {@include rfs($pandev-ui-h2-size);}
+h3 {@include rfs($pandev-ui-h3-size);}
+h4 {@include rfs($pandev-ui-h4-size);}
+h5 {@include rfs($pandev-ui-h5-size);}
+h6 {@include rfs($pandev-ui-h6-size);}
+
+a {
+  @include rfs($pandev-ui-a-size);
+
+  color: $pandev-ui-a-color;
+  font-weight: $pandev-ui-a-font-weight;
+  letter-spacing: $pandev-ui-a-letter-spacing;
+  cursor: pointer;
+
+  &:hover {
+    color: $pandev-ui-a-color-hover;
+  }
+}
+
+p {
+  @include rfs($pandev-ui-p-size);
+
+  color: $pandev-ui-p-color;
+  font-weight: $pandev-ui-p-font-weight;
+  letter-spacing: $pandev-ui-p-letter-spacing;
+
+  margin-bottom: 5px;
+}
+
+label {
+  @include rfs($pandev-ui-label-size);
+
+  color: $pandev-ui-label-color;
+  font-weight: $pandev-ui-label-font-weight;
+  letter-spacing: $pandev-ui-label-letter-spacing;
+
+  margin-bottom: 5px;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
