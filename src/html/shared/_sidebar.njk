@@ -1,10 +1,27 @@
-<div id="mainSidebar"
-     class="sidebar fixed">
-    <ul>
-    <li class="divider">Menu principale</li>
-            <li class="active"><a><i class="fas fa-list"></i>Lista istanze servizi</a></li>
-        <li><a href="../stepper_v1.html"><i class="fas fa-list"></i>Lista utenti</a></li>
-        <li><a><i class="fas fa-list"></i>Lista utenti</a></li>
+<div id="mainSidebar" class="sidebar fixed">
+    <ul class="accordion">
+        <li class="divider">Menu principale</li>
+        <li class="active"><a><i class="fas fa-list"></i>Lista istanze servizi</a></li>
+        <li>
+            <a class="sidebar-dropdown-toggle" data-target="#list1">
+                <i class="fas fa-list"></i>
+                dropdown menu
+                <i class="fas fa-angle-up right"></i>
+            </a>
+        </li>
+        <li id="list1" class="sidebar-dropdown-menu">
+            <a class="sidebar-dropdown-item" href="#">Action</a>
+            <a class="sidebar-dropdown-item" href="#">Another action</a>
+            <a class="sidebar-dropdown-item" href="#">Something else here</a>
+        </li>
+
+        <li>
+            <a class="sidebar-actions-toggle" data-target="#list2">
+                <i class="fas fa-list"></i>
+                Slide out menu
+            </a>
+        </li>
+
         <li><a><i class="fas fa-list"></i>Lista utenti</a></li>
         <li><a><i class="fas fa-list"></i>Lista utenti</a></li>
         <li class="active"><a><i class="fas fa-list"></i>Lista utenti</a></li>
@@ -16,5 +33,19 @@
         <li><a><i class="fas fa-list"></i>Lista utenti</a></li>
         <li><a><i class="fas fa-list"></i>Lista utenti</a></li>
         <li><a><i class="fas fa-list"></i>Lista utenti</a></li>
+    </ul>
+</div>
+
+<div class="sidebar-actions-menu" data-status="close">
+    <ul id="list2">
+        <li class="">
+            <a class="sidebar-actions-item" href="#">Lista prodotti</a>
+        </li>
+        <li>
+            <a class="sidebar-actions-item" href="#">Nuovo prodotto</a>
+        </li>
+        <li>
+            <a class="sidebar-actions-item" href="#">Altro</a>
+        </li>
     </ul>
 </div>

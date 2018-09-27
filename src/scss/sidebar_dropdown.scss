@@ -1,0 +1,46 @@
+@-webkit-keyframes fadeIn {
+  from {
+    margin-left: -10px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    margin-left: -10px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+.sidebar {
+
+  .sidebar-dropdown-toggle{
+    .right{
+      position: absolute;
+      right: 10px;
+    }
+  }
+
+  .sidebar-dropdown-menu {
+    display: none;
+  }
+
+  .sidebar-dropdown-menu {
+    &.open {
+      display: block;
+
+      -webkit-animation: fadeIn .4s;
+      animation: fadeIn .4s;
+    }
+  }
+
+
+}

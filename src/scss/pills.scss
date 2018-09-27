@@ -1,0 +1,24 @@
+.nav-pills-light {
+  background-color: transparent;
+
+  margin: 12.5px 0;
+
+  border-bottom: 1px solid #e4e7ed;
+
+  .nav-item {
+    margin-bottom: -1px;
+
+    .nav-link {
+
+      color: #86848c;
+      border-radius: 0;
+
+      &.active{
+        background-color: inherit;
+        color: #34313f;
+        border-bottom: 4px solid $primary;
+      }
+
+    }
+  }
+}
