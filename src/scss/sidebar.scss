@@ -42,7 +42,30 @@ body.with-sidebar-fixed {
       white-space: nowrap;
     }
 
-    li:not(.divider) {
+    li.sidebar-dropdown-menu{
+      a {
+        @include rfs($pandev-ui-sidebar-a-size);
+
+        color: $pandev-ui-sidebar-color;
+        padding: 14px 28px;
+        display: block;
+        transition: all .2s ease-in-out;
+
+        border-radius: 3px;
+
+        &:hover{
+          background-color: $pandev-ui-sidebar-background-hover;
+          color: $pandev-ui-sidebar-color-hover;
+        }
+
+        i {
+          width: 20px;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    li:not(.divider):not(.sidebar-dropdown-menu) {
 
       border-radius: 3px;
       transition: all .2s ease-in-out;
