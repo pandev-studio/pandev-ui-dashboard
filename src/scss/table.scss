@@ -8,6 +8,22 @@
     }
   }
 
+  .fit{
+
+  }
+
+  &.table-pandev-ui {
+    tbody {
+      tr {
+        th, td{
+          .table-image{
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+
   &.table-bordered-pandev-ui {
     thead {
       tr {

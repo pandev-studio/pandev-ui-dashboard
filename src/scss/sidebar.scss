@@ -71,12 +71,15 @@ body.with-sidebar-fixed {
       transition: all .2s ease-in-out;
 
       a {
+        position: relative;
+
         @include rfs($pandev-ui-sidebar-a-size);
 
         color: $pandev-ui-sidebar-color;
         padding: 14px 28px;
         display: block;
         transition: all .2s ease-in-out;
+        text-decoration: none;
 
         i {
           width: 20px;
