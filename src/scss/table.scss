@@ -8,15 +8,53 @@
     }
   }
 
-  .fit{
-
+  thead, tbody, tfoot{
+    tr{
+      th, td{
+        .fit{
+          white-space: nowrap;
+          width: 1%;
+        }
+      }
+    }
   }
 
   &.table-pandev-ui {
-    tbody {
+    thead, tbody, tfoot{
       tr {
         th, td{
-          .table-image{
+          &.action-table-row{
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 20px;
+
+            background-color: #dee2e6;
+
+            .action-table{
+              font-weight: 700;
+
+              &:hover{
+                text-decoration: none;
+              }
+            }
+          }
+          .dropdown-menu-pandev-ui{
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+
+            background-color: transparent;
+
+            &:hover{
+              background-color: #dee2e6;
+            }
+
+            &::after {
+              display:none;
+            }
+          }
+
+          img.table-image{
             height: 35px;
           }
         }
