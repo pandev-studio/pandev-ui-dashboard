@@ -1,3 +1,14 @@
-.dropdown-toggle-pandev-ui::after {
-  display:none;
+.dropdown-toggle-pandev-ui{
+
+  &::after {
+    display:none;
+  }
+
+  &:focus{
+    border: none;
+  }
+
+  .dropdown-item{
+    padding: .35rem 1.5rem;
+  }
 }
