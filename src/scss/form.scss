@@ -90,7 +90,7 @@
 
 .float-input {
   position: relative;
-  margin: 15px 10px;
+  margin: 15px 0;
   height: 50px;
 
   label {
@@ -107,17 +107,17 @@
     height: 50px;
     font-size: 16px;
     line-height: 13px;
-    padding: 20px 0 5px 10px;
+    padding: 25px 0 5px 10px;
 
     &:focus {
       box-shadow: none;
       border-color: $pandev-ui-blue;
     }
 
-    &.is-valid {
+    &.valid {
       border-color: $pandev-ui-green;
     }
-    &.is-invalid {
+    &.invalid {
       border-color: $pandev-ui-red;
     }
   }
