@@ -22,6 +22,9 @@
   &.table-pandev-ui {
     thead, tbody, tfoot{
       tr {
+        th{
+          vertical-align: middle;
+        }
         th, td{
           &.action-table-row{
             padding-bottom: 10px;
