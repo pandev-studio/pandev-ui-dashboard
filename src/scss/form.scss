@@ -96,7 +96,7 @@
     position: absolute;
     top: 7px;
     left: 11px;
-    z-index: 4;
+    z-index: 5;
   }
 
   .input-group {
@@ -176,7 +176,7 @@
     top: 7px;
     left: 11px;
 
-    z-index: 2;
+    z-index: 5;
 
   }
 
@@ -192,29 +192,6 @@
     padding: 25px 0 5px 10px;
   }
 
-  textarea,
-  input {
-    &:focus {
-      box-shadow: none;
-      border-color: $pandev-ui-input-focus;
-    }
-
-    &.valid {
-      border-color: $pandev-ui-green;
-    }
-    &.invalid {
-      border-color: $pandev-ui-red;
-    }
-  }
-
-  .invalid-feedback{
-    position: absolute;
-    top: 4px;
-    right: 10px;
-
-    width: auto;
-  }
-
   .bootstrap-select.form-control:not([class*=col-]) {
     button.btn {
       border-radius: 3px;
@@ -227,4 +204,31 @@
       }
     }
   }
+}
+
+textarea,
+input {
+  &:focus {
+    box-shadow: none;
+    border-color: $pandev-ui-input-focus;
+  }
+
+  &.valid {
+    border-color: $pandev-ui-green;
+  }
+  &.invalid {
+    border-color: $pandev-ui-red;
+  }
+}
+
+.invalid-feedback{
+  margin-top: 0;
+
+  position: absolute;
+  top: 7px;
+  right: 11px;
+
+  z-index: 5;
+
+  width: auto;
 }
