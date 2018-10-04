@@ -213,10 +213,10 @@ input {
     border-color: $pandev-ui-input-focus;
   }
 
-  &.valid {
+  &.is-valid {
     border-color: $pandev-ui-green;
   }
-  &.invalid {
+  &.is-invalid {
     border-color: $pandev-ui-red;
   }
 }
