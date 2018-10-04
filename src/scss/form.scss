@@ -207,6 +207,14 @@
     }
   }
 
+  .invalid-feedback{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+
+    width: auto;
+  }
+
   .bootstrap-select.form-control:not([class*=col-]) {
     button.btn {
       border-radius: 3px;
