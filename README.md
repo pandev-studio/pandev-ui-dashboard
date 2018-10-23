@@ -1,5 +1,8 @@
 # Come aggiornare la versione
 
+- Aggiornare il package.json con la nuova versione
+- run 'npm install'
+
 - Commit con messaggio Bump versione X.Y.Z
 - Rilascio tag con nome vX.Y.Z
 - Aggiornamento dei progetti cambiando il tag
