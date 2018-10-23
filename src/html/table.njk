@@ -64,7 +64,10 @@
                         <table class="table table-pandev-ui">
                             <thead>
                             <tr>
-                                <th scope="col" class="id-col">
+                                <th colspan="1" scope="col">
+
+                                </th>
+                                <th scope="col">
                                     #
                                 </th>
                                 <th scope="col">
@@ -87,6 +90,19 @@
                             <tbody>
                             {% for i in range(0, 20) %}
                                 <tr>
+                                    <td scope="col" class="fit">
+                                        <div class="btn-group btn-group-pandev-ui" role="group" aria-label="Basic example">
+                                            <a class="btn btn-pandev-ui">
+                                                <i class="fas fa-copy"></i>
+                                            </a>
+                                            <a class="btn btn-pandev-ui">
+                                                <i class="fas fa-marker"></i>
+                                            </a>
+                                            <a class="btn btn-pandev-ui">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
                                     <th scope="row">
                                         <a href="#">sw001</a>
                                     </th>

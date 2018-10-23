@@ -1,0 +1,18 @@
+.btn-group.btn-group-pandev-ui{
+
+  background-color: transparent;
+
+  .btn-pandev-ui{
+    box-shadow: none;
+    i{
+      color: $pandev-ui-button-icon-color;
+
+    }
+    &:hover{
+      i{
+        color: $pandev-ui-button-icon-color-hover;
+
+      }
+    }
+  }
+}

@@ -126,12 +126,15 @@ $pandev-ui-icon-arrow-down: '\f107';
 $pandev-ui-button-background: #fff;
 $pandev-ui-button-background-hover: #fff;
 
+$pandev-ui-button-icon-color: $pandev-ui-text-color;
+$pandev-ui-button-icon-color-hover: $pandev-ui-text-color-dark;
+
 $pandev-ui-button-border-radius: 3px;
 
 $pandev-ui-button-font-weight: 500;
 
 $pandev-ui-button-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
-$pandev-ui-button-shadow-hover:0 0 0 1px rgba(43,45,80,.1), 0 2px 5px 0 rgba(43,45,80,.1), 0 3px 9px 0 rgba(43,45,80,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08);
+$pandev-ui-button-shadow-hover: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .1), 0 3px 9px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .08);
 
 //  PAGINATION
 $pandev-ui-pagination-background: #fff;
@@ -143,7 +146,7 @@ $pandev-ui-pagination-font-color-active: #fff;
 $pandev-ui-pagination-font-weight: 500;
 
 $pandev-ui-pagination-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
-$pandev-ui-pagination-shadow-hover:0 0 0 1px rgba(43,45,80,.1), 0 2px 5px 0 rgba(43,45,80,.1), 0 3px 9px 0 rgba(43,45,80,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08);
+$pandev-ui-pagination-shadow-hover: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .1), 0 3px 9px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .08);
 
 //  BREADCRUMB
 $pandev-ui-breadcrumb-font-color: $pandev-ui-text-color;
@@ -157,7 +160,7 @@ $pandev-ui-breadcrumb-font-size-active: 18;
 $pandev-ui-input-focus: $pandev-ui-primary;
 
 $pandev-ui-input-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
-$pandev-ui-input-shadow-hover:0 0 0 1px rgba(43,45,80,.1), 0 2px 5px 0 rgba(43,45,80,.1), 0 3px 9px 0 rgba(43,45,80,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08);
+$pandev-ui-input-shadow-hover: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .1), 0 3px 9px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .08);
 
 $pandev-ui-dropdown-items-border-radius: 3px;
 $pandev-ui-dropdown-item-border-radius: 3px;
