@@ -112,7 +112,7 @@ $pandev-ui-card-title-weight: 500;
 $pandev-ui-card-background: #fff;
 
 $pandev-ui-card-general-padding: 15px;
-$pandev-ui-card-header-padding: 15px 15px 15px 15px;
+$pandev-ui-card-header-padding: 15px 20px;
 $pandev-ui-card-body-padding: 0 15px;
 $pandev-ui-card-footer-padding: 15px;
 
@@ -148,9 +148,10 @@ $pandev-ui-pagination-shadow-hover:0 0 0 1px rgba(43,45,80,.1), 0 2px 5px 0 rgba
 //  BREADCRUMB
 $pandev-ui-breadcrumb-font-color: $pandev-ui-text-color;
 $pandev-ui-breadcrumb-font-color-active: $pandev-ui-primary;
+$pandev-ui-breadcrumb-font-weight-active: 700;
 
 $pandev-ui-breadcrumb-font-size: 12;
-$pandev-ui-breadcrumb-font-size-active: 16;
+$pandev-ui-breadcrumb-font-size-active: 18;
 
 //  FORM
 $pandev-ui-input-focus: $pandev-ui-primary;

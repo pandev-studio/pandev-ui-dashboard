@@ -1,7 +1,7 @@
 .card.card-table{
 
   .card-header{
-    padding: 20px 20px 0 20px;
+    padding: $pandev-ui-card-header-padding;
 
     .card-title{
       @extend .m-0;
@@ -11,6 +11,5 @@
   .card-body {
     padding: 0;
   }
-
 
 }

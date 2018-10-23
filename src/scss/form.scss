@@ -7,6 +7,10 @@
 //  Table
 @import "form/table-input";
 
+.form-group{
+  margin: 0;
+}
+
 textarea,
 input {
   &:focus {
