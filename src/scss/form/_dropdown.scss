@@ -4,7 +4,7 @@
     background-color: #fff;
 
     border-radius: 0;
-    border: 1px solid #ced4da;
+    border: $pandev-ui-input-border;
     font-size: 14px;
 
     height: 30px;
@@ -13,13 +13,13 @@
   .dropdown-toggle {
     &:hover,
     &:focus {
-      border: none;
+      border: $pandev-ui-input-border;
     }
   }
 
   &.show {
     .dropdown-toggle {
-      border: none;
+      border: $pandev-ui-input-border;
     }
   }
 
