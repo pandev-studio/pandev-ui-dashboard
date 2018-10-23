@@ -1,31 +1,32 @@
-.quill-container {
+.quill-container{
   position: relative;
+  border: $pandev-ui-input-border;
+  border-radius: 3px;
+  box-shadow: $pandev-ui-input-shadow;
+  padding: 25px 0 5px 0;
+  margin-bottom: 25px;
 
-  border: 1px solid #ced4da;
-  padding: 25px 10px 5px 10px;
+  &:hover{
+    box-shadow: $pandev-ui-input-shadow-hover;
+  }
 
-  border-radius: .25rem;
+  .ql-snow{
+    &.ql-toolbar,
+    &.ql-container{
+      border: none
+    }
+  }
 
-  label {
+  &.quill-container-disabled{
+    background-color: #e9ecef;
+    opacity: 1;
+  }
+
+  label{
     position: absolute;
     top: 7px;
     left: 11px;
+
     z-index: 2;
-  }
-
-  .ql-toolbar {
-    &.ql-snow {
-      border-left: none;
-      border-right: none;
-      border-top: none;
-      border-bottom: 1px solid #ced4da;
-    }
-  }
-
-  .ql-container{
-
-    &.ql-snow {
-      border: none;
-    }
   }
 }
