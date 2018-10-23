@@ -1,82 +1,43 @@
+
 .float-input-group {
-  position: relative;
-  margin: 15px 0;
+  &.float-input-group-prepend {
 
-  label {
-    position: absolute;
-    top: 7px;
-    left: 11px;
-    z-index: 5;
-  }
-
-  .input-group {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-
-    .input-group-prepend,
-    .input-group-append {
-
-      .input-group-text {
-        height: 50px;
-        font-size: 16px;
-        line-height: 13px;
-        padding: 25px 0 5px 10px;
-
-        background-color: #fff;
-      }
-    }
-
-    .input-group-prepend {
-      .input-group-text {
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-
-        border-right: none;
-      }
-    }
-
-    .input-group-append {
-      .input-group-text {
-        border-left: none;
-      }
-    }
-
-    input.form-control {
-      height: 50px;
-      font-size: 16px;
-      line-height: 13px;
-      padding: 25px 0 5px 10px;
-
-      border-radius: 0 3px 3px 0;
-
-      &.disabled + .input-group-prepend {
+    .input-group {
+      .input-group-prepend {
         .input-group-text {
-          background-color: #e9ecef;
+          position: relative;
+          font-size: 12px;
+          padding: 25px 5px 5px 10px;
+          border-top: $pandev-ui-input-border;
+          border-right: none;
+          border-bottom: $pandev-ui-input-border;
+          border-left: $pandev-ui-input-border;
+          box-shadow: $pandev-ui-input-shadow;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+
+          label {
+            position: absolute;
+            top: 7px;
+            left: 11px;
+
+            z-index: 2;
+          }
         }
       }
-
-      &:focus{
-        border-top: 1px solid $pandev-ui-input-focus;
-        border-right: 1px solid $pandev-ui-input-focus;
-        border-bottom: 1px solid $pandev-ui-input-focus;
+      .form-control {
+        height: 50px;
+        position: relative;
+        padding: 25px 0 5px 10px;
+        border-top: $pandev-ui-input-border;
+        border-right: $pandev-ui-input-border;
+        border-bottom: $pandev-ui-input-border;
         border-left: none;
-      }
-      &:focus + .input-group-prepend .input-group-text {
-        border: 1px solid $pandev-ui-input-focus;
-        border-right: none;
+        box-shadow:  $pandev-ui-input-shadow;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
       }
     }
 
-    .form-control:first-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-left: none;
-    }
-    .form-control:not(:last-child) {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-    }
   }
-
 }
