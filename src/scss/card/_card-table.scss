@@ -1,0 +1,16 @@
+.card.card-table{
+
+  .card-header{
+    padding: 20px 20px 0 20px;
+
+    .card-title{
+      @extend .m-0;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+
+}

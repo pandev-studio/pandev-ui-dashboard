@@ -12,7 +12,7 @@
 
   background: #e0e1e2 none;
 
-  &.btn-rounded-icon{
+  &.btn-rounded-icon {
     position: relative;
 
     border-radius: 50%;
@@ -22,7 +22,7 @@
 
     padding: 9.5px;
 
-    i{
+    i {
       position: absolute;
       top: 9.5px;
       left: 9.5px;
@@ -128,5 +128,33 @@
         }
       }
     }
+  }
+}
+
+//
+//
+//
+//    Pandev Ui Button
+//
+//
+//
+
+.btn-pandev-ui {
+  @include rfs($pandev-ui-button-text-size);
+
+  background-color: #fff;
+
+  font-weight: $pandev-ui-button-font-weight;
+  border-radius: $pandev-ui-button-border-radius;
+  box-shadow: $pandev-ui-button-shadow;
+  color: $pandev-ui-text-color-dark;
+
+  &:hover {
+    box-shadow: $pandev-ui-button-shadow-hover;
+  }
+
+  &.btn-pandev-ui-success:hover{
+    background-color: $pandev-ui-success;
+    color: #fff;
   }
 }

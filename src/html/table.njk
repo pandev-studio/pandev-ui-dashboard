@@ -34,147 +34,110 @@
         </div>
 
         <div class="col-12">
-            <div class="card mt-2">
-                <div class="card-body">
+            <div class="card card-table mt-2">
+                <div class="card-header">
                     <div class="row">
-                        <div class="col">
-                            <h5 class="mb-3">
-                                Lista istanze servizi
-                                <a data-toggle="modal" data-target="#instance_modal" href="#">
-                                    <i class="fas fa-plus-circle"></i>
-                                </a>
-                            </h5>
-                            <form action="#" class="search-box">
-                                <div class="row">
-                                    <div class="col-md-5 col-lg-3">
-
-                                        <div class="form-group">
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       class="form-control"
-                                                       placeholder="Cerca">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary"
-                                                            type="button">
-                                                        <i class="fas fa-search"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-5 col-lg-2">
-                                        <div class="form-group">
-                                            <input type="text"
-                                                   placeholder="Data inizio"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-2">
-                                        <div class="form-group">
-                                            <input type="text"
-                                                   placeholder="Data fine"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-2">
-                                        <div class="form-group">
-                                            <select name="status" id="status" class="form-control selectpicker">
-                                                <option>Attivo</option>
-                                                <option>Non attivo</option>
-                                                <option>Past due</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-2">
-                                        <div class="form-group">
-                                            <select name="status" id="status" class="form-control">
-                                                <option>Attivo</option>
-                                                <option>Non attivo</option>
-                                                <option>Past due</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-lg-12">
-
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="table-responsive">
-                                <table class="table table-sm table-striped table-hover table-bordered-pandev-ui">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col" class="id-col">
-                                            #
-                                        </th>
-                                        <th scope="col">
-                                            Stato
-                                        </th>
-                                        <th scope="col">
-                                            Descrizione
-                                        </th>
-                                        <th scope="col">
-                                            Dominio
-                                        </th>
-                                        <th scope="col" class="align-top">
-                                            Link interno
-                                        </th>
-                                        <th scope="col" class="align-top">
-                                            Impostazioni
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    {% for i in range(0, 20) %}
-                                        <tr>
-                                            <th scope="row">
-                                                <a href="#">sw001</a>
-                                            </th>
-                                            <td class="badge-cell">
-                                                {% if i%3 == 0 %}
-                                                    <span class="badge badge-success badge-table">Attivo</span>
-                                                    {% elif  i%3 == 1 %}
-                                                    <span class="badge badge-warning badge-table">Past due</span>
-                                                {% else %}
-                                                    <span class="badge badge-danger badge-table">Non attivo</span>
-                                                {% endif %}
-
-                                            </td>
-                                            <td class="text-truncate">Sito web per la presentazione del nuovo locale</td>
-                                            <td>www.nuovosito.it</td>
-                                            <td>
-                                                <a href="#">Apri</a>
-                                            </td>
-                                            <td>
-                                                <a href="#">Apri</a>
-                                            </td>
-                                        </tr>
-                                    {% endfor %}
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="d-flex justify-content-start">
-                                <nav aria-label="Page navigation example" class="justify-content-end">
-                                    <ul class="pagination m-0 mt-0 justify-content-end">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <select class="form-control" style="width: auto;">
-                                    <option>10</option>
-                                    <option>20</option>
-                                    <option>25</option>
-                                    <option>50</option>
+                        <div class="col-2">
+                            <input class="form-control" id="prova2" type="text" placeholder="ricerca">
+                        </div>
+                        <div class="col-2">
+                            <div class="form-group card-header-dropdown">
+                                <select name="status" id="status" class="form-control selectpicker">
+                                    <option>Attivo</option>
+                                    <option>Non attivo</option>
+                                    <option>Past due</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="col-auto ml-auto">
+                            <a class="btn btn-pandev-ui">
+                                <i class="fas fa-plus"></i>
+                                Nuovo</a>
+                            <a class="btn btn-pandev-ui">
+                                <i class="fas fa-long-arrow-alt-up fa-rotate-45"></i>
+                                Export</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-pandev-ui">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="id-col">
+                                    #
+                                </th>
+                                <th scope="col">
+                                    Stato
+                                </th>
+                                <th scope="col">
+                                    Descrizione
+                                </th>
+                                <th scope="col">
+                                    Dominio
+                                </th>
+                                <th scope="col">
+                                    Link interno
+                                </th>
+                                <th scope="col">
+                                    Impostazioni
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for i in range(0, 20) %}
+                                <tr>
+                                    <th scope="row">
+                                        <a href="#">sw001</a>
+                                    </th>
+                                    <td class="badge-cell">
+                                        {% if i%3 == 0 %}
+                                            <span class="badge badge-success badge-table">Attivo</span>
+                                            {% elif  i%3 == 1 %}
+                                            <span class="badge badge-warning badge-table">Past due</span>
+                                        {% else %}
+                                            <span class="badge badge-danger badge-table">Non attivo</span>
+                                        {% endif %}
 
+                                    </td>
+                                    <td class="text-truncate">Sito web per la presentazione del nuovo locale</td>
+                                    <td>www.nuovosito.it</td>
+                                    <td>
+                                        <a href="#">Apri</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Apri</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-auto">
+                            <select class="form-control" style="width: auto;">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>25</option>
+                                <option>50</option>
+                            </select>
+                        </div>
+                        <div class="col-auto ml-auto">
+                            <nav aria-label="Page navigation example" class="justify-content-end">
+                                <ul class="pagination m-0 mt-0 justify-content-end">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>

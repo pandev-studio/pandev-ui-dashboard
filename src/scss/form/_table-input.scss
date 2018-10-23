@@ -1,0 +1,12 @@
+.form-control{
+
+  border: none;
+  box-shadow: $pandev-ui-input-shadow;
+
+  &:hover,
+  &:focus{
+    box-shadow: $pandev-ui-input-shadow-hover;
+  }
+
+
+}

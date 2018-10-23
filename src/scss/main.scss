@@ -19,14 +19,19 @@
 @import "tags";
 @import "pills";
 @import "dropdown";
+@import "badge";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family:'Montserrat', sans-serif;
 
-  background-color: #ecf0f1;
+  background-color: $background-main;
   padding-top: $pandev-ui-header-min-height;
 }
 
+*:not(.card):not(.btn-pandev-ui):not(.form-control):not(.page-link):not(.dropdown-menu-pandev-ui){
+  box-shadow: none !important;
+  outline: none !important;
+}
 
 .content {
   padding: 10px;

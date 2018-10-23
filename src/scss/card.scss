@@ -1,60 +1,77 @@
-.card {
+@import "card/card-table";
 
-  background-color: transparent;
+.card {
+  position: relative;
+
+  background-color: $pandev-ui-card-background;
 
   margin-top: 2rem;
   margin-bottom: 1rem;
   border: none;
 
-  -webkit-box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+
+  box-shadow: $pandev-ui-card-shadow;
 
   .card-header,
   .card-body,
   .card-footer {
+    padding: $pandev-ui-card-general-padding;
+
     background-color: #fff;
-    border-radius: 3px;
-  }
 
-  .card-header,
-  .card-footer {
-    border: none;
   }
-
   .card-header {
-    padding: 15px 15px 0 15px;
+
+    border-radius: $pandev-ui-card-header-border-radius;
+    border-bottom: $pandev-ui-card-header-border;
+
+    padding: $pandev-ui-card-header-padding;
 
     .card-title {
       @include rfs($pandev-ui-card-title-size);
 
-      color: $pandev-card-title-color;
-      letter-spacing: $pandev-card-title-letter-spacing;
-      font-weight: 900;
+      color: $pandev-ui-card-title-color;
+      font-weight: $pandev-ui-card-title-weight;
+      text-transform: capitalize;
 
       &:first-letter {
         text-transform: uppercase;
       }
+
+    }
+
+    a:not(.dropdown-item) {
+      @extend .btn-pandev-ui;
     }
   }
+  .card-body {
+    border-radius: $pandev-ui-card-body-border-radius;
+
+    padding: $pandev-ui-card-body-padding;
+  }
+  .card-footer {
+    border-radius: $pandev-ui-card-footer-border-radius;
+    border-top: $pandev-ui-card-footer-border;
+
+    padding: $pandev-ui-card-footer-padding;
+  }
+
   .card-body.vertical-label {
     padding: 25px;
 
     dl {
       dt {
-        color: $title-color;
+        color: $pandev-ui-primary;
       }
       dd {
         margin-bottom: 1.5rem;
       }
     }
   }
-  .card-footer {
-    padding: 0 15px 15px 15px;
-  }
 
   //  CARD DOCK & INFORMATION LIST MIX
-  &.card-information-list, &.card-vertical-stepper{
+  &.card-information-list, &.card-vertical-stepper {
     .card-header {
       padding: 10px 20px;
       display: flex;
@@ -63,18 +80,17 @@
 
       border-bottom: 1px solid #dee2e6;
 
-      .card-title{
+      .card-title {
         @include rfs($pandev-ui-card-title-size);
 
-        color: $pandev-card-title-color;
-        letter-spacing: $pandev-card-title-letter-spacing;
+        color: $pandev-ui-card-title-color;
         margin-bottom: 0;
 
         &:first-letter {
           text-transform: uppercase;
         }
 
-        i{
+        i {
           color: #1c70af;
         }
       }
@@ -93,71 +109,19 @@
             text-transform: uppercase;
           }
 
-          &.btn-warning{
+          &.btn-warning {
             background-color: #F49917;
             color: #fff;
           }
 
           &:hover,
-          &.active{
+          &.active {
             background-color: #e9ecef;
 
-            &.btn-warning{
+            &.btn-warning {
               background-color: #da850a;
             }
           }
-        }
-      }
-    }
-  }
-
-  //  CARD DOCK
-  &.card-dock {
-
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-
-    .card-header{
-      position: relative;
-      height: 50px;
-
-      background-color: transparent;
-
-      .card-title{
-        position: absolute;
-        left: 10px;
-
-        margin: 0;
-
-        color: #353535;
-        @include rfs(22);
-      }
-
-      .card-actions{
-        position: absolute;
-        right: 10px;
-      }
-    }
-    .card-body{
-      border-radius: 3px;
-
-      .card-statistics{
-        p{
-
-        }
-      }
-    }
-  }
-
-  //  CARD LIST INFORMATION
-  &.card-information-list{
-    .card-body{
-      padding: 10px 20px;
-
-      p{
-        i{
-          margin-right: 10px;
         }
       }
     }

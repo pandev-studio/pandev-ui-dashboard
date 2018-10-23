@@ -16,11 +16,13 @@ $(document).ready(() => {
         var sd = $(this).data('target');
 
         if ($(sd).hasClass('open')) {
+            $(this).removeClass('opened');
             $(this).find('i.fas.fa-angle-down.right').remove();
             $(this).append("<i class=\"fas fa-angle-up right\"></i>");
 
             $(sd).removeClass('open');
         } else {
+            $(this).addClass('opened');
             $(this).find('i.fas.fa-angle-up.right').remove();
             $(this).append("<i class=\"fas fa-angle-down right\"></i>");
 

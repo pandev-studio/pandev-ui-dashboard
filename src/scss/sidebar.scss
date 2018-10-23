@@ -1,6 +1,7 @@
 body.with-sidebar-fixed {
   @media (min-width: 768px) {
     .content {
+      padding-top: 0;
       padding-left: $pandev-ui-sidebar-width;
     }
   }
@@ -25,35 +26,37 @@ body.with-sidebar-fixed {
 
   ul {
     list-style: none;
-    padding: 10px;
+    padding: $pandev-ui-sidebar-items-padding;
 
     li.divider {
       @include rfs($pandev-ui-sidebar-divider-size);
 
       margin: 10px 0 0 0;
-      padding: 10px 10px 10px 10px;
+      padding: 10px 10px 15px 0;
 
       font-size: 10px;
-      letter-spacing: 1px;
       text-transform: uppercase;
-      font-weight: normal;
+      font-weight: $pandev-ui-sidebar-height-divider;
       color: $pandev-ui-sidebar-color-divider;
-      opacity: .3;
       white-space: nowrap;
     }
 
-    li.sidebar-dropdown-menu{
+    li.sidebar-dropdown-menu {
+
       a {
         @include rfs($pandev-ui-sidebar-a-size);
 
+        height: $pandev-ui-sidebar-item-height;
+        line-height: 20px;
+
         color: $pandev-ui-sidebar-color;
-        padding: 14px 28px;
+        padding: $pandev-ui-sidebar-item-padding;
         display: block;
         transition: all .2s ease-in-out;
 
         border-radius: 3px;
 
-        &:hover{
+        &:hover {
           background-color: $pandev-ui-sidebar-background-hover;
           color: $pandev-ui-sidebar-color-hover;
         }
@@ -67,16 +70,21 @@ body.with-sidebar-fixed {
 
     li:not(.divider):not(.sidebar-dropdown-menu) {
 
+      height: $pandev-ui-sidebar-item-height;
+
       border-radius: 3px;
       transition: all .2s ease-in-out;
 
       a {
+        height: $pandev-ui-sidebar-item-height;
+        line-height: 20px;
+
         position: relative;
 
         @include rfs($pandev-ui-sidebar-a-size);
 
         color: $pandev-ui-sidebar-color;
-        padding: 14px 28px;
+        padding: $pandev-ui-sidebar-item-padding;
         display: block;
         transition: all .2s ease-in-out;
         text-decoration: none;
@@ -108,7 +116,7 @@ body.with-sidebar-fixed {
         background-color: $pandev-ui-sidebar-background-active;
         a {
           color: $pandev-ui-sidebar-color-active;
-          font-weight: 700;
+          font-weight: $pandev-ui-sidebar-weight-active;
         }
 
         &:before {

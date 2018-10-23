@@ -1,31 +1,22 @@
 .pagination {
 
   .page-item {
-    margin: 0 2px;
 
     .page-link {
-      border: 0;
-
-      min-width: 35px;
-      height: 30px;
-      text-align: center;
-
-      padding: 8px;
-
-      background-color: #e9ecef;
-      color: #495057;
-
-      border-radius: 0;
+      @extend .btn-pandev-ui;
+      border: none;
+      min-height: 26px;
 
       &:hover,
       &:focus {
-        background-color: #dee2e6;
+        background-color: $pandev-ui-pagination-background-hover;
+        color: $pandev-ui-pagination-font-color-hover;
       }
     }
 
     &.active .page-link {
-      background-color: #17A2B8;
-      color: #fff
+      background-color: $pandev-ui-pagination-background-active;
+      color: $pandev-ui-pagination-font-color-active;
     }
 
     &.disabled {

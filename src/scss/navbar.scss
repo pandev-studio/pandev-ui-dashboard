@@ -1,19 +1,25 @@
+@import "navbar/breadcrumb";
+
 .navbar-pandev-ui {
 
   min-height: $pandev-ui-header-min-height;
+  padding: $pandev-ui-header-padding;
 
   background-color: $header-background;
 
   color: $header-color;
 
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: $pandev-ui-header-shadow;
 
   .navbar-brand {
-    text-align: center;
+    padding-left: 35px;
     min-width: calc(250px - 1rem);
     .logo {
       height: 31px;
     }
+  }
+  .collapse{
+    padding-right: 35px;
   }
 
   @media (max-width: 768px) {
@@ -58,17 +64,13 @@
 
   .dropdown-menu-pandev-ui {
 
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.16);
-
-    top: 115%;
-
-    border: none;
-    border-radius: 0 0 3px 3px;
-
+    border: $pandev-ui-header-dropdown-border;
+    box-shadow: $pandev-ui-header-dropdown-box-shadow;
+    border-radius: 3px;
     padding: 3px 10px;
 
     a {
-      color: $pandev-ui-sidebar-color;
+      color: $pandev-ui-header-dropdown-color;
 
       padding: 7px 10px;
       margin: 3px 0;
@@ -76,9 +78,8 @@
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        background-color: $pandev-ui-sidebar-background-hover;
-
-        color: #fff;
+        background-color: $pandev-ui-header-dropdown-background-hover;
+        color: $pandev-ui-header-dropdown-color-hover;
       }
     }
   }

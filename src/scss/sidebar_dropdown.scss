@@ -22,16 +22,36 @@
 
 .sidebar {
 
-  .sidebar-dropdown-toggle{
+  a.sidebar-dropdown-toggle{
     .right{
       position: absolute;
       right: 10px;
-      top: 17px;
+      top: 8px;
+    }
+
+    &.opened{
+      color: $pandev-ui-sidebar-color-active !important;
+      font-weight: $pandev-ui-sidebar-weight-active;
     }
   }
 
   .sidebar-dropdown-menu {
+    padding-left: 34px;
+    padding-bottom: 15px;
     display: none;
+
+    a.divider{
+      cursor: none;
+      height: 1px;
+      width: 85%;
+      padding: 0;
+      margin: 7.5px 0;
+      background-color: $pandev-ui-sidebar-item-divider-background;
+
+      &:hover{
+        background-color: $pandev-ui-sidebar-item-divider-background;
+      }
+    }
   }
 
   .sidebar-dropdown-menu {

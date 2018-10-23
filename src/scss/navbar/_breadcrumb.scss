@@ -1,0 +1,18 @@
+.breadcrumb {
+  background-color: transparent;
+  margin:7px 0;
+
+  .breadcrumb-item {
+    a {
+      @include rfs($pandev-ui-breadcrumb-font-size);
+      color: $pandev-ui-breadcrumb-font-color;
+    }
+
+    &.active {
+      a {
+        @include rfs($pandev-ui-breadcrumb-font-size-active);
+        color: $pandev-ui-breadcrumb-font-color-active;
+      }
+    }
+  }
+}
