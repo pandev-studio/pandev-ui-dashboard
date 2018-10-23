@@ -1,48 +1,86 @@
-:not(.input-group) > .bootstrap-select.form-control:not([class*=col-]) {
+.form-group:not(.input-group) {
+  position: relative;
 
-  button.btn {
-    background-color: #fff;
+  label {
+    position: absolute;
+    top: 7px;
+    left: 11px;
 
-    border-radius: 0;
-    border: $pandev-ui-input-border;
-    font-size: 14px;
-
-    height: 30px;
+    z-index: 5;
   }
 
-  .dropdown-toggle {
-    &:hover,
-    &:focus {
+  .bootstrap-select.form-control:not([class*=col-]) {
+    @extend .mb-2;
+
+    button.btn {
+      background-color: #fff;
+
+      border-radius: 3px;
       border: $pandev-ui-input-border;
-    }
-  }
+      font-size: 14px;
 
-  &.show {
+      height: 50px;
+    }
+
     .dropdown-toggle {
-      border: $pandev-ui-input-border;
+      padding: 25px 10px 5px 10px;
+
+      &:hover,
+      &:focus {
+        border: $pandev-ui-input-border;
+      }
+
+      &.disabled {
+        background-color: #e9ecef;
+        opacity: 1;
+      }
     }
-  }
 
-  .dropdown-menu {
-    border-radius: $pandev-ui-dropdown-items-border-radius;
+    &.show {
+      .dropdown-toggle {
+        border: $pandev-ui-input-border;
+      }
+    }
 
-    li {
-      margin: 2px 5px;
+    .dropdown-toggle.bs-placeholder {
+      color: #495057;
+    }
 
-      a {
-        font-size: 12px;
-        padding: 8px 9px;
-        border-radius: $pandev-ui-dropdown-item-border-radius;
+    .dropdown-menu {
+      border-radius: $pandev-ui-dropdown-items-border-radius;
 
-        &:hover {
-          background-color: #dee2e6;
+      .actions-btn {
+        @extend .btn-pandev-ui;
+        max-height: 33px;
+
+        .bs-select-all {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        .bs-deselect-all {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
         }
       }
-      &.selected {
+
+      li {
+        margin: 2px 5px;
+
         a {
-          position: relative;
-          background-color: $pandev-ui-dropdown-item-background-active;
-          color: #fff;
+          font-size: 12px;
+          padding: 8px 9px;
+          border-radius: $pandev-ui-dropdown-item-border-radius;
+
+          &:hover {
+            background-color: #dee2e6;
+          }
+        }
+        &.selected {
+          a {
+            position: relative;
+            background-color: $pandev-ui-dropdown-item-background-active;
+            color: #fff;
+          }
         }
       }
     }
