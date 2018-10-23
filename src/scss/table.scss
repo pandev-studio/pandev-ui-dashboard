@@ -8,10 +8,10 @@
     }
   }
 
-  thead, tbody, tfoot{
-    tr{
-      th, td{
-        &.fit{
+  thead, tbody, tfoot {
+    tr {
+      th, td {
+        &.fit {
           white-space: nowrap;
           width: 1%;
         }
@@ -20,35 +20,93 @@
   }
 
   &.table-pandev-ui {
-    thead, tbody, tfoot{
+    thead {
       tr {
-        th{
-          vertical-align: middle;
+        background-color: $pandev-ui-table-header-background;
+        th {
+          @include rfs($pandev-ui-table-header-th-size);
+
+          font-weight: $pandev-ui-table-header-th-weight;
+          text-transform: uppercase;
+
+          border-top: $pandev-ui-table-general-th-td-border-top;
+          border-bottom: $pandev-ui-table-general-th-td-border-bottom;
         }
-        th, td{
-          &.action-table-row{
+      }
+    }
+    tbody {
+      tr {
+        td {
+          @include rfs($pandev-ui-table-body-td-size);
+
+          border-top: $pandev-ui-table-general-th-td-border-top;
+
+          &.badge-cell{
+            padding-top: 4px;
+            padding-bottom: 4px;
+
+            .badge-table{
+              min-height: 18px;
+              line-height: 18px;
+            }
+          }
+        }
+        th, td {
+          a {
+            color: $pandev-ui-table-general-link-color;
+
+            &:hover{
+              color: $pandev-ui-table-general-link-color-hover;
+          }
+            &:first-child {
+              font-weight: $pandev-ui-table-body-td-first-font-weight;
+            }
+          }
+        }
+
+        &:hover{
+          background-color: $pandev-ui-table-header-background-hover;
+        }
+      }
+    }
+    tfoot {
+    }
+    thead, tbody, tfoot {
+      tr {
+        th, td {
+          padding: 8px;
+
+          vertical-align: middle;
+
+          height: $pandev-ui-table-general-th-td-min-height;
+
+          &.action-table-row {
             padding-bottom: 10px;
             padding-top: 10px;
             padding-left: 20px;
 
             background-color: #dee2e6;
 
-            .action-table{
+            .action-table {
               font-weight: 700;
 
-              &:hover{
+              &:hover {
                 text-decoration: none;
               }
             }
           }
-          .dropdown-toggle-pandev-ui{
+          .dropdown-toggle-pandev-ui {
             &::after {
-              display:none;
+              display: none;
             }
           }
 
-          img.table-image{
+          img.table-image {
             height: 35px;
+          }
+
+          &:first-child {
+            padding-left: 20px;
           }
         }
       }
@@ -60,8 +118,6 @@
       tr {
         th {
           @include rfs($pandev-ui-th-size);
-
-          padding: .65rem;
 
           font-weight: 700;
           letter-spacing: .5px;

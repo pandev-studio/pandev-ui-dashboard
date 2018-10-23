@@ -1,0 +1,50 @@
+:not(.input-group) > .bootstrap-select.form-control:not([class*=col-]) {
+
+  button.btn {
+    background-color: #fff;
+
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+
+    height: 30px;
+  }
+
+  .dropdown-toggle {
+    &:hover,
+    &:focus {
+      border: none;
+    }
+  }
+
+  &.show {
+    .dropdown-toggle {
+      border: none;
+    }
+  }
+
+  .dropdown-menu {
+    border-radius: $pandev-ui-dropdown-items-border-radius;
+
+    li {
+      margin: 2px 5px;
+
+      a {
+        font-size: 12px;
+        padding: 8px 9px;
+        border-radius: $pandev-ui-dropdown-item-border-radius;
+
+        &:hover {
+          background-color: #dee2e6;
+        }
+      }
+      &.selected {
+        a {
+          position: relative;
+          background-color: $pandev-ui-dropdown-item-background-active;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -7,11 +7,6 @@
 {% block content %}
 
     <div class="row">
-        <div class="col-12">
-            <h1>Prodotti</h1>
-        </div>
-    </div>
-    <div class="row">
 
         <div class="col-12">
             <ul class="nav nav-pills nav-pills-light">
@@ -43,26 +38,31 @@
 
             <div class="row">
                 <div class="col-12 col-md-9">
-                    <div class="card card-dock">
+                    <div class="card">
                         <div class="card-header">
-                            <div class="card-title">Informazioni</div>
-
-                            <div class="card-actions">
-                                <a class="btn btn-rounded">
-                                    <i class="fas fa-print"></i>
-                                </a>
-                                <a class="btn btn-rounded">
-                                    <i class="fas fa-print"></i>
-                                </a>
+                            <div class="row">
+                                <div class="col-2">
+                                    <a class="btn btn-pandev-ui btn-pandev-ui-success">
+                                        <i class="fas fa-floppy-o"></i>
+                                        Salva</a>
+                                </div>
+                                <div class="col-auto ml-auto">
+                                    <a class="btn btn-pandev-ui">
+                                        <i class="fas fa-plus"></i>
+                                        Nuovo</a>
+                                    <a class="btn btn-pandev-ui">
+                                        <i class="fas fa-long-arrow-alt-up fa-rotate-45"></i>
+                                        Export</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body">
 
                             <div class="row">
                                 <div class="col-6">
-                                    <div class="float-input">
-                                        <label for="prova">Prova</label>
-                                        <input class="form-control" id="prova" type="text">
+                                    <div class="float-input invalid">
+                                        <label for="prova">Prova <span class="invalid-feedback">Nome non può essere lasciato in bianco</span></label>
+                                        <input class="form-control is-invalid" id="prova" type="text">
                                     </div>
                                 </div>
 

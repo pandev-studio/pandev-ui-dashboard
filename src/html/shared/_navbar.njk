@@ -15,13 +15,21 @@
         </span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                prova
+    <div class="collapse navbar-collapse d-flex align-items-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto breadcrumb">
+            <li class="nav-item breadcrumb-item">
+                <a href="#">Pagina prodotti</a>
+            </li>
+            <li class="nav-item breadcrumb-item active">
+                <a href="#">Prodotto</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="btn btn-pandev-ui btn-warning">
+                    <i class="fas fa-question"></i>
+                </a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link active"
                    id="currentUserDropdown"
@@ -29,7 +37,8 @@
                     Nome Cognome
                     <i class="fas fa-caret-down"></i>
                 </a>
-                <div class="dropdown-menu dropdown-menu-right dropdown-menu-pandev-ui" aria-labelledby="currentUserDropdown">
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-pandev-ui"
+                     aria-labelledby="currentUserDropdown">
                     <a class="dropdown-item" href="#">Profilo</a>
                     <a class="dropdown-item" href="#">Log out</a>
                 </div>

@@ -2,17 +2,21 @@
   font-size: 14px;
 }
 
-$background-main: #e9ecef;
+$background-main: #e3e8ee;
+$pandev-ui-text-color: #4e566d;
+$pandev-ui-text-color-dark: #2b2d50;
 
 //  COLORS
-$pandev-ui-cyan: #00dcd7;
-$pandev-ui-blue: #2f88cf;
-$pandev-ui-red: #ff5b5b;
-$pandev-ui-green: #5bff71;
-$pandev-ui-yellow: #fff05b;
+$pandev-ui-information: #45b2e8;
+$pandev-ui-danger: #db78dd;
+$pandev-ui-success: #3ecf8e;
+$pandev-ui-warning: #f0b64b;
+
+$pandev-ui-primary: #586ada;
+$pandev-ui-primary-light: #6C7FFF;
+$pandev-ui-primary-dark: #2b2d50;
 
 //  FONTS SIZE
-
 $pandev-ui-h1-size: 38;
 $pandev-ui-h2-size: 28;
 $pandev-ui-h3-size: 24;
@@ -37,13 +41,9 @@ $pandev-ui-td-a-size: 15;
 $pandev-ui-sidebar-a-size: 15;
 $pandev-ui-sidebar-divider-size: 10;
 
-//  Card
-//------------------------------
-$pandev-ui-card-title-size: 16;
-
 //  Button
 //------------------------------
-$pandev-ui-button-text-size: 12;
+$pandev-ui-button-text-size: 16;
 
 //  FONTS COLOR
 
@@ -55,50 +55,132 @@ $pandev-ui-p-color: #343a40;
 $pandev-ui-p-font-weight: 400;
 $pandev-ui-p-letter-spacing: normal;
 
-$pandev-ui-a-color: $pandev-ui-blue;
-$pandev-ui-a-color-hover: darken($pandev-ui-blue, 15%);
+$pandev-ui-a-color: $pandev-ui-information;
+$pandev-ui-a-color-hover: darken($pandev-ui-information, 15%);
 $pandev-ui-a-font-weight: 400;
 $pandev-ui-a-letter-spacing: normal;
 
-
 //  HEADER
-$pandev-ui-header-min-height: 45px;
-$header-background: #fff;
+$pandev-ui-header-min-height: 65px;
+$pandev-ui-header-padding: 10px 0;
+
+$pandev-ui-header-shadow: none;
+
+$pandev-ui-header-dropdown-border: 1px solid #e4e8ed;
+$pandev-ui-header-dropdown-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
+$pandev-ui-header-dropdown-color: $pandev-ui-text-color;
+$pandev-ui-header-dropdown-color-hover: #fff;
+$pandev-ui-header-dropdown-background-hover: $pandev-ui-primary;
+
+$header-background: $background-main;
 $header-color: #343a40;
 $header-color-hover: #495057;
 $header-color-active: #495057;
 
 //  SIDEBAR
-$pandev-ui-sidebar-background: #1D2939;
-$pandev-ui-sidebar-background-hover: #18222f;
-$pandev-ui-sidebar-background-active: #00b297;
+$pandev-ui-sidebar-background: transparent;
+$pandev-ui-sidebar-background-hover: transparent;
+$pandev-ui-sidebar-background-active: transparent;
 $pandev-ui-sidebar-font-size: 1.2rem;
 $pandev-ui-sidebar-font-weight: 700;
-$pandev-ui-sidebar-color: #adb5bd;
-$pandev-ui-sidebar-color-hover: #fff;
-$pandev-ui-sidebar-color-active: #fff;
-$pandev-ui-sidebar-color-divider: #fff;
+$pandev-ui-sidebar-color: $pandev-ui-text-color-dark;
+$pandev-ui-sidebar-color-hover: $pandev-ui-primary-dark;
+$pandev-ui-sidebar-color-active: $pandev-ui-primary;
+$pandev-ui-sidebar-weight-active: 700;
+$pandev-ui-sidebar-color-divider: $pandev-ui-primary-dark;
+$pandev-ui-sidebar-height-divider: 700;
 $pandev-ui-sidebar-width: 250px;
 
-//  TITLE for card - divider sidebar -
-$title-size: 16px;
-$title-color: #7f8c8d;
-$title-letter-spacing: 1px;
+$pandev-ui-sidebar-items-padding: 10px 0 0 35px;
+$pandev-ui-sidebar-item-height: 28px;
+$pandev-ui-sidebar-item-padding: 4px;
+$pandev-ui-sidebar-item-divider-background: #4e566d;
 
 //  CARD
-$pandev-card-title-color:#343a40;
-$pandev-card-title-font-size: 1.4rem;
-$pandev-card-title-font-weight: 600;
-$pandev-card-title-letter-spacing: .5px;
+$pandev-ui-card-header-border-radius: 3px 3px 0 0;
+$pandev-ui-card-header-border: 1px solid #e4e8ed;
+
+$pandev-ui-card-body-border-radius: 3px;
+
+$pandev-ui-card-footer-border-radius: 0 0 3px 3px;
+$pandev-ui-card-footer-border: 1px solid #e4e8ed;
+
+$pandev-ui-card-title-size: 20;
+$pandev-ui-card-title-color: $pandev-ui-text-color-dark;
+$pandev-ui-card-title-weight: 500;
+
+$pandev-ui-card-background: #fff;
+
+$pandev-ui-card-general-padding: 15px;
+$pandev-ui-card-header-padding: 15px 15px 15px 15px;
+$pandev-ui-card-body-padding: 0 15px;
+$pandev-ui-card-footer-padding: 15px;
+
+$pandev-ui-card-shadow: 0 7px 14px 0 rgba(59, 65, 94, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
 
 //  ICON
 $pandev-ui-icon-arrow-up: '\f106';
 $pandev-ui-icon-arrow-down: '\f107';
 
 //  BUTTON
-$pandev-ui-bubtton-background: transparent;
-$pandev-ui-bubtton-background-hover: #7f8c8d;
+$pandev-ui-button-background: #fff;
+$pandev-ui-button-background-hover: #fff;
+
+$pandev-ui-button-border-radius: 3px;
+
+$pandev-ui-button-font-weight: 500;
+
+$pandev-ui-button-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
+$pandev-ui-button-shadow-hover:0 0 0 1px rgba(43,45,80,.1), 0 2px 5px 0 rgba(43,45,80,.1), 0 3px 9px 0 rgba(43,45,80,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08);
+
+//  PAGINATION
+$pandev-ui-pagination-background: #fff;
+$pandev-ui-pagination-background-hover: $pandev-ui-primary;
+$pandev-ui-pagination-background-active: $pandev-ui-primary;
+
+$pandev-ui-pagination-font-color-hover: #fff;
+$pandev-ui-pagination-font-color-active: #fff;
+$pandev-ui-pagination-font-weight: 500;
+
+$pandev-ui-pagination-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
+$pandev-ui-pagination-shadow-hover:0 0 0 1px rgba(43,45,80,.1), 0 2px 5px 0 rgba(43,45,80,.1), 0 3px 9px 0 rgba(43,45,80,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08);
+
+//  BREADCRUMB
+$pandev-ui-breadcrumb-font-color: $pandev-ui-text-color;
+$pandev-ui-breadcrumb-font-color-active: $pandev-ui-primary;
+
+$pandev-ui-breadcrumb-font-size: 12;
+$pandev-ui-breadcrumb-font-size-active: 16;
 
 //  FORM
-$pandev-ui-input-focus: #00b297;
+$pandev-ui-input-focus: $pandev-ui-primary;
+
+$pandev-ui-input-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
+$pandev-ui-input-shadow-hover:0 0 0 1px rgba(43,45,80,.1), 0 2px 5px 0 rgba(43,45,80,.1), 0 3px 9px 0 rgba(43,45,80,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08);
+
+$pandev-ui-dropdown-items-border-radius: 3px;
+$pandev-ui-dropdown-item-border-radius: 3px;
+$pandev-ui-dropdown-item-background-active: $pandev-ui-primary;
+
+//  TABLE
+$pandev-ui-table-header-background: #f7fafc;
+$pandev-ui-table-header-background-hover: #f7fafc;
+$pandev-ui-table-header-border: 1px solid #e4e8ed;
+
+$pandev-ui-table-general-th-td-border-top: 1px solid #e4e8ed;
+$pandev-ui-table-general-th-td-border-bottom: 1px solid #e4e8ed;
+
+$pandev-ui-table-general-th-td-min-height: 36px;
+
+$pandev-ui-table-general-link-color: $pandev-ui-primary;
+$pandev-ui-table-general-link-color-hover: $pandev-ui-primary-dark;
+
+$pandev-ui-table-header-th-size: 15;
+$pandev-ui-table-header-th-weight: 500;
+
+$pandev-ui-table-body-td-size: 15;
+$pandev-ui-table-body-td-first-font-weight: 700;
+
+$pandev-ui-td-a-size: 15;
+$pandev-ui-td-a-size: 15;
 
