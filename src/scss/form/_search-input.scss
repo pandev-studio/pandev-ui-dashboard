@@ -1,0 +1,25 @@
+//  STRUTTURA
+//
+//
+//
+//
+//
+//
+//
+
+.input-search{
+  position:relative;
+
+  i{
+    position:absolute;
+    top: 12px;
+    left: 8px;
+    font-size: 12px;
+    color: #6d757c;
+  }
+
+  .form-control{
+    max-height: 33px;
+    padding-left: 25px
+  }
+}

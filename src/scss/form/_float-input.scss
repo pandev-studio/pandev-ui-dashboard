@@ -24,8 +24,10 @@
     line-height: 13px;
     padding: 25px 0 5px 10px;
 
+    border: $pandev-ui-input-border;
+
     &:hover, &:focus {
-      border: none;
+      border: $pandev-ui-input-border;
       box-shadow: $pandev-ui-input-shadow-hover;
     }
   }
@@ -34,13 +36,17 @@
     box-shadow: $pandev-ui-input-shadow;
     height: 50px;
 
+    &.show .btn{
+      border: $pandev-ui-input-border;
+    }
+
     button.btn {
       border-radius: 3px;
       height: 50px;
-      border: none;
+      border: $pandev-ui-input-border;
 
       &:hover, &:focus, &.show{
-        border: none;
+        border: $pandev-ui-input-border;
       }
 
       .filter-option .filter-option-inner {

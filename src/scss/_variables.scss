@@ -159,10 +159,10 @@ $pandev-ui-breadcrumb-font-size-active: 18;
 //  FORM
 $pandev-ui-input-focus: $pandev-ui-primary;
 
-$pandev-ui-input-border: 1px solid #e4e8ed;;
+$pandev-ui-input-border: 1px solid #e4e8ed;
 
-$pandev-ui-input-shadow: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08);
-$pandev-ui-input-shadow-hover: 0 0 0 1px rgba(43, 45, 80, .1), 0 2px 5px 0 rgba(43, 45, 80, .1), 0 3px 9px 0 rgba(43, 45, 80, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .08);
+$pandev-ui-input-shadow: none;
+$pandev-ui-input-shadow-hover: none;
 
 $pandev-ui-dropdown-items-border-radius: 3px;
 $pandev-ui-dropdown-item-border-radius: 3px;
