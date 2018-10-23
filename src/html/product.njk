@@ -67,30 +67,76 @@
                                 </div>
 
                                 <div class="col-6">
-                                    <div class="float-input">
-                                        <label for="prova2">Prova</label>
-                                        <input class="form-control" id="prova2" type="text">
+                                    <div class="form-group select optional products_product_tags"><label
+                                                class="form-control-label select optional"
+                                                for="products_product_tag_ids">Tags</label><input
+                                                name="products_product[tag_ids][]" type="hidden" value="">
+                                        <div class="dropdown bootstrap-select show-tick form-control select optional">
+                                            <select class="form-control select optional selectpicker"
+                                                    data-none-selected-text="Nessun oggetto selezionato"
+                                                    data-actions-box="true" data-select-all-text="Seleziona tutto"
+                                                    data-deselect-all-text="Rimuovi tutto" multiple="multiple"
+                                                    name="products_product[tag_ids][]" id="products_product_tag_ids"
+                                                    tabindex="-98">
+                                                <option value="4">csdcsdc</option>
+                                                <option value="3">fdsfsdfsdf</option>
+                                                <option value="2">ddddd</option>
+                                                <option value="1">prova</option>
+                                            </select>
+                                            <button type="button" class="btn dropdown-toggle bs-placeholder btn-light"
+                                                    data-toggle="dropdown" role="button"
+                                                    data-id="products_product_tag_ids"
+                                                    title="Nessun oggetto selezionato">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-inner">
+                                                        <div class="filter-option-inner-inner">Nessun oggetto
+                                                            selezionato
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="dropdown-menu " role="combobox">
+                                                <div class="bs-actionsbox">
+                                                    <div class="btn-group btn-group-sm btn-block">
+                                                        <button type="button"
+                                                                class="actions-btn bs-select-all btn btn-light">
+                                                            Seleziona tutto
+                                                        </button>
+                                                        <button type="button"
+                                                                class="actions-btn bs-deselect-all btn btn-light">
+                                                            Rimuovi tutto
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="inner show" role="listbox" aria-expanded="false"
+                                                     tabindex="-1">
+                                                    <ul class="dropdown-menu inner show"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-6">
-                                    <div class="form-group float-input">
-                                        <label for="status">prova</label>
-                                        <select name="status" id="status" class="form-control selectpicker">
-                                            <option>Attivo</option>
-                                            <option>Non attivo</option>
-                                            <option>Past due</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-6">
-                                    <p>Prova</p>
-                                    <div class="editor"></div>
+                                    <div class="form-group form-group-button-pandev-ui string required products_product_category">
+                                        <label
+                                                class="control-label string required" for="products_product_category">Categoria
+                                            <abbr title="required">*</abbr></label>
+                                        <div>
+                                            <div class="input-group col-sm-12">
+                                                <input class="string optional  form-control" label="false"
+                                                       disabled="disabled" type="text" value="prova"
+                                                       name="products_product[category]" id="products_product_category">
+                                                <span class="input-group-btn">
+                        <button name="button" type="button" class="btn btn-pandev-ui" id="edit-product-category">
+                          Modifica
+</button>                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 

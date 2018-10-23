@@ -20,6 +20,8 @@
   }
 
   &.table-pandev-ui {
+    @extend .m-0;
+
     thead {
       tr {
         background-color: $pandev-ui-table-header-background;
