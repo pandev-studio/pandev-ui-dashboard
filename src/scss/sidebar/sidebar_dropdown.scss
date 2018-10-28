@@ -40,6 +40,14 @@
     padding-bottom: 15px;
     display: none;
 
+    .sidebar-dropdown-item {
+
+      &.active{
+        color: $pandev-ui-primary;
+
+      }
+    }
+
     a.divider{
       cursor: none;
       height: 1px;

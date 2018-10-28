@@ -8,7 +8,7 @@ $pandev-ui-text-color-dark: #2b2d50;
 
 //  COLORS
 $pandev-ui-information: #45b2e8;
-$pandev-ui-danger: #db78dd;
+$pandev-ui-danger: #e74c3c;
 $pandev-ui-success: #3ecf8e;
 $pandev-ui-warning: #f0b64b;
 
@@ -55,8 +55,8 @@ $pandev-ui-p-color: #343a40;
 $pandev-ui-p-font-weight: 400;
 $pandev-ui-p-letter-spacing: normal;
 
-$pandev-ui-a-color: $pandev-ui-information;
-$pandev-ui-a-color-hover: darken($pandev-ui-information, 15%);
+$pandev-ui-a-color: $pandev-ui-primary;
+$pandev-ui-a-color-hover: $pandev-ui-primary-dark;
 $pandev-ui-a-font-weight: 400;
 $pandev-ui-a-letter-spacing: normal;
 

@@ -19,6 +19,12 @@
     }
   }
 
+  &.table-pandev-ui-no-hover{
+    &:hover{
+      background-color: transparent !important;
+    }
+  }
+
   &.table-pandev-ui {
     @extend .m-0;
 
