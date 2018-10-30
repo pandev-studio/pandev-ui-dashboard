@@ -10,3 +10,8 @@
 .hidden{
   display:none;
 }
+
+*:not(.card,.input-search,.dropdown-menu-pandev-ui,.page-link,.form-control, .btn-pandev-ui, .quill-container,.input-group-text) {
+  box-shadow: none !important;
+  outline: none !important;
+}

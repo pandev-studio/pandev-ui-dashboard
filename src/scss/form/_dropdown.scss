@@ -52,6 +52,25 @@
           }
         }
 
+        &.bs-select-all{
+          border-left: $pandev-ui-input-border;
+          border-right: 0;
+        }
+        &.bs-deselect-all {
+          border-right: $pandev-ui-input-border;
+          border-left: 0;
+        }
+        &.bs-select-all,
+        &.bs-deselect-all {
+          box-shadow: none;
+          border-top: $pandev-ui-input-border;
+          border-bottom: $pandev-ui-input-border;
+
+          &:hover{
+            box-shadow: none;
+          }
+        }
+
         &:hover {
           box-shadow: none;
         }
