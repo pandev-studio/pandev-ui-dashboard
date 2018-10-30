@@ -1,0 +1,23 @@
+.invalid {
+
+  label {
+    color: $pandev-ui-danger;
+
+    .invalid-feedback {
+      display: inline !important;
+      width: 100%;
+      margin-top: 0.25rem;
+      font-size: 80%;
+      color: $pandev-ui-danger;
+      padding-left: 10px;
+    }
+  }
+
+  .form-control.is-invalid, .form-control.is-invalid:focus, .form-control.is-invalid:hover {
+    border-color: $pandev-ui-danger;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}

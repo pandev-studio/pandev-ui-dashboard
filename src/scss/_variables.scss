@@ -61,7 +61,7 @@ $pandev-ui-a-font-weight: 400;
 $pandev-ui-a-letter-spacing: normal;
 
 //  HEADER
-$pandev-ui-header-min-height: 65px;
+$pandev-ui-header-min-height: 65px !default;
 $pandev-ui-header-padding: 10px 0;
 
 $pandev-ui-header-shadow: none;
@@ -78,9 +78,9 @@ $header-color-hover: #495057;
 $header-color-active: #495057;
 
 //  SIDEBAR
-$pandev-ui-sidebar-background: transparent;
-$pandev-ui-sidebar-background-hover: transparent;
-$pandev-ui-sidebar-background-active: transparent;
+$pandev-ui-sidebar-background: #e3e8ee;
+$pandev-ui-sidebar-background-hover: #e3e8ee;
+$pandev-ui-sidebar-background-active: #e3e8ee;
 $pandev-ui-sidebar-font-size: 1.2rem;
 $pandev-ui-sidebar-font-weight: 700;
 $pandev-ui-sidebar-color: $pandev-ui-text-color-dark;
@@ -91,7 +91,7 @@ $pandev-ui-sidebar-color-divider: $pandev-ui-primary-dark;
 $pandev-ui-sidebar-height-divider: 700;
 $pandev-ui-sidebar-width: 250px;
 
-$pandev-ui-sidebar-items-padding: 10px 0 0 35px;
+$pandev-ui-sidebar-items-padding: 0 0 0 35px;
 $pandev-ui-sidebar-item-height: 28px;
 $pandev-ui-sidebar-item-padding: 4px;
 $pandev-ui-sidebar-item-divider-background: #4e566d;

@@ -5,6 +5,9 @@
 @import "~rfs/scss/rfs";
 
 @import "variables";
+
+$pandev-ui-header-min-height: 70px;
+
 @import "typography";
 @import "sidebar";
 @import "sidebar/sidebar_dropdown";
@@ -34,5 +37,5 @@ body {
 }
 
 .content {
-  padding: 10px;
+
 }

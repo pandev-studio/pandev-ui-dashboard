@@ -41,6 +41,11 @@ body.with-sidebar-fixed {
       font-weight: $pandev-ui-sidebar-height-divider;
       color: $pandev-ui-sidebar-color-divider;
       white-space: nowrap;
+
+      &.divider-first{
+        margin-top: 0;
+        padding-top: 0;
+      }
     }
 
     li.sidebar-dropdown-menu {
