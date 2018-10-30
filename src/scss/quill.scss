@@ -1,10 +1,11 @@
 .quill-container{
+  @extend .my-3;
+
   position: relative;
   border: $pandev-ui-input-border;
   border-radius: 3px;
   box-shadow: $pandev-ui-input-shadow;
   padding: 25px 0 5px 0;
-  margin-bottom: 25px;
 
   &:hover{
     box-shadow: $pandev-ui-input-shadow-hover;
