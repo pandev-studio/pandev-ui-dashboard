@@ -2,7 +2,6 @@
 @import "card/card-table";
 
 .card {
-  @extend .py-3;
 
   position: relative;
 
@@ -49,9 +48,12 @@
     }
   }
   .card-body {
+    @extend .py-3;
+
     border-radius: $pandev-ui-card-body-border-radius;
 
-    padding: $pandev-ui-card-body-padding;
+    padding-left: $pandev-ui-card-body-padding-left;
+    padding-right: $pandev-ui-card-body-padding-right;
   }
   .card-footer {
     border-radius: $pandev-ui-card-footer-border-radius;
