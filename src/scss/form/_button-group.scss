@@ -1,7 +1,7 @@
 .form-group-button-pandev-ui {
+  @extend .my-3;
 
   position: relative;
-  @extend .mb-2;
 
   label {
     @extend .label-float;

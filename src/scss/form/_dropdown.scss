@@ -1,6 +1,8 @@
 .form-group:not(.input-group) {
+  @extend .my-3;
 
   position: relative;
+  min-height: 50px;
 
   label {
     @extend .label-float;
@@ -57,6 +59,7 @@
     }
 
     .dropdown-toggle {
+      min-height: 50px;
       padding: 25px 10px 5px 10px;
 
       &:hover,
@@ -67,6 +70,14 @@
       &.disabled {
         background-color: #e9ecef;
         opacity: 1;
+      }
+
+      .filter-option {
+        .filter-option-inner {
+          .filter-option-inner-inner {
+            overflow: visible;
+          }
+        }
       }
     }
 
