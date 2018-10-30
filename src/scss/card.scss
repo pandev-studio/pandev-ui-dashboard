@@ -2,6 +2,8 @@
 @import "card/card-table";
 
 .card {
+  @extend .py-3;
+
   position: relative;
 
   background-color: $pandev-ui-card-background;

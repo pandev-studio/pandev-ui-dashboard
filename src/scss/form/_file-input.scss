@@ -1,3 +1,7 @@
-.fileinput .thumbnail > img {
-  max-width: 100%;
+.fileinput {
+  @extend .my-3;
+
+  .thumbnail > img {
+    max-width: 100%;
+  }
 }
