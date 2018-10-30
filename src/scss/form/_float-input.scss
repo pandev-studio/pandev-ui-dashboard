@@ -16,7 +16,7 @@
   input,
   textarea{
     font-size: $pandev-ui-input-size;
-    line-height: 13px;
+    line-height: $pandev-ui-input-line-height;
     padding: 25px 0 5px 10px;
 
     border: $pandev-ui-input-border;

@@ -8,14 +8,43 @@
 
   .bootstrap-select.form-control:not([class*=col-]) {
 
-    button.btn {
-      background-color: #fff;
+    .dropdown-menu {
+      button.actions-btn {
+        background-color: #fff;
 
-      border-radius: 3px;
-      border: $pandev-ui-input-border;
-      font-size: $pandev-ui-input-size;
+        border-radius: 3px;
+        border: $pandev-ui-input-border;
+        font-size: $pandev-ui-input-size;
+        line-height: $pandev-ui-input-line-height;
 
-      min-height: 50px;
+        box-shadow: none;
+
+        min-height: 33px;
+
+        &.bs-select-all {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+
+          &:hover {
+            background-color: $pandev-ui-success;
+            color: #fff;
+          }
+        }
+
+        &.bs-deselect-all {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+
+          &:hover {
+            background-color: $pandev-ui-danger;
+            color: #fff;
+          }
+        }
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
     }
 
     .dropdown-toggle {
@@ -81,4 +110,5 @@
       }
     }
   }
+
 }
