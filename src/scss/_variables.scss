@@ -168,6 +168,8 @@ $pandev-ui-dropdown-items-border-radius: 3px;
 $pandev-ui-dropdown-item-border-radius: 3px;
 $pandev-ui-dropdown-item-background-active: $pandev-ui-primary;
 
+$pandev-ui-input-size: 14px;
+
 //  TABLE
 $pandev-ui-table-header-background: #f7fafc;
 $pandev-ui-table-header-background-hover: #f7fafc;
@@ -189,4 +191,8 @@ $pandev-ui-table-body-td-first-font-weight: 700;
 
 $pandev-ui-td-a-size: 15;
 $pandev-ui-td-a-size: 15;
+
+// STANDARD ELEMENTS
+
+@import "standard";
 

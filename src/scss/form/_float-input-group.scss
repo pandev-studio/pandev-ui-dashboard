@@ -6,7 +6,7 @@
       .input-group-prepend {
         .input-group-text {
           position: relative;
-          font-size: 12px;
+          font-size: $pandev-ui-input-size;
           padding: 25px 5px 5px 10px;
           border-top: $pandev-ui-input-border;
           border-right: none;
@@ -17,16 +17,12 @@
           border-bottom-left-radius: 3px;
 
           label {
-            position: absolute;
-            top: 7px;
-            left: 11px;
-
-            z-index: 2;
+            @extend .label-float;
           }
         }
       }
       .form-control {
-        height: 50px;
+        min-height: 50px;
         position: relative;
         padding: 25px 0 5px 10px;
         border-top: $pandev-ui-input-border;

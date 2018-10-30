@@ -1,25 +1,21 @@
 .form-group:not(.input-group) {
+
   position: relative;
 
   label {
-    position: absolute;
-    top: 7px;
-    left: 11px;
-
-    z-index: 5;
+    @extend .label-float;
   }
 
   .bootstrap-select.form-control:not([class*=col-]) {
-    @extend .mb-2;
 
     button.btn {
       background-color: #fff;
 
       border-radius: 3px;
       border: $pandev-ui-input-border;
-      font-size: 14px;
+      font-size: $pandev-ui-input-size;
 
-      height: 50px;
+      min-height: 50px;
     }
 
     .dropdown-toggle {
