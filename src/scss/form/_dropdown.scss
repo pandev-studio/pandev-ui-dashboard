@@ -8,6 +8,15 @@
 
   .bootstrap-select.form-control:not([class*=col-]) {
 
+    button.btn {
+      background-color: #fff;
+
+      border-radius: 3px;
+      border: $pandev-ui-input-border;
+      font-size: $pandev-ui-input-size;
+      line-height: $pandev-ui-input-line-height;
+    }
+
     .dropdown-menu {
       button.actions-btn {
         background-color: #fff;
