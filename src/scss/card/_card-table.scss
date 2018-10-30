@@ -1,6 +1,4 @@
 .card.card-table{
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
 
   .card-header{
     padding: $pandev-ui-card-header-padding;
@@ -11,7 +9,7 @@
   }
 
   .card-body {
-    padding: 0;
+    padding: 0 !important;
   }
 
 }
