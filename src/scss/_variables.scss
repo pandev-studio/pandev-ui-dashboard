@@ -69,7 +69,9 @@ $pandev-ui-header-shadow: none;
 $pandev-ui-header-dropdown-border: none;
 $pandev-ui-header-dropdown-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
 $pandev-ui-header-dropdown-color: $pandev-ui-text-color;
-$pandev-ui-header-dropdown-color-hover: #fff;
+$pandev-ui-header-dropdown-color-hover: $pandev-ui-primary-light;
+$pandev-ui-header-dropdown-color-active: $pandev-ui-primary-dark;
+$pandev-ui-header-dropdown-border-hover: $pandev-ui-primary;
 $pandev-ui-header-dropdown-background-hover: $pandev-ui-primary;
 
 $header-background: $background-main;
@@ -167,6 +169,7 @@ $pandev-ui-input-shadow-hover: none;
 
 $pandev-ui-dropdown-items-border-radius: 3px;
 $pandev-ui-dropdown-item-border-radius: 0;
+$pandev-ui-dropdown-item-border-active: $pandev-ui-primary;
 $pandev-ui-dropdown-item-background-active: $pandev-ui-primary;
 
 $pandev-ui-dropdown-item-color-hover: $pandev-ui-primary-light;

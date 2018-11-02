@@ -20,11 +20,11 @@
     }
 
     .dropdown-menu {
-      border: 0;
+      border: $pandev-ui-input-border;
       padding: 0;
 
       &.inner {
-        border: $pandev-ui-input-border;
+        border: 0;
       }
 
       .actions-btn {
@@ -155,7 +155,7 @@
         }
         &.selected {
           a {
-            border-left: 3px solid $pandev-ui-dropdown-item-background-active;
+            border-left: 3px solid $pandev-ui-dropdown-item-border-active;
             color: $pandev-ui-dropdown-item-color-active;
             position: relative;
             background-color: transparent;

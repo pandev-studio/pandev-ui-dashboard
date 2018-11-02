@@ -66,20 +66,30 @@
 
     border: $pandev-ui-header-dropdown-border;
     box-shadow: $pandev-ui-header-dropdown-box-shadow;
-    border-radius: 3px;
-    padding: 3px 10px;
+    border-radius: 0;
+    padding: 3px 0;
 
-    a {
+    &.show{
+      padding: 3px 0;
+    }
+
+    a.dropdown-item {
       color: $pandev-ui-header-dropdown-color;
 
       padding: 7px 10px;
       margin: 3px 0;
-      border-radius: 2px;
-      transition: all 0.2s ease-in-out;
+      border-radius: 0;
+      border-left: 3px solid transparent;
+
+      transition: padding-left 500ms;
 
       &:hover {
-        background-color: $pandev-ui-header-dropdown-background-hover;
+        background-color: transparent;
         color: $pandev-ui-header-dropdown-color-hover;
+        padding-left: 14px;
+      }
+      &.current{
+        border-left: 3px solid $pandev-ui-header-dropdown-border-hover;
       }
     }
   }
