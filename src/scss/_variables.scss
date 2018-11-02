@@ -166,8 +166,11 @@ $pandev-ui-input-shadow: none;
 $pandev-ui-input-shadow-hover: none;
 
 $pandev-ui-dropdown-items-border-radius: 3px;
-$pandev-ui-dropdown-item-border-radius: 3px;
+$pandev-ui-dropdown-item-border-radius: 0;
 $pandev-ui-dropdown-item-background-active: $pandev-ui-primary;
+
+$pandev-ui-dropdown-item-color-hover: $pandev-ui-primary-light;
+$pandev-ui-dropdown-item-color-active: $pandev-ui-primary-dark;
 
 $pandev-ui-input-size: 14px;
 $pandev-ui-input-line-height: 14px;

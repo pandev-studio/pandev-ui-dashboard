@@ -20,6 +20,8 @@
     }
 
     .dropdown-menu {
+      border: $pandev-ui-input-border;
+
       .actions-btn {
         background-color: #fff;
 
@@ -128,22 +130,30 @@
       }
 
       li {
-        margin: 2px 5px;
+        margin: 0;
 
         a {
+          border-left: 3px solid transparent;
+
           font-size: 12px;
           padding: 8px 9px;
+
           border-radius: $pandev-ui-dropdown-item-border-radius;
+
+          transition: padding-left 500ms;
 
           &:hover {
             background-color: #dee2e6;
+            color: $pandev-ui-dropdown-item-color-hover;
+            padding-left: 14px;
           }
         }
         &.selected {
           a {
+            border-left: 3px solid $pandev-ui-dropdown-item-background-active;
+            color: $pandev-ui-dropdown-item-color-active;
             position: relative;
-            background-color: $pandev-ui-dropdown-item-background-active;
-            color: #fff;
+            background-color: transparent;
           }
         }
       }

@@ -1,0 +1,10 @@
+.positionable-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 240px;
+  height: calc(240px / 1.77);
+
+  margin: 10px;
+}

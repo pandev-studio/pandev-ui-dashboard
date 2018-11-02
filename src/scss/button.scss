@@ -159,4 +159,19 @@
     background-color: $pandev-ui-success;
     color: #fff;
   }
+
+  &.btn-pandev-ui-danger:hover{
+    background-color: $pandev-ui-danger;
+    color: #fff;
+  }
+
+  &.btn-pandev-ui-warning:hover{
+    background-color: $pandev-ui-warning;
+    color: $pandev-ui-text-color;
+  }
+
+  &.btn-pandev-ui-information:hover{
+    background-color: $pandev-ui-information;
+    color: $pandev-ui-text-color;
+  }
 }
