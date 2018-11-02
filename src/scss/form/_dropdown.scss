@@ -20,7 +20,11 @@
     }
 
     .dropdown-menu {
-      border: $pandev-ui-input-border;
+      border: 0;
+
+      &.inner {
+        border: $pandev-ui-input-border;
+      }
 
       .actions-btn {
         background-color: #fff;
@@ -112,7 +116,7 @@
       color: #495057;
     }
 
-    .dropdown-menu {
+    .dropdown-menu.inner {
       border-radius: $pandev-ui-dropdown-items-border-radius;
 
       .actions-btn {
@@ -154,6 +158,10 @@
             color: $pandev-ui-dropdown-item-color-active;
             position: relative;
             background-color: transparent;
+
+            &:hover{
+              color: $pandev-ui-dropdown-item-color-hover;
+            }
           }
         }
       }
