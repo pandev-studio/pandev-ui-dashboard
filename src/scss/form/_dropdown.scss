@@ -99,9 +99,11 @@
       }
 
       .filter-option {
+        width: 96%;
         .filter-option-inner {
           .filter-option-inner-inner {
-            overflow: visible;
+            overflow-x: hidden;
+            overflow-y: visible;
           }
         }
       }
