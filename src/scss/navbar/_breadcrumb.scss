@@ -1,6 +1,6 @@
 ul.breadcrumb {
   background-color: transparent;
-  margin:7px 0;
+  margin: 7px 0;
 
   li {
     a {
@@ -8,10 +8,15 @@ ul.breadcrumb {
       color: $pandev-ui-breadcrumb-font-color;
     }
 
-    &:last-child a{
+    &:last-child {
+      color: $pandev-ui-breadcrumb-font-color-active;
+      font-weight: $pandev-ui-breadcrumb-font-weight-active;
+
+      a {
         @include rfs($pandev-ui-breadcrumb-font-size-active);
         color: $pandev-ui-breadcrumb-font-color-active;
         font-weight: $pandev-ui-breadcrumb-font-weight-active;
+      }
     }
   }
 }

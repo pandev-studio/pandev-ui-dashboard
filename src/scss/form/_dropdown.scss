@@ -9,6 +9,7 @@
   }
 
   .bootstrap-select.form-control:not([class*=col-]) {
+    min-height: 50px;
 
     button.btn {
       background-color: #fff;
