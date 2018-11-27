@@ -8,7 +8,7 @@ ul.breadcrumb {
       color: $pandev-ui-breadcrumb-font-color;
     }
 
-    &:last-child {
+    &:last-child a{
         @include rfs($pandev-ui-breadcrumb-font-size-active);
         color: $pandev-ui-breadcrumb-font-color-active;
         font-weight: $pandev-ui-breadcrumb-font-weight-active;
