@@ -15,7 +15,7 @@
 //  Yasni file input
 @import "form/validation-input";
 
-.form-group{
+.form-group {
   margin: 0;
 }
 
@@ -24,6 +24,19 @@ input {
   &:focus {
     box-shadow: none;
     border-color: $pandev-ui-input-focus;
+  }
+
+  &::placeholder {
+    color: #e4e8ed !important;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #e4e8ed !important;
+  }
+
+  &::-ms-input-placeholder {
+    color: #e4e8ed !important;
   }
 }
 
@@ -39,14 +52,14 @@ input {
   &.is-valid:focus,
   &.is-valid:hover {
     -webkit-box-shadow: 0 0 5px 0 rgba(24, 200, 24, 1);
-    -moz-box-shadow:    0 0 5px 0 rgba(24, 200, 24, 1);
-    box-shadow:         0 0 5px 0 rgba(24, 200, 24, 1);
+    -moz-box-shadow: 0 0 5px 0 rgba(24, 200, 24, 1);
+    box-shadow: 0 0 5px 0 rgba(24, 200, 24, 1);
   }
   &.is-invalid,
   &.is-invalid:focus,
   &.is-invalid:hover {
     -webkit-box-shadow: 0 0 5px 0 rgba(200, 24, 24, 1);
-    -moz-box-shadow:    0 0 5px 0 rgba(200, 24, 24, 1);
-    box-shadow:         0 0 5px 0 rgba(200, 24, 24, 1);
+    -moz-box-shadow: 0 0 5px 0 rgba(200, 24, 24, 1);
+    box-shadow: 0 0 5px 0 rgba(200, 24, 24, 1);
   }
 }
