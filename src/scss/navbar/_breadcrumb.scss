@@ -9,14 +9,9 @@ ul.breadcrumb {
     }
 
     &:last-child {
+      @include rfs($pandev-ui-breadcrumb-font-size-active);
       color: $pandev-ui-breadcrumb-font-color-active;
       font-weight: $pandev-ui-breadcrumb-font-weight-active;
-
-      a {
-        @include rfs($pandev-ui-breadcrumb-font-size-active);
-        color: $pandev-ui-breadcrumb-font-color-active;
-        font-weight: $pandev-ui-breadcrumb-font-weight-active;
-      }
     }
   }
 }
