@@ -15,6 +15,11 @@
           white-space: nowrap;
           width: 1%;
         }
+
+        &.table-hide{
+          @extend .d-none;
+          @extend .d-lg-table-cell;
+        }
       }
     }
   }

@@ -1,3 +1,10 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  background-color: $background-main;
+  padding-top: $pandev-ui-header-min-height;
+}
+
 .label-float{
   position: absolute;
   top: 5px;
@@ -11,7 +18,7 @@
   display:none;
 }
 
-*:not(.card,.input-search,.dropdown-menu-pandev-ui,.page-link,.form-control, .btn-pandev-ui, .quill-container,.input-group-text) {
+*:not(.navbar-pandev-ui, .card,.input-search,.dropdown-menu-pandev-ui,.page-link,.form-control, .btn-pandev-ui, .quill-container,.input-group-text) {
   box-shadow: none !important;
   outline: none !important;
 }

@@ -9,6 +9,13 @@ body.with-sidebar-fixed {
   }
 }
 
+@media (max-width: 576px) {
+  body.with-sidebar-fixed {
+    padding-top: 15px;
+    padding-bottom: $pandev-ui-header-min-height-mobile;
+  }
+}
+
 .sidebar {
 
   &::-webkit-scrollbar {
@@ -42,7 +49,7 @@ body.with-sidebar-fixed {
       color: $pandev-ui-sidebar-color-divider;
       white-space: nowrap;
 
-      &.divider-first{
+      &.divider-first {
         margin-top: 0;
         padding-top: 0;
       }
@@ -156,6 +163,18 @@ body.with-sidebar-fixed {
   .divider {
     //border-bottom: solid 1px #ddd;
     padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .sidebar {
+    margin-top: -15px;
+    margin-left: -15px;
+    height: 100vh;
+    width: 70%;
+
+    padding-top: 25px;
   }
 }
 

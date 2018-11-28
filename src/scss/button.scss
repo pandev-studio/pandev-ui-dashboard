@@ -175,3 +175,11 @@
     color: $pandev-ui-text-color;
   }
 }
+
+@media (max-width: 576px) {
+  .btn-pandev-ui{
+    span{
+      display: none;
+    }
+  }
+}

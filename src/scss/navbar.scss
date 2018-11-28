@@ -18,40 +18,59 @@
       height: 31px;
     }
   }
-  .collapse{
-    padding-right: 35px;
+  .collapse {
+
   }
 
   @media (max-width: 768px) {
-    .navbar-brand {
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 50%;
 
-      font-weight: 600;
-      letter-spacing: 1px;
-      .logo {
-        height: 31px;
-      }
+    .navbar-pandev-ui {
+      padding: 0;
+      min-height: $pandev-ui-header-min-height-mobile;
+      background-color: #fff;
 
-      .sidebar-toggler {
-        color: #868e96;
+      box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07) !important;
 
-        &:hover {
-          color: #343a40;
-          text-decoration: none;
+      &.navbar-pandev-ui-mobile {
+        a {
+          font-size: 16px;
+          color: $header-color;
+          &:hover {
+            color: $header-color-hover;
+          }
         }
       }
-    }
 
-    .navbar-toggler {
-      margin-left: auto;
+      .navbar-brand {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 50%;
+
+        font-weight: 600;
+        letter-spacing: 1px;
+        .logo {
+          height: 31px;
+        }
+
+        .sidebar-toggler {
+          color: #868e96;
+
+          &:hover {
+            color: #343a40;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .navbar-toggler {
+        margin-left: auto;
+      }
     }
   }
 
   .navbar-collapse {
-    padding-left: .5rem;
+    padding: 0 1rem;
     right: 0;
   }
 
@@ -69,7 +88,7 @@
     border-radius: 0;
     padding: 3px 0;
 
-    &.show{
+    &.show {
       padding: 3px 0;
     }
 
@@ -88,10 +107,21 @@
         color: $pandev-ui-header-dropdown-color-hover;
         padding-left: 14px;
       }
-      &.current{
+      &.current {
         border-left: 3px solid $pandev-ui-header-dropdown-border-hover;
       }
     }
   }
+}
 
+@media (min-width: 576px) {
+
+  .navbar-pandev-ui {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    .navbar-nav {
+      flex-direction: row;
+    }
+  }
 }

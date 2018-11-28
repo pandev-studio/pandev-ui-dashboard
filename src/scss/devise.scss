@@ -1,0 +1,45 @@
+
+// #########################################
+//                 DEVISE
+// #########################################
+
+.devise-mask-row {
+  position: relative;
+
+  background-image: url('/devise.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  margin-top: - $pandev-ui-header-min-height;
+  height: 100vh;
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, .6);
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .devise-mask-col-info {
+
+  }
+
+  .devise-mask-col-action {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+  }
+}
