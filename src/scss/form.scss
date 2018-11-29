@@ -51,9 +51,9 @@ input {
   &.is-valid,
   &.is-valid:focus,
   &.is-valid:hover {
-    -webkit-box-shadow: 0 0 5px 0 rgba(24, 200, 24, 1);
-    -moz-box-shadow: 0 0 5px 0 rgba(24, 200, 24, 1);
-    box-shadow: 0 0 5px 0 rgba(24, 200, 24, 1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   &.is-invalid,
   &.is-invalid:focus,
