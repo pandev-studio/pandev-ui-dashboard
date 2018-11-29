@@ -7,6 +7,24 @@ body.with-sidebar-fixed {
       padding-left: $pandev-ui-sidebar-width;
     }
   }
+  @media (min-width: 768px) and (orientation: landscape) {
+    .content {
+      padding-top: 0;
+      padding-left: $pandev-ui-sidebar-width;
+    }
+  }
+  @media (min-width: 768px) and (orientation: portrait) {
+    .content {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  body.with-sidebar-fixed {
+    padding-top: 15px;
+    padding-bottom: $pandev-ui-header-min-height-mobile;
+  }
 }
 
 @media (max-width: 576px) {
@@ -150,6 +168,17 @@ body.with-sidebar-fixed {
     transform: translateX(0);
   }
 
+  @media (min-width: 768px) and (orientation: portrait) {
+    &.fixed {
+      transform: translateX(-100%);
+
+      &.opened {
+        border-right: 1px solid #dee2e6 !important;
+        transform: translateX(0);
+      }
+    }
+  }
+
   @media (min-width: 768px) {
     &.fixed {
       transform: translateX(0);
@@ -166,21 +195,35 @@ body.with-sidebar-fixed {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) and (orientation: portrait) {
+  .sidebar {
+    margin-top: -15px;
+    margin-left: -15px;
+    height: 100vh;
+    width: 250px;
+    padding-top: 25px;
+  }
+}
 
+@media (max-width: 576px) {
   .sidebar {
     margin-top: -15px;
     margin-left: -15px;
     height: 100vh;
     width: 70%;
-
     padding-top: 25px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: landscape) {
   .sidebar-toggler {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .sidebar-toggler {
+    display: inline-block;
   }
 }
 
