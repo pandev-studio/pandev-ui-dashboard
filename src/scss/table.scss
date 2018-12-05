@@ -76,7 +76,9 @@
             }
           }
         }
-
+        &.tr-action {
+          background-color: $pandev-ui-table-header-background;
+        }
         &:hover{
           background-color: $pandev-ui-table-header-background-hover;
         }

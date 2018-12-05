@@ -180,9 +180,11 @@ body.with-sidebar-fixed {
   }
 
   @media (min-width: 768px) {
+    /*
     &.fixed {
       transform: translateX(0);
     }
+    */
 
     .sidebar-toggler {
       display: none;

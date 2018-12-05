@@ -2,16 +2,19 @@
 
   background-color: transparent;
 
-  .btn-pandev-ui{
+  .btn-pandev-ui {
     box-shadow: none;
-    i{
-      color: $pandev-ui-button-icon-color;
+    color: $pandev-ui-primary;
 
+    i {
+      color: $pandev-ui-primary;
     }
-    &:hover{
-      i{
-        color: $pandev-ui-button-icon-color-hover;
 
+    &:hover {
+      color: $pandev-ui-primary-dark;
+
+      i {
+        color: $pandev-ui-primary-dark;
       }
     }
   }
