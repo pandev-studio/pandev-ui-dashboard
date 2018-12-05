@@ -129,6 +129,7 @@ body.with-sidebar-fixed {
 
       &:hover {
         background-color: $pandev-ui-sidebar-background-hover;
+
         a {
           color: $pandev-ui-sidebar-color-hover;
         }
@@ -146,6 +147,7 @@ body.with-sidebar-fixed {
 
       &.active {
         background-color: $pandev-ui-sidebar-background-active;
+
         a {
           color: $pandev-ui-sidebar-color-active;
           font-weight: $pandev-ui-sidebar-weight-active;
@@ -180,20 +182,22 @@ body.with-sidebar-fixed {
   }
 
   @media (min-width: 768px) {
-    /*
-    &.fixed {
-      transform: translateX(0);
-    }
-    */
-
     .sidebar-toggler {
       display: none;
     }
   }
 
   .divider {
-    //border-bottom: solid 1px #ddd;
     padding: 8px 16px;
+  }
+
+  @media (min-width: 768px) and (orientation: landscape) {
+    &.fixed {
+      transform: translateX(0);
+    }
+    li:not(.divider):hover {
+      transform: translateX(3px);
+    }
   }
 }
 
