@@ -128,6 +128,19 @@
     }
   }
 
+  &.table-vertical{
+    tbody{
+      tr{
+        th{
+          @include rfs($pandev-ui-table-header-th-size);
+
+          background-color: $pandev-ui-table-header-background;
+          font-weight: $pandev-ui-table-header-th-weight;
+        }
+      }
+    }
+  }
+
   &.table-bordered-pandev-ui {
     thead {
       tr {
