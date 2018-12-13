@@ -20,6 +20,11 @@
           @extend .d-none;
           @extend .d-lg-table-cell;
         }
+
+        &.price{
+          font-family: $pandev-ui-monospace-font;
+          text-align: right;
+        }
       }
     }
   }
@@ -62,10 +67,6 @@
               min-height: 18px;
               line-height: 18px;
             }
-          }
-          &.price{
-            font-family: $pandev-ui-monospace-font;
-            text-align: right;
           }
         }
         th, td {

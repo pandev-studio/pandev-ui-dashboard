@@ -1,6 +1,6 @@
 {
   "name": "pandev-ui-dashboard",
-  "version": "1.0.34.1",
+  "version": "1.0.35",
   "description": "Pan.Dev UI Dashboard",
   "main": "index.js",
   "scripts": {
