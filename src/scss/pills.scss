@@ -1,9 +1,7 @@
-.nav-pills-light {
+.nav-pills-pandev-ui {
   background-color: transparent;
 
   margin: 0;
-
-  border-bottom: 1px solid #e4e7ed;
 
   .nav-item {
     margin-bottom: -1px;
@@ -16,15 +14,15 @@
       color: $pandev-ui-text-color;
       border-radius: 0;
 
-      &:hover{
+      &:hover {
         color: $pandev-ui-text-color-dark;
       }
 
-      &.active{
+      &.active {
         background-color: inherit;
         color: $pandev-ui-text-color-dark;
 
-        &::after{
+        &::after {
           content: '';
           position: absolute;
           bottom: 0;
@@ -36,7 +34,25 @@
 
         }
       }
+    }
 
+    &.active {
+      .nav-link {
+        background-color: inherit;
+        color: $pandev-ui-text-color-dark;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: $pandev-ui-primary;
+          height: 4px;
+          width: 100%;
+          border-radius: 5px;
+
+        }
+      }
     }
   }
 }

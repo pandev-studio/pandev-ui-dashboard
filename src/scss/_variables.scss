@@ -2,6 +2,12 @@
   font-size: 14px;
 }
 
+$container-max-widths: (
+        md: 720px,
+        lg: 960px,
+        xl: 1390px
+);
+
 $background-main: #e3e8ee;
 $pandev-ui-text-color: #4e566d;
 $pandev-ui-text-color-dark: #2b2d50;
@@ -16,7 +22,10 @@ $pandev-ui-primary: #586ada;
 $pandev-ui-primary-light: #6C7FFF;
 $pandev-ui-primary-dark: #2b2d50;
 
-//  FONTS SIZE
+//  FONTS
+$pandev-ui-system-font: 'Montserrat', sans-serif;
+$pandev-ui-monospace-font: 'Roboto Mono', monospace;
+
 $pandev-ui-h1-size: 38;
 $pandev-ui-h2-size: 28;
 $pandev-ui-h3-size: 24;
