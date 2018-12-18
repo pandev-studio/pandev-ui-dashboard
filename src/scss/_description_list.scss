@@ -1,0 +1,11 @@
+dl {
+  @include rfs($pandev-ui-dl-size);
+
+  dt {
+    @include rfs($pandev-ui-dt-size);
+  }
+
+  dd {
+    @include rfs($pandev-ui-dd-size);
+  }
+}

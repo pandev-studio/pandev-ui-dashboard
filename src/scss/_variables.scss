@@ -204,6 +204,12 @@ $pandev-ui-table-body-td-first-font-weight: 700;
 $pandev-ui-td-a-size: 15;
 $pandev-ui-td-a-size: 15;
 
+//  DESCRIPTION LIST
+
+$pandev-ui-dl-size: $pandev-ui-a-size;
+$pandev-ui-dt-size: $pandev-ui-a-size;
+$pandev-ui-dd-size: $pandev-ui-a-size;
+
 // STANDARD ELEMENTS
 
 @import "standard";
