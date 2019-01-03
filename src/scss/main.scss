@@ -31,7 +31,7 @@ body {
   padding-top: $pandev-ui-header-min-height;
 }
 
-*:not(.card):not(.btn-pandev-ui):not(.form-control):not(.page-link):not(.dropdown-menu-pandev-ui){
+*:not(.card):not(.btn-pandev-ui):not(.form-control):not(.page-link):not(.dropdown-menu-pandev-ui):not(.nav-pills-pandev-ui-large){
   box-shadow: none !important;
   outline: none !important;
 }

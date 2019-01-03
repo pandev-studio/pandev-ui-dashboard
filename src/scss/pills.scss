@@ -3,6 +3,47 @@
 
   margin: 0;
 
+  &.large {
+    border-radius: 4px;
+    box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+
+    a.nav-link {
+      @include rfs(18);
+      min-height: 40px;
+      line-height: 20px;
+      border-bottom: 1px solid rgba(43, 45, 80, 0.1);
+      border-radius: 0;
+      background-color: #fff;
+      font-weight: 400;
+      color: #2b2d50;
+
+      span {
+        @include rfs(14);
+        color: lighten(#2b2d50, 30%);
+        font-weight: 300;
+        display: block;
+      }
+      &:first-child{
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+      &.active {
+        background-color: $pandev-ui-primary;
+        color: #fff;
+
+        span {
+          color: darken(#fff, 15%);
+        }
+      }
+    }
+  }
+
   .nav-item {
     margin-bottom: -1px;
 
