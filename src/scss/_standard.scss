@@ -6,6 +6,8 @@ body {
 }
 
 .label-float {
+  text-align: left;
+
   position: absolute;
   top: 2px;
   left: 2px;
@@ -19,12 +21,18 @@ body {
   background-color: #fff;
 }
 
-.form-control:disabled + label,
-.bootstrap-select.disabled + label {
+label.disabled,
+input:disabled ~ label,
+input:disabled + label,
+select.disabled + label {
   background-color: transparent !important;
 }
 
 .hide,
 .hidden {
   display: none;
+}
+
+.sticky{
+  position: fixed;
 }

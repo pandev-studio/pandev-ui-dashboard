@@ -195,7 +195,7 @@ body.with-sidebar-fixed {
     &.fixed {
       transform: translateX(0);
     }
-    li:not(.divider):hover {
+    li:not(.divider):not(.sidebar-dropdown-menu):hover {
       transform: translateX(3px);
     }
   }
