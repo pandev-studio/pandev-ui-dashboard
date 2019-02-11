@@ -10,13 +10,18 @@
   }
 
   input{
+    line-height: $pandev-ui-input-line-height;
     min-height: 50px;
+  }
+
+  textarea{
+    line-height: $pandev-ui-textarea-line-height;
+    min-height: 160px;
   }
 
   input,
   textarea{
     font-size: $pandev-ui-input-size;
-    line-height: $pandev-ui-input-line-height;
     padding: 25px 0 5px 10px;
 
     border: $pandev-ui-input-border;

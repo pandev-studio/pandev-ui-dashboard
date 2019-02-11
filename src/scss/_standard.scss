@@ -7,10 +7,21 @@ body {
 
 .label-float {
   position: absolute;
-  top: 5px;
-  left: 10px;
+  top: 2px;
+  left: 2px;
+  padding-top: 5px;
+  padding-left: 10px;
 
   z-index: 5;
+
+  width: calc(100% - 4px);
+
+  background-color: #fff;
+}
+
+.form-control:disabled + label,
+.bootstrap-select.disabled + label {
+  background-color: transparent !important;
 }
 
 .hide,
