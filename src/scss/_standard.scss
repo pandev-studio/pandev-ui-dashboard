@@ -25,6 +25,7 @@ label.disabled,
 input:disabled ~ label,
 input:disabled + label,
 textarea:disabled + label,
+.select:disabled + label,
 select.disabled + label {
   background-color: transparent !important;
 }
