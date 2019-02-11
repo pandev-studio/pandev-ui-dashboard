@@ -9,10 +9,12 @@ body {
   text-align: left;
 
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: .5px;
+  left: .5px;
   padding-top: 5px;
   padding-left: 10px;
+
+  border-radius: 3px;
 
   z-index: 5;
 
