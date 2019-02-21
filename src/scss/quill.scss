@@ -3,12 +3,17 @@
 
   position: relative;
   border: $pandev-ui-input-border;
-  border-radius: 3px;
+  border-radius: $pandev-ui-input-border-radius;
   box-shadow: $pandev-ui-input-shadow;
   padding: 25px 0 5px 0;
 
   &:hover{
     box-shadow: $pandev-ui-input-shadow-hover;
+  }
+
+  .ql-editor{
+    border: none;
+    padding: 25px 10px 10px 10px
   }
 
   .ql-snow{
@@ -26,6 +31,7 @@
     opacity: 1;
   }
 
+  /*
   label{
     position: absolute;
     top: 7px;
@@ -33,4 +39,5 @@
 
     z-index: 2;
   }
+  */
 }
