@@ -9,8 +9,8 @@ body {
   text-align: left;
 
   position: absolute;
-  top: .5px;
-  left: .5px;
+  top: 1px;
+  left: 1px;
   padding-top: 5px;
   padding-left: 10px;
 
@@ -29,7 +29,8 @@ input:disabled ~ label,
 input:disabled + label,
 textarea:disabled + label,
 select.disabled + label,
-.select.disabled + label {
+.select.disabled + label,
+.quill-container-disabled label{
   background-color: transparent !important;
 }
 

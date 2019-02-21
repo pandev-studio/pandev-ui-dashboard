@@ -3,6 +3,10 @@ ul.breadcrumb {
   margin: 7px 0;
 
   li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     a {
       @include rfs($pandev-ui-breadcrumb-font-size);
       color: $pandev-ui-breadcrumb-font-color;
