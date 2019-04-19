@@ -1,0 +1,69 @@
+// Componente drawer
+$sidebar-width: 250px !default;
+$navbar-height: 56px !default;
+
+.drawer {
+
+  margin-top: $navbar-height;
+
+  &.sidenav-opened {
+    .sidenav {
+      margin-left: 0;
+      transition: 0.3s ease-in-out;
+      transform: translateX(0);
+    }
+  }
+
+  > .content {
+    @media (min-width: #{map-get($grid-breakpoints, 'lg')}) {
+      margin-left: $sidebar-width;
+    }
+  }
+
+  .sidenav-toggler {
+    @extend .navbar-toggler;
+
+    @media (min-width: #{map-get($grid-breakpoints, 'lg')}) {
+      margin-right: 16px;
+    }
+  }
+
+  &.centered {
+    @include make-container(0);
+    @include make-container-max-widths();
+
+    .sidenav {
+      margin-left: 0;
+    }
+  }
+
+  > .content {
+    padding: 12px;
+  }
+
+  .sidenav {
+    width: $sidebar-width;
+    position: fixed;
+    z-index: 5;
+
+    @media (max-width: #{map-get($grid-breakpoints, 'lg')}) {
+      transform: translateX(-$sidebar-width);
+      transition: 0.3s ease-in-out;
+      left: 0;
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, 'lg')}) {
+      margin-left: 0;
+    }
+
+    border-right: solid 1px $gray-400;
+    //@extend .shadowed;
+    background-color: $gray-100;
+
+    > .sidenav-content {
+      height: calc(100vh - #{$navbar-height});
+      position: relative;
+      overflow-y: scroll;
+    }
+  }
+}

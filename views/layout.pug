@@ -3,10 +3,19 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/main.css')
-    
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
     link(rel='icon', href='data:;base64,=')
   body
-    block content
+    div.drawer.centered
+      include shared/navbar
+      .sidenav
+        .sidenav-content
+          h1
+            ="CIAO"
+      .content
+        block content
 
     script(src="/javascripts/jquery.min.js")
     script(src="/javascripts/bootstrap.bundle.js")
+    script(src="/javascripts/app.js")

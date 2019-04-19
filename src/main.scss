@@ -1,6 +1,9 @@
+// NB: Keep this order
 @import "../lib/bootstrap/scss/functions";
+
+@import "bootstrap/variables";
+@import "variables";
+
 @import "../lib/bootstrap/scss/mixins";
-@import "./variables";
 
 @import "./library";
-

@@ -1,0 +1,99 @@
+// Font system
+$font-size-base: 1rem;
+$enable-responsive-font-sizes: true;
+
+// Round size
+$border-radius: .25rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+// Colors
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+$stripe: #556CE0;
+
+$colors: (
+        "blue": $blue,
+        "indigo": $indigo,
+        "purple": $purple,
+        "pink": $pink,
+        "red": $red,
+        "orange": $orange,
+        "yellow": $yellow,
+        "green": $green,
+        "teal": $teal,
+        "cyan": $cyan,
+        "white": $white,
+        "gray": $gray-600,
+        "gray-dark": $gray-800,
+        "stripe": $stripe
+);
+
+// Theme settings
+$primary: $stripe;
+$secondary: $white;
+$success: $green;
+$info: $blue;
+$warning: $yellow;
+$danger: $red;
+
+$light: $gray-100;
+$dark: $gray-800;
+
+$enable-rounded: true;
+$enable-shadows: false;
+
+$theme-color-interval: 8%; // Set a specific jump point for requesting color jumps
+
+// Background
+$body-bg: #e3e8ee;
+$error: $red;
+
+// Buttons
+$input-btn-padding-y:         .2rem;
+$input-btn-padding-x:         .5rem;
+
+$input-btn-padding-y-sm:      .025rem;
+$input-btn-padding-x-sm:      .3rem;
+
+$input-btn-padding-y-lg:      .5rem;
+$input-btn-padding-x-lg:      1rem;
+
+// Forms
+$label-margin-bottom: 0.2rem;
+
+@import "../../lib/bootstrap/scss/variables";
+
+//// Clean bootstrap
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "error": $error,
+        "warning": $warning,
+        "info": $info,
+        "light": $light,
+        "dark": $dark
+);
+
+

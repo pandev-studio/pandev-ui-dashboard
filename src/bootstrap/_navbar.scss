@@ -1,0 +1,29 @@
+@import "../../lib/bootstrap/scss/navbar";
+
+.main-navbar {
+  .container {
+    padding: 0;
+  }
+
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .fixed-top;
+  @extend .navbar-dark;
+  @extend .bg-primary;
+
+  .main-navbar-brand {
+    @extend .navbar-brand;
+    display: block;
+    width: $sidebar-width;
+
+    @media (max-width: #{map-get($grid-breakpoints, 'lg')}) {
+      width: auto;
+    }
+
+    @extend .text-center;
+  }
+
+  .sidebar-toggler {
+
+  }
+}
