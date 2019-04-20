@@ -1,6 +1,44 @@
 // Componente drawer
-$sidebar-width: 250px !default;
-$navbar-height: 56px !default;
+$sidebar-width: 15.63rem !default;
+$navbar-height: 3.5rem !default;
+$sidenav-content-padding: 0.75rem !default;
+$sidenav-section-spacing: 1.2rem !default;
+
+@-webkit-keyframes fadeIn {
+  from {
+    margin-left: -10px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    margin-left: -10px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  background: $black;
+  opacity: 0.1;
+  z-index: 1000;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .drawer {
 
@@ -38,13 +76,18 @@ $navbar-height: 56px !default;
   }
 
   > .content {
-    padding: 12px;
+    padding: $sidenav-content-padding;
   }
 
   .sidenav {
     width: $sidebar-width;
+    //padding: $sidenav-content-padding $sidenav-content-padding $sidenav-content-padding 2.813rem;
+    padding: $sidenav-content-padding;
     position: fixed;
-    z-index: 5;
+    z-index: 1001;
+
+    background: $body-bg;
+    //background: $secondary;
 
     @media (max-width: #{map-get($grid-breakpoints, 'lg')}) {
       transform: translateX(-$sidebar-width);
@@ -56,14 +99,77 @@ $navbar-height: 56px !default;
       margin-left: 0;
     }
 
-    border-right: solid 1px $gray-400;
+    //border-right: solid 1px $gray-400;
     //@extend .shadowed;
-    background-color: $gray-100;
+    //background-color: $gray-100;
 
     > .sidenav-content {
       height: calc(100vh - #{$navbar-height});
       position: relative;
       overflow-y: scroll;
+    }
+
+    .sidenav-section {
+      margin-bottom: $sidenav-section-spacing;
+
+      li {
+        a {
+          color: $black;
+          @extend .d-block;
+        }
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul.sidenav-section-list {
+        @extend .pl-0;
+      }
+
+      .sidenav-section-title {
+        font-size: 0.7143rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: $sidenav-section-spacing;
+      }
+
+      .sidenav-link {
+        font-size: 0.9286rem;
+        margin: 0.5rem;
+        position: relative;
+
+        &.active a {
+          font-weight: 700;
+          color: $primary;
+        }
+
+        .sidenav-link-icon {
+          margin-right: 1.4rem;
+        }
+
+        .sidenav-link-caret {
+          position: absolute;
+          top: 0.25rem;
+          right: 0;
+        }
+      }
+
+      .sidenav-dropdown {
+        @extend .sidenav-link;
+
+        .sidenav-dropdown-menu {
+          @extend .pl-4;
+          @extend .d-none;
+
+          &.open {
+            @extend .d-block;
+            -webkit-animation: fadeIn .4s;
+            animation: fadeIn .4s;
+          }
+        }
+      }
+
     }
   }
 }

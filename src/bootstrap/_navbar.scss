@@ -1,5 +1,7 @@
 @import "../../lib/bootstrap/scss/navbar";
 
+$navbar-font-size: 0.875rem !default;
+
 .main-navbar {
   .container {
     padding: 0;
@@ -8,10 +10,12 @@
   @extend .navbar;
   @extend .navbar-expand-lg;
   @extend .fixed-top;
-  @extend .navbar-dark;
-  @extend .bg-primary;
+  @extend .navbar-light;
+
+  background-color: $body-bg;
 
   .main-navbar-brand {
+
     @extend .navbar-brand;
     display: block;
     width: $sidebar-width;
@@ -25,5 +29,45 @@
 
   .sidebar-toggler {
 
+  }
+
+  .main-navbar-nav {
+    @extend .navbar-nav;
+    //font-size: $navbar-font-size;
+
+    .dropdown-nav {
+      @extend .mx-1;
+
+      //
+      //.btn {
+      //  @extend .btn-block;
+      //}
+
+      .dropdown-toggle-nav {
+        @extend .btn-block;
+        //@extend .dropdown-toggle;
+        //font-size: $navbar-font-size;
+      }
+
+      .dropdown-menu-nav {
+        //font-size: $navbar-font-size;
+      }
+    }
+  }
+
+  .main-navbar-breadcrumb-nav {
+    @extend .navbar-nav;
+    flex-direction: row;
+
+    li {
+      a {
+        //font-size: $navbar-font-size*0.8;
+        font-weight: 500;
+        font-size: $navbar-font-size;
+      }
+
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
   }
 }

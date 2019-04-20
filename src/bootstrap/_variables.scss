@@ -67,6 +67,7 @@ $theme-color-interval: 8%; // Set a specific jump point for requesting color jum
 
 // Background
 $body-bg: #e3e8ee;
+//$body-bg: #e3e8ee;
 $error: $red;
 
 // Buttons
@@ -82,9 +83,12 @@ $input-btn-padding-x-lg:      1rem;
 // Forms
 $label-margin-bottom: 0.2rem;
 
+// Navbar font size
+$navbar-font-size: 0.875rem;
+
 @import "../../lib/bootstrap/scss/variables";
 
-//// Clean bootstrap
+// Clean bootstrap
 $theme-colors: (
         "primary": $primary,
         "secondary": $secondary,

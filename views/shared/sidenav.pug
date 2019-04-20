@@ -1,0 +1,29 @@
+.sidenav
+    .sidenav-content
+        -var n =0;
+        while n < 8
+            div.sidenav-section
+                h5.sidenav-section-title Generale
+                ul.sidenav-section-list
+                    li.sidenav-link.active
+                        a(href='ciao')
+                            i.sidenav-link-icon.fas.fa-tachometer-alt
+                            ="Dashboard"
+                    li.sidenav-link
+                        a(href='ciao' data-toggle)
+                            i.sidenav-link-icon.fas.fa-tachometer-alt
+                            ="Client"
+                    li.sidenav-dropdown
+                        a#dropdownMenuButton.sidenav-dropdown-toggle(href="#" data-target="#menu"+n)
+                            i.sidenav-link-icon.fas.fa-tachometer-alt
+                            ="Prodotti"
+                            i.sidenav-link-caret.fas.fa-angle-left
+                        ul.sidenav-dropdown-menu(id="menu"+n)
+                            li.sidenav-link.sidenav-dropdown-item
+                                a(href='#')
+                                    ="Action"
+                            li.sidenav-link.sidenav-dropdown-item
+                                a(href='#') Another action
+                            li.sidenav-link.sidenav-dropdown-item
+                                a(href='#') Immobili/Attività
+            -n++
