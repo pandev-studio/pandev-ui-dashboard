@@ -1,1 +1,100 @@
 @import "../../lib/bootstrap/scss/card";
+
+$card-table-header-bg: #F7FAFF !default;
+$card-table-header-spacing: 0.5714rem !default;
+$card-table-header-font-weight: 500 !default;
+$card-table-header-font-size: 0.9286rem !default;
+
+.card {
+  box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
+  -webkit-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
+  -moz-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
+  -ms-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
+  -o-webkit-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
+}
+
+.card-page {
+  @extend .card;
+  @extend .mb-3;
+
+  .card-header {
+    @extend .bg-transparent;
+    @extend .px-3;
+    @extend .py-3;
+
+    .actions {
+      @extend .d-flex;
+      @extend .justify-content-between;
+    }
+  }
+
+  .card-footer {
+    @extend .bg-transparent;
+    @extend .px-4;
+    @extend .py-3;
+
+    p {
+      @extend .mb-1;
+    }
+  }
+}
+
+.card-table {
+  @extend .card-page;
+
+  .table {
+    @extend .table-hover;
+    margin: 0;
+
+    &:not(.table-sm) {
+      td.actions, th.actions {
+        @extend .py-0;
+      }
+    }
+
+    thead {
+      background: $card-table-header-bg;
+
+      th {
+        border-bottom: 0;
+        text-transform: uppercase;
+        font-weight: $card-table-header-font-weight;
+        font-size: $card-table-header-font-size;
+        padding: $card-table-header-spacing;
+      }
+    }
+
+    tr {
+      td, th {
+        vertical-align: middle;
+
+        &.actions {
+          width: 1%;
+          @extend .pr-3;
+          white-space: nowrap;
+
+          * {
+            margin: 0 0.1rem;
+          }
+        }
+      }
+
+      td:first-child:not(.actions), th:first-child:not(.actions) {
+        @extend .pl-4;
+      }
+
+      td:first-child.actions, th:first-child.actions {
+        @extend .pl-2;
+      }
+
+      td:last-child, th:last-child {
+        @extend .pr-4;
+      }
+    }
+  }
+
+  .card-body {
+    @extend .p-0;
+    @extend .table-responsive;
+  }
+}

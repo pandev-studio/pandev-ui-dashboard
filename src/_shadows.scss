@@ -1,0 +1,18 @@
+// Shadow
+$shadow-gradient: rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+@mixin border-shadow {
+  -webkit-box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.07), 0 1px 2px 0 rgba(0,0,0,0.08);
+  -moz-box-shadow:0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.07), 0 1px 2px 0 rgba(0,0,0,0.08);
+  -ms-box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.07), 0 1px 2px 0 rgba(0,0,0,0.08);
+  -o-box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.07), 0 1px 2px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.07), 0 1px 2px 0 rgba(0,0,0,0.08);
+}
+
+@mixin border-shadow-hover {
+  -webkit-box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.1), 0 3px 9px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.08);
+  -moz-box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.1), 0 3px 9px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.08);
+  -ms-box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.1), 0 3px 9px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.08);
+  -o-box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.1), 0 3px 9px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 0 1px rgba(43,45,80,0.1), 0 2px 5px 0 rgba(43,45,80,0.1), 0 3px 9px 0 rgba(43,45,80,0.08), 0 1px 1.5px 0 rgba(0,0,0,0.08), 0 1px 2px 0 rgba(0,0,0,0.08);
+}

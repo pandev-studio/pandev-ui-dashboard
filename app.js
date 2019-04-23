@@ -19,6 +19,7 @@ app.use(sassMiddleware({
     /* Options */
     src: path.join(__dirname, 'src'),
     dest: path.join(__dirname, 'public/stylesheets'),
+    sourceMapEmbed: true,
     debug: true,
     outputStyle: 'nested',
     prefix: '/stylesheets'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
@@ -26,10 +27,12 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
-    let page = req.path
+    let page = req.path.substring(1);
+
     if (req.path === '/') {
         page = 'index'
     }
+
     res.render(page);
 });
 
@@ -42,7 +45,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     // set locals, only providing error in development
     res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
+    res.locals.error = req.app.get('env') !== 'production' ? err : {};
 
     // render the error page
     res.status(err.status || 500);

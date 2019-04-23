@@ -1,5 +1,16 @@
 .sidenav
     .sidenav-content
+        div.sidenav-section
+            h5.sidenav-section-title Cards
+            ul.sidenav-section-list
+                li.sidenav-link.active
+                    a(href='/cards/index')
+                        i.sidenav-link-icon.fas.fa-tachometer-alt
+                        ="Normal"
+                li.sidenav-link
+                    a(href='/cards/page' data-toggle)
+                        i.sidenav-link-icon.fas.fa-tachometer-alt
+                        ="Page cards"
         -var n =0;
         while n < 8
             div.sidenav-section
