@@ -30,8 +30,13 @@ $card-table-header-font-size: 0.9286rem !default;
 
   .card-footer {
     @extend .bg-transparent;
-    @extend .px-4;
+    @extend .px-3;
     @extend .py-3;
+
+    .actions {
+      @extend .d-flex;
+      @extend .justify-content-between;
+    }
 
     p {
       @extend .mb-1;

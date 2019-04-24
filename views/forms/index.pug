@@ -1,0 +1,155 @@
+extends ../layout
+
+block content
+    .card-page
+        .card-header
+            .actions
+                .left
+                    a(href='#').btn.btn-primary.btn-icon
+                        i.fas.fa-edit
+                        span="Action 1"
+                    a(href='#').btn.btn-secondary.btn-icon
+                        i.fas.fa-edit
+                        span="Action 1"
+        .card-body
+            form
+                .form-row
+                    .form-group.col-md-6
+                        label(for='inputEmail4') Email
+                        input#inputEmail4.form-control(type='email' placeholder='Email')
+                    .form-group.col-md-6
+                        label(for='inputPassword4') Password
+                        input#inputPassword4.form-control(type='password' placeholder='Password')
+                .form-group
+                    label(for='inputAddress') Address
+                    input#inputAddress.form-control(type='text' placeholder='1234 Main St')
+                .form-group
+                    label(for='inputAddress2') Address 2
+                    input#inputAddress2.form-control(type='text' placeholder='Apartment, studio, or floor')
+                .form-row
+                    .form-group.col-md-3
+                        label(for='inputCity') City
+                        input#inputCity.form-control(type='text')
+                    .form-group.col-md-4
+                        label(for='inputState') State
+                        select#inputState.form-control
+                            option(selected='') Choose...
+                            option ...
+                    .form-group.col-md-2
+                        label(for='inputZip') Zip
+                        input#inputZip.form-control(type='text')
+                    .form-group.col-md-3.mb-3
+                        label(for='validationServer05') Zip
+                        select.selectpicker.select-single(required='false')
+                            option(value='') Open this select menu
+                            option(value='1') One
+                            option(value='2') Two
+                            option(value='3') Three
+                .form-row
+                    .form-group.col-md-2
+                        label(for='inputZip') Zip
+                        input#inputZip3.form-control(type='text')
+                    .form-group.col-md-3.mb-3
+                        label(for='validationServer05') Zip
+                        select.selectpicker.select-multiple(required='false' multiple=true)
+                            option(value='') Open this select menu
+                            option(value='1') One
+                            option(value='2') Two
+                            option(value='3') Three
+
+                    .form-group.col-md-3.mb-3.is-invalid
+                        label(for='validationServer05') Zip
+                        select.selectpicker.select-multiple.is-invalid(required='false' multiple=true)
+                            option(value='') Open this select menu
+                            option(value='1') One
+                            option(value='2') Two
+                            option(value='3') Three
+                        .invalid-feedback
+                            | Please provide a valid state.
+                .form-group
+                    .pretty.p-icon
+                        input#gridCheck.form-check-input(type='checkbox')
+                        .state.p-primary
+                            i.icon.fas.fa-check
+                            label Check me
+
+    .card-page
+        .card-header
+            h5 Compila i dati segenti
+        .card-body
+            form
+                .form-row
+                    .col-md-4.mb-3
+                        label(for='validationServer01') First name
+                        input#validationServer01.form-control.is-valid(type='text' placeholder='First name' value='Mark' required='')
+                        .valid-feedback
+                            | Looks good!
+                    .col-md-4.mb-3
+                        label(for='validationServer02') Last name
+                        input#validationServer02.form-control.is-valid(type='text' placeholder='Last name' value='Otto' required='')
+                        .valid-feedback
+                            | Looks good!
+                    .col-md-4.mb-3
+                        label(for='validationServerUsername') Username
+                        .input-group
+                            .input-group-prepend
+                                span#inputGroupPrepend3.input-group-text @
+                            input#validationServerUsername.form-control.is-invalid(type='text' placeholder='Username' aria-describedby='inputGroupPrepend3' required='')
+                            .invalid-feedback
+                                | Please choose a username.
+                .form-row
+                    .col-md-3.mb-3
+                        label(for='validationServer03') City
+                        input#validationServer03.form-control.is-invalid(type='text' placeholder='City' required='')
+                        .invalid-feedback
+                            | Please provide a valid city.
+                    .col-md-3.mb-3
+                        label(for='validationServer04') State
+                        input#validationServer04.form-control.is-invalid(type='text' placeholder='State' required='')
+                        .invalid-feedback
+                            | Please provide a valid state.
+                    .col-md-3.mb-3
+                        label(for='validationServer05') Zip
+                        input#validationServer05.form-control.is-invalid(type='text' placeholder='Zip' required='')
+                        .invalid-feedback
+                            | Please provide a valid zip.
+                    .col-md-3.mb-3
+                        label(for='validationServer05') Zip
+                        select.selectpicker.select-single(required='false')
+                            option(value='') Open this select menu
+                            option(value='1') One
+                            option(value='2') Two
+                            option(value='3') Three
+                .form-group
+                    .form-check
+                        input#invalidCheck3.form-check-input.is-invalid(type='checkbox' value='' required='')
+                        label.form-check-label(for='invalidCheck3')
+                            | Agree to terms and conditions
+                        .invalid-feedback
+                            | You must agree before submitting.
+
+                .form-row
+                    .col-lg-3
+                        .user-avatar-uploader
+                            .form-group.file.optional.user_avatar.form-group-valid
+                                input#user_avatar.d-none(type='file' name='user[avatar]')
+                                img#user-avatar-preview.image-preview(onerror="this.src='/images/placeholder.png'" src='')
+                                a#upload-file-trigger.btn.btn-secondary.btn-sm.btn-block.mt-2(href='#') Carica
+
+
+        .card-footer
+            .actions
+                .left
+                .right
+                    a(href='#').btn.btn-secondary.btn-icon
+                        i.fas.fa-edit
+                        span="Action 1"
+                    a(href='#').btn.btn-primary.btn-icon
+                        i.fas.fa-edit
+                        span="Action 1"
+
+
+
+    script.
+        singleImageUploader('#user_avatar', '#upload-file-trigger', '#user-avatar-preview')
+

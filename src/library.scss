@@ -37,6 +37,11 @@
 
 @import "drawer";
 
+@import "../lib/bootstrap-select/sass/bootstrap-select";
+@import "pretty-checkbox/pretty-checkbox";
+
+@import "single_image_uploader";
+
 :root {
   font-size: 14px;
 }
@@ -47,4 +52,9 @@ body {
 
 .fit {
   width: 1%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

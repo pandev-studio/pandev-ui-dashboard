@@ -9,6 +9,13 @@ html
 
     link(rel='icon', href='data:;base64,=')
   body
+    script(src="/javascripts/jquery.min.js")
+    script(src="/javascripts/bootstrap.bundle.js")
+    script(src="/javascripts/bootstrap-select/bootstrap-select.js")
+    script(src="/javascripts/bootstrap-select/i18n/defaults-it_IT.js")
+    script(src="/javascripts/app.js")
+    script(src="/javascripts/demo.js")
+
     .overlay.d-none
     div.drawer.centered
       include shared/navbar
@@ -16,6 +23,5 @@ html
       .content
         block content
 
-    script(src="/javascripts/jquery.min.js")
-    script(src="/javascripts/bootstrap.bundle.js")
-    script(src="/javascripts/app.js")
+
+

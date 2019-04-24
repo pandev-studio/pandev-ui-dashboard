@@ -1,4 +1,4 @@
-$(function () {
+function initPandevUI() {
     $('.sidenav-toggler').on('click', function () {
         $('.drawer').toggleClass('sidenav-opened');
         $('.overlay').toggleClass('d-none');
@@ -6,7 +6,7 @@ $(function () {
     });
 
     $('.overlay').on('click', function () {
-       $('.sidenav-toggler').trigger('click');
+        $('.sidenav-toggler').trigger('click');
     });
 
     $('.sidenav-dropdown-toggle').click(function () {
@@ -34,6 +34,33 @@ $(function () {
 
         return false;
     });
-});
 
+    $('.select-single').selectpicker({
+        style: 'form-control',
+        styleBase: ''
+    });
 
+    $('.select-multiple').selectpicker({
+        style: 'form-control',
+        styleBase: '',
+        multiple: true,
+        actionsBox: true,
+        liveSearch: true,
+        locale: 'it'
+    });
+}
+
+function singleImageUploader(file_input, trigger, preview_img) {
+    var loadFile = function (event) {
+        var output = $(preview_img);
+        var url = URL.createObjectURL(event.target.files[0]);
+        output.attr('src', url);
+    };
+
+    $(file_input).on('change', loadFile);
+
+    $(trigger).on('click', function () {
+        $(file_input).trigger('click');
+        return false;
+    })
+}
