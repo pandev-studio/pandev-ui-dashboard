@@ -1,0 +1,78 @@
+extends layout
+
+block content
+    .card-auth.sign-up
+        .card-header
+            h2 Benvenuto in Pandev.Admino
+            h4 Inserisci i tuoi dati per registrarti
+        .card-body
+            form
+                //.alert.alert-danger.text-center
+                //    ="Credenziali non valide"
+
+                .form-section
+                    h5.form-section-title Informazioni personali
+
+                    .form-row
+                        .form-group.col-lg-4
+                            label(for='first_name') Nome
+                            input#first_name.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-4
+                            label(for='last_name') Cognome
+                            input#last_name.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-4
+                            label(for='phone') Telefono
+                            input#phone.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter your phone')
+
+                    .form-row
+                        .form-group.col-lg-6
+                            label(for='password') Password
+                            input#password.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-6
+                            label(for='password_confirmation') Password confirmation
+                            input#password_confirmation.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+
+                .form-section
+                    h5.form-section-title Informazioni personali
+
+                    .form-row
+                        .form-group.col-lg-4
+                            label(for='first_name') Nome
+                            input#rag_soc.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-4
+                            label(for='last_name') Cognome
+                            input#last_name.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-4
+                            label(for='phone') Telefono
+                            input#phone.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter your phone')
+
+                    .form-row
+                        .form-group.col-lg-6
+                            label(for='password') Password
+                            input#password.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-6
+                            label(for='password_confirmation') Password confirmation
+                            input#password_confirmation.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+
+                    .form-row
+                        .form-group.col-lg-6
+                            label(for='password') Password
+                            input#password.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-6
+                            label(for='password_confirmation') Password confirmation
+                            input#password_confirmation.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+
+                    .form-row
+                        .form-group.col-lg-6
+                            label(for='password') Password
+                            input#password.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+                        .form-group.col-lg-6
+                            label(for='password_confirmation') Password confirmation
+                            input#password_confirmation.form-control(type='text' aria-describedby='emailHelp' placeholder='Enter name')
+
+                .form-group.pretty.p-icon
+                    input#gridCheck.form-check-input(type='checkbox')
+                    .state.p-primary
+                        i.icon.fas.fa-check
+                        label Ricorda l'accesso
+                button.btn.btn-primary.btn-block(type='submit') Accedi

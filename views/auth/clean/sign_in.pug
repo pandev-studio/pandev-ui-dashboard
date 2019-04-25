@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .card-auth.sign-in
+        .card-header
+            img.logo(src="/images/logo-admino-large.png")
+            h2 Benvenuto in Pandev.Admino
+            h4 Inserisci le credenziali per accedere
+        .card-body
+            form
+                //.alert.alert-danger.text-center
+                //    ="Credenziali non valide"
+                .form-group
+                    label(for='exampleInputEmail1') Email address
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email')
+                .form-group
+                    label(for='exampleInputPassword1') Password
+                    input#exampleInputPassword1.form-control(type='password' placeholder='Password')
+                .form-group.pretty.p-icon
+                    input#gridCheck.form-check-input(type='checkbox')
+                    .state.p-primary
+                        i.icon.fas.fa-check
+                        label Ricorda l'accesso
+                button.btn.btn-primary.btn-block(type='submit') Accedi

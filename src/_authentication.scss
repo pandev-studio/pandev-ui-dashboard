@@ -1,0 +1,89 @@
+$auth-body-bg-image: none !default;
+//$auth-body-bg-image: url('/images/devise.jpg');
+$auth-body-bg-color: $body-bg !default;
+$auth-margin-top: 0.8rem !default;
+$auth-margin-bottom: 3rem !default;
+$auth-footer-height: 3.875rem !default;
+$auth-sign-in-max-width: 500px !default;
+
+$auth-footer-color: #f0b64b !default;
+$auth-footer-bg-color: rgba(0, 0, 0, 0.5) !default;
+
+body.authentication {
+  background: $body-bg;
+
+  .background-image {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    z-index: -1;
+
+    margin-top: -$auth-margin-top;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    background-color: $auth-body-bg-color;
+    background-image: $auth-body-bg-image;
+  }
+
+  div.auth-content {
+    @extend .container;
+    max-width: 992px;
+    margin-bottom: $auth-footer-height + $auth-margin-bottom;
+    margin-top: $auth-margin-top;
+
+    .card-auth {
+      &.sign-in {
+        max-width: $auth-sign-in-max-width;
+      }
+
+      margin: auto;
+
+      @extend .card;
+
+      .card-header {
+        @extend .text-center;
+        @extend .bg-transparent;
+        @extend .px-3;
+        @extend .py-3;
+
+        img.logo {
+          width: 100%;
+        }
+
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: $auth-footer-height;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    a {
+      color: $auth-footer-color;
+      font-weight: 600;
+      font-size: 1.25rem;
+      padding: 0.8rem;
+      white-space: nowrap;
+
+      display: block;
+
+    }
+
+    background-color: $auth-footer-bg-color;
+  }
+
+}

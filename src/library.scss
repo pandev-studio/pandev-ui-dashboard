@@ -43,21 +43,5 @@
 @import "single_image_uploader";
 
 @import "tabs";
-
-:root {
-  font-size: $root-font-size;
-}
-
-.fit {
-  width: 1%;
-  @extend .text-nowrap;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.price:not(th) {
-  font-family: 'Roboto Mono', monospace;
-}
+@import "common";
+@import "authentication";

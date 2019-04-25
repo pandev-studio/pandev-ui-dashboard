@@ -25,6 +25,19 @@
                     a(href='/forms/index')
                         i.sidenav-link-icon.fas.fa-tachometer-alt
                         ="Standard"
+        div.sidenav-section
+            h5.sidenav-section-title Autenticazione
+            ul.sidenav-section-list
+                li.sidenav-dropdown
+                    a#cleanLayoutDropdownButton.sidenav-dropdown-toggle(href="#" data-target="#menu" + n)
+                        i.sidenav-link-icon.fas.fa-tachometer-alt
+                        ="Layout pulito"
+                        i.sidenav-link-caret.fas.fa-angle-left
+                    ul.sidenav-dropdown-menu(id="menu" + n)
+                        li.sidenav-link.sidenav-dropdown-item
+                            a(href='/auth/clean/sign_in') Sign in
+                        li.sidenav-link.sidenav-dropdown-item
+                            a(href='/auth/clean/sign_up') Sign up
         -var n =0;
         while n < 5
             div.sidenav-section
