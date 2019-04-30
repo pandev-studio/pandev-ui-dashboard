@@ -138,13 +138,14 @@ $sidenav-section-spacing: 1.2rem !default;
         margin: 0.5rem;
         position: relative;
 
-        &.active a {
+        &.active > a {
           font-weight: 700;
           color: $primary;
         }
 
         .sidenav-link-icon {
-          margin-right: 1.4rem;
+          width: 1.714rem;
+          margin-right: 0.4rem;
         }
 
         .sidenav-link-caret {
