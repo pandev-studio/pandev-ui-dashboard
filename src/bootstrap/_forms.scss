@@ -1,1 +1,9 @@
 @import "../../lib/bootstrap/scss/forms";
+
+.form-section {
+  .form-section-title {
+    @extend .pb-1;
+    @extend .mb-3;
+    @extend .border-bottom;
+  }
+}

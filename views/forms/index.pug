@@ -148,6 +148,42 @@ block content
                         i.fas.fa-edit
                         span="Action 1"
 
+    .card-page
+        .card-header
+            .actions
+                .left
+                    a.btn.btn-secondary.btn-icon(href='/user_app/registry/customers/1')
+                        i.fas.fa-window-close
+                        span Annulla modifiche
+                    a.btn.btn-primary.btn-icon(href='/user_app/registry/customers/1')
+                        i.fas.fa-save
+                        span Salva cliente
+        .card-body
+            .form-section
+                h4.pb-1.mb-3.border-bottom
+                    | Informazioni personali
+                .form-row
+                    .form-group.string.required.customer_nome.col-lg-6
+                        label.form-control-label.string.required(for='customer_nome')
+                            | Nome
+                            abbr(title='required') *
+                        input#customer_nome.form-control.string.required(type='text' name='customer[nome]' style='background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg=="); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;')
+                    .form-group.string.required.customer_cognome.col-lg-6
+                        label.form-control-label.string.required(for='customer_cognome')
+                            | Cognome
+                            abbr(title='required') *
+                        input#customer_cognome.form-control.string.required(type='text' name='customer[cognome]')
+                .form-row
+                    .form-group.string.required.customer_e-mail.col-lg-6
+                        label.form-control-label.string.required(for='customer_e-mail')
+                            | E-mail
+                            abbr(title='required') *
+                        input#customer_e-mail.form-control.string.required(type='text' name='customer[e-mail]')
+                    .form-group.string.required.customer_telefono.col-lg-6
+                        label.form-control-label.string.required(for='customer_telefono')
+                            | Telefono
+                            abbr(title='required') *
+                        input#customer_telefono.form-control.string.required(type='text' name='customer[telefono]')
 
 
     script.

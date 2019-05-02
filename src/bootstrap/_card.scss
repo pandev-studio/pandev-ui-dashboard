@@ -6,11 +6,11 @@ $card-table-header-font-weight: 500 !default;
 $card-table-header-font-size: 0.9286rem !default;
 
 .card {
-  box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
-  -webkit-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
-  -moz-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
-  -ms-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
-  -o-webkit-box-shadow: 0 7px 14px 0 rgba(59,65,94,0.1), 0 3px 6px 0 rgba(0,0,0,0.07);
+  box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  -ms-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  -o-webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
 }
 
 .card-page {
@@ -29,6 +29,9 @@ $card-table-header-font-size: 0.9286rem !default;
     .actions {
       @extend .d-flex;
       @extend .justify-content-between;
+
+      @extend .align-items-center;
+      @extend .align-self-center;
     }
 
     h5 {
@@ -73,7 +76,7 @@ $card-table-header-font-size: 0.9286rem !default;
       background: $card-table-header-bg;
 
       tr:first-child {
-        th,td {
+        th, td {
           border-top: 0;
         }
       }
@@ -95,6 +98,7 @@ $card-table-header-font-size: 0.9286rem !default;
           width: 1%;
           @extend .pr-3;
           white-space: nowrap;
+
 
           * {
             margin: 0 0.1rem;

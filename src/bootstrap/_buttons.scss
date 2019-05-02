@@ -6,7 +6,7 @@
 //    }
 //}
 
-.btn {
+.btn:not(.btn-link) {
   @include border-shadow();
 
   @include hover {
