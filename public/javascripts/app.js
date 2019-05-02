@@ -48,6 +48,14 @@ function initPandevUI() {
         liveSearch: true,
         locale: 'it'
     });
+
+    $('tr').on('click', function () {
+        var rowLink = $(this).find('.row-link')[0];
+
+        if(rowLink) {
+            window.location.href = rowLink.href;
+        }
+    })
 }
 
 function singleImageUploader(file_input, trigger, preview_img) {

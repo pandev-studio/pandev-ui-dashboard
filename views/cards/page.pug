@@ -5,6 +5,39 @@ block content
         .col-12
             .card-page
                 .card-header
+                    .actions.align-content-center
+                        .left
+                            a.btn.btn-primary.btn-icon(href='/user_app/registry/customers/1/edit')
+                                i.fas.fa-edit
+                                span Modifica cliente
+                            a.btn.btn-secondary.btn-icon(href='/user_app/registry/customers/2')
+                                i.fas.fa-paper-plane
+                                span Manda invito
+                        .right
+                            a.btn.btn-danger.btn-icon(href='#')
+                                i.fas.fa-trash
+                                span Elimina cliente
+                .card-body
+                    .row
+                        .col-lg-6
+                            dl
+                                dt Nome
+                                dd Cliente 1
+                                dt Cognome
+                                dd Di prova con un cognome lungo
+                                dt E-mail
+                                dd admin@foo.it
+                                dt Telefono
+                                dd 123456789
+                        .col-lg-6
+                            dl
+                                dt Stato account
+                                dd
+                                    | Non invitato
+
+
+            .card-page
+                .card-header
                     .actions
                         .left
                             a(href='#').btn.btn-primary.btn-icon
@@ -47,13 +80,15 @@ block content
                                 th(scope='col') Handle
                                 th(scope='col') Handle
                         tbody
-                            tr.table-success
+                            tr
                                 th.actions(scope='row')
                                     button.btn.btn-primary
                                         i.fas.fa-edit
                                     button.btn.btn-secondary
                                         i.fas.fa-edit
-                                td Mark
+                                td
+                                    p Ciao
+                                    p Ciao
                                 td Otto
                                 td @mdo
                                 td @mdo
@@ -65,7 +100,7 @@ block content
                                 td @fat
                                 td @fat
                                 td @fat
-                            tr
+                            tr.table-success
                                 th(scope='row') 2
                                 td Jacob
                                 td Thornton
@@ -189,3 +224,168 @@ block content
 
                 .card-footer
                     p Elementi visualizzati: <b>2</b>
+
+            .card-table
+                .card-header
+                    h5 Istanze servizi
+                .card-body
+                    table.table.table-sm
+                        thead
+                            tr
+                                th Nome istanza
+                                th dominio
+                                th commerciale
+                                th indirizzo tenant
+                                th link ai settings
+                        tbody
+                            tr.divider
+                                td(colspan='5')
+                                    a(href='/user_app/registry/customers/1')
+                                        i.fas.fa-plus
+                                        |  Aggiungi istanza servizio
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr.divider
+                                td(colspan='5')
+                                    a(href='/user_app/registry/customers/1')
+                                        i.fas.fa-plus
+                                        |  Aggiungi istanza servizio
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr.divider
+                                td(colspan='5')
+                                    a(href='/user_app/registry/customers/1')
+                                        i.fas.fa-plus
+                                        |  Aggiungi istanza servizio
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+                            tr.divider
+                                td(colspan='5')
+                                    a(href='/user_app/registry/customers/1')
+                                        i.fas.fa-plus
+                                        |  Aggiungi istanza servizio
+                            tr
+                                th
+                                    a.row-link(href='/user_app/registry/customers/1')
+                                        i.fas.fa-search
+                                        |               Nome istanza
+                                td
+                                    | www.eco-in.it
+                                td
+                                    | Giovanni Pilati
+                                td
+                                    a(target='_blank' href='https://ecoin.website.pandevstudio.it/') Vai al link
+                                td
+                                    a(target='_blank' href='https://www.website.pandevstudio.it/settings_managers/sign_in') Vai al link
+

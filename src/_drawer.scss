@@ -53,6 +53,7 @@ $sidenav-section-spacing: 1.2rem !default;
   }
 
   > .content {
+    @include border-radius($card-border-radius);
 
     @media (min-width: #{map-get($grid-breakpoints, 'lg')}) {
       margin-left: $sidebar-width;
@@ -106,6 +107,10 @@ $sidenav-section-spacing: 1.2rem !default;
       height: calc(100vh - #{$navbar-height});
       position: relative;
       overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     .sidenav-section {

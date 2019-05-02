@@ -17,6 +17,10 @@ $card-table-header-font-size: 0.9286rem !default;
   @extend .card;
   @extend .mb-3;
 
+  dl {
+    margin: 0;
+  }
+
   .card-header {
     @extend .bg-transparent;
     @extend .px-3;
@@ -25,6 +29,10 @@ $card-table-header-font-size: 0.9286rem !default;
     .actions {
       @extend .d-flex;
       @extend .justify-content-between;
+    }
+
+    h5 {
+      margin: 0;
     }
   }
 
@@ -57,8 +65,18 @@ $card-table-header-font-size: 0.9286rem !default;
       }
     }
 
+    p {
+      margin: 0;
+    }
+
     thead {
       background: $card-table-header-bg;
+
+      tr:first-child {
+        th,td {
+          border-top: 0;
+        }
+      }
 
       th {
         border-bottom: 0;
@@ -82,6 +100,20 @@ $card-table-header-font-size: 0.9286rem !default;
             margin: 0 0.1rem;
           }
         }
+
+        ul {
+          margin-bottom: 0;
+          padding-left: 1.5rem;
+        }
+      }
+
+      &.divider {
+        background-color: $table-active-bg;
+        font-weight: 700;
+      }
+
+      &.clickable {
+        cursor: pointer;
       }
 
       td:first-child:not(.actions), th:first-child:not(.actions) {
@@ -100,6 +132,5 @@ $card-table-header-font-size: 0.9286rem !default;
 
   .card-body {
     @extend .p-0;
-    @extend .table-responsive;
   }
 }
