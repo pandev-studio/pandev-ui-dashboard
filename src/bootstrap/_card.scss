@@ -32,6 +32,7 @@ $card-table-header-font-size: 0.9286rem !default;
     min-height: 4.4rem;
 
     .actions {
+      width: 100%;
       @extend .d-flex;
       @extend .justify-content-between;
 
