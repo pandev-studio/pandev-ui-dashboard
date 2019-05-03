@@ -204,6 +204,8 @@ select.selectpicker {
 
   &.disabled,
   > .disabled {
+    background-color: $input-disabled-bg;
+    
     @include cursor-disabled();
 
     &:focus {
