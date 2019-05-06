@@ -71,14 +71,14 @@ $body-bg: #e3e8ee;
 $error: $red;
 
 // Buttons
-$input-btn-padding-y:         .3rem;
-$input-btn-padding-x:         .6rem;
+$input-btn-padding-y: .3rem;
+$input-btn-padding-x: .6rem;
 
-$input-btn-padding-y-sm:      .1rem;
-$input-btn-padding-x-sm:      .4rem;
+$input-btn-padding-y-sm: .1rem;
+$input-btn-padding-x-sm: .4rem;
 
-$input-btn-padding-y-lg:      .5rem;
-$input-btn-padding-x-lg:      1rem;
+$input-btn-padding-y-lg: .5rem;
+$input-btn-padding-x-lg: 1rem;
 
 // Forms
 $label-margin-bottom: 0.2rem;
@@ -87,13 +87,16 @@ $label-margin-bottom: 0.2rem;
 $navbar-font-size: 0.875rem;
 
 // Grid
-$grid-gutter-width:           1.5rem;
+$grid-gutter-width: 1.5rem;
 
-$table-cell-padding:          .75rem !default;
-$table-cell-padding-sm:       .4rem !default;
+$table-cell-padding: .75rem !default;
+$table-cell-padding-sm: .4rem !default;
 
-$table-hover-bg:              #f7fafc;
-$table-active-bg:             $table-hover-bg;
+$table-hover-bg: #f7fafc;
+$table-active-bg: $table-hover-bg;
+
+// Badges
+$badge-font-size: 1rem !default;
 
 // Tables
 @import "../../lib/bootstrap/scss/variables";

@@ -1,1 +1,6 @@
 @import "../../lib/bootstrap/scss/badge";
+
+.badge-label {
+  display: block;
+  text-transform: uppercase;
+}
