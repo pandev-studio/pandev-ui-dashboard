@@ -42,19 +42,22 @@
 
 @import "single_image_uploader";
 
-:root {
-  font-size: 14px;
-}
+@import "tabs";
 
-body {
-  font-family: 'Montserrat', sans-serif;
+:root {
+  font-size: $root-font-size;
 }
 
 .fit {
   width: 1%;
+  @extend .text-nowrap;
 }
 
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.price:not(th) {
+  font-family: 'Roboto Mono', monospace;
 }

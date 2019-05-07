@@ -1,0 +1,86 @@
+// Base class
+//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s or `<ul>`s.
+
+//
+// Tabs
+//
+
+$page-tabs-background: #f7fafc !default;
+
+$tab-link-padding-y: 0.8rem !default;
+$tab-link-padding-x: 1.429rem !default;
+$tab-link-disabled-color: $gray-500 !default;
+$tab-link-color: $gray-600 !default;
+$tab-link-color-hover: $black !default;
+
+$page-tabs-border-color: $gray-300 !default;
+$page-tabs-border-width: $border-width !default;
+$page-tabs-border-radius: $border-radius !default;
+
+$page-tabs-link-active-color: $primary !default;
+$page-tabs-link-active-bg: $white !default;
+$page-tabs-link-active-border-color: $primary !default;
+$page-tabs-border-active-width: 0.2143rem !default;
+
+.page-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  overflow: scroll;
+
+  @include card-shadow();
+  @include border-top-radius($page-tabs-border-radius);
+  background: $page-tabs-background;
+
+  font-weight: 500;
+
+  .tab-item {
+    flex: 1 1 auto;
+    text-align: center;
+
+    border-left: $border-width solid $page-tabs-border-color;
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .tab-link {
+    color: $tab-link-color;
+    text-decoration: none;
+
+    @include hover-focus {
+      color: $tab-link-color-hover;
+    }
+
+    display: block;
+    padding: $tab-link-padding-y $tab-link-padding-x;
+    padding-top: $tab-link-padding-y + 0.2;
+
+    &.disabled {
+      color: $tab-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .tab-link.active,
+  .tab-item.show .tab-link {
+    color: $page-tabs-link-active-color;
+    background-color: $page-tabs-link-active-bg;
+    border-bottom: solid $page-tabs-border-active-width $page-tabs-link-active-border-color;
+    font-weight: 600;
+  }
+}

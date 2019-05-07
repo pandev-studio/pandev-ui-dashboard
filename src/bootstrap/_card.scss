@@ -5,12 +5,17 @@ $card-table-header-spacing: 0.5714rem !default;
 $card-table-header-font-weight: 500 !default;
 $card-table-header-font-size: 0.9286rem !default;
 
-.card {
+@mixin card-shadow() {
   box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
   -ms-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
   -o-webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+}
+
+.card {
+  @include card-shadow();
+  border: 0;
 }
 
 .card-page {
@@ -99,6 +104,18 @@ $card-table-header-font-size: 0.9286rem !default;
         font-weight: $card-table-header-font-weight;
         font-size: $card-table-header-font-size;
         padding: $card-table-header-spacing;
+      }
+
+      .price {
+        text-align: right;
+        @extend .fit;
+      }
+    }
+
+    tbody, tfoot {
+      .price {
+        @extend .fit;
+        text-align: right;
       }
     }
 

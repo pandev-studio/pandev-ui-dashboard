@@ -1,7 +1,21 @@
 extends ../layout
 
 block content
-    .row
+    ul.page-tabs
+        li.tab-item
+            a.tab-link(href='#') Active
+        li.tab-item
+            a.tab-link(href='#') Link
+        li.tab-item
+            a.tab-link.active(href='#') Link
+        li.tab-item
+            a.tab-link(href='#') Link
+        li.tab-item
+            a.tab-link(href='#') Link
+        li.tab-item
+            a.tab-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+
+    .row.mt-3
         .col-lg-4
             .card(style='')
                 img.card-img-top(src='/images/placeholder.jpg' alt='placeholder')
