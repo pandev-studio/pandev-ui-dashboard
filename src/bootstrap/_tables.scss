@@ -1,1 +1,86 @@
 @import "../../lib/bootstrap/scss/tables";
+
+$table-header-bg: #F7FAFF !default;
+$table-header-spacing: 0.5714rem !default;
+$table-header-font-weight: 500 !default;
+$table-header-font-size: 0.9286rem !default;
+
+.table {
+  @extend .table-hover;
+  margin: 0;
+
+  &:not(.table-sm) {
+    td.actions, th.actions {
+      @extend .py-0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  thead {
+    background: $table-header-bg;
+
+    th {
+      border-bottom: 0;
+      text-transform: uppercase;
+      font-weight: $table-header-font-weight;
+      font-size: $table-header-font-size;
+      padding: $table-header-spacing;
+    }
+
+    .price {
+      text-align: right;
+      @extend .fit;
+    }
+  }
+
+  tbody, tfoot {
+    .price {
+      @extend .fit;
+      text-align: right;
+    }
+  }
+
+  tr {
+    td, th {
+      vertical-align: middle;
+
+      &.actions {
+        width: 1%;
+        white-space: nowrap;
+
+        * {
+          margin: 0 0.1rem;
+        }
+      }
+
+      ul {
+        margin-bottom: 0;
+        padding-left: 1.5rem;
+      }
+    }
+
+    &.divider {
+      background-color: $table-active-bg;
+      font-weight: 700;
+    }
+
+    &.clickable {
+      cursor: pointer;
+    }
+
+    td:first-child, th:first-child {
+      @extend .pl-3;
+    }
+
+    td:last-child, th:last-child {
+      @extend .pr-3;
+    }
+  }
+}
+
+.table-clean {
+  width: 100%;
+}

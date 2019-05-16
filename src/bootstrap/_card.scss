@@ -1,10 +1,5 @@
 @import "../../lib/bootstrap/scss/card";
 
-$card-table-header-bg: #F7FAFF !default;
-$card-table-header-spacing: 0.5714rem !default;
-$card-table-header-font-weight: 500 !default;
-$card-table-header-font-size: 0.9286rem !default;
-
 @mixin card-shadow() {
   box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
@@ -69,90 +64,17 @@ $card-table-header-font-size: 0.9286rem !default;
 .card-table {
   @extend .card-page;
 
-  .table {
-    @extend .table-hover;
-    margin: 0;
-
-    &:not(.table-sm) {
-      td.actions, th.actions {
-        @extend .py-0;
-      }
-    }
-
-    p {
-      margin: 0;
-    }
-
-    thead {
-      background: $card-table-header-bg;
-
-      tr:first-child {
-        th, td {
-          border-top: 0;
-        }
-      }
-
-      tr:last-child {
-        th, td {
-          border-top: 0;
-        }
-      }
-
-      th {
-        border-bottom: 0;
-        text-transform: uppercase;
-        font-weight: $card-table-header-font-weight;
-        font-size: $card-table-header-font-size;
-        padding: $card-table-header-spacing;
-      }
-
-      .price {
-        text-align: right;
-        @extend .fit;
-      }
-    }
-
-    tbody, tfoot {
-      .price {
-        @extend .fit;
-        text-align: right;
-      }
-    }
-
-    tr {
-      td, th {
-        vertical-align: middle;
-
-        &.actions {
-          width: 1%;
-          white-space: nowrap;
-
-          * {
-            margin: 0 0.1rem;
+  .card-body {
+    .table-responsive:first-child,
+    > table:first-child {
+      .table:last-child {
+        thead {
+          tr:first-child {
+            th, td {
+              border-top: 0;
+            }
           }
         }
-
-        ul {
-          margin-bottom: 0;
-          padding-left: 1.5rem;
-        }
-      }
-
-      &.divider {
-        background-color: $table-active-bg;
-        font-weight: 700;
-      }
-
-      &.clickable {
-        cursor: pointer;
-      }
-
-      td:first-child, th:first-child {
-        @extend .pl-3;
-      }
-
-      td:last-child, th:last-child {
-        @extend .pr-3;
       }
     }
   }
