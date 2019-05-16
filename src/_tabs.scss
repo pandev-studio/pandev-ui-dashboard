@@ -44,7 +44,7 @@ $page-tabs-border-active-width: 0.2143rem !default;
   font-weight: 500;
 
   .tab-item {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
     text-align: center;
 
     border-left: $border-width solid $page-tabs-border-color;
@@ -58,6 +58,12 @@ $page-tabs-border-active-width: 0.2143rem !default;
   }
 
   .tab-link {
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .align-content-center;
+    @extend .justify-content-center;
+
+    height: 100%;
     color: $tab-link-color;
     text-decoration: none;
 
