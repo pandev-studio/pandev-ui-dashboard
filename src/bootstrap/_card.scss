@@ -65,14 +65,12 @@
   @extend .card-page;
 
   .card-body {
-    .table-responsive:first-child,
-    > table:first-child {
-      .table:last-child {
-        thead {
-          tr:first-child {
-            th, td {
-              border-top: 0;
-            }
+    > .table-responsive:first-child,
+    > .table:first-child{
+      thead {
+        tr:first-child {
+          th, td {
+            border-top: 0;
           }
         }
       }
