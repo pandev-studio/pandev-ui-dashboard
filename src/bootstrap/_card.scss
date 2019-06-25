@@ -45,6 +45,10 @@
     }
   }
 
+  .card-header:last-child {
+    border-bottom: 0;
+  }
+
   .card-footer {
     @extend .bg-transparent;
     @extend .px-3;
