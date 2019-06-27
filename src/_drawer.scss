@@ -1,7 +1,7 @@
 // Componente drawer
 $sidebar-width: 15.63rem !default;
 $navbar-height: 3.875rem !default;
-$sidenav-content-padding: 0.75rem !default;
+$sidenav-content-padding: 0.775rem !default;
 $sidenav-section-spacing: 1.2rem !default;
 
 @-webkit-keyframes fadeIn {
@@ -82,7 +82,7 @@ $sidenav-section-spacing: 1.2rem !default;
   .sidenav {
     width: $sidebar-width;
     //padding: $sidenav-content-padding $sidenav-content-padding $sidenav-content-padding 2.813rem;
-    padding: $sidenav-content-padding;
+    padding: $sidenav-content-padding 1.2rem;
     position: fixed;
     z-index: 1001;
 
@@ -115,6 +115,21 @@ $sidenav-section-spacing: 1.2rem !default;
 
     .sidenav-section {
       margin-bottom: $sidenav-section-spacing;
+
+      > ul {
+        > li {
+          > a {
+            position: relative;
+            padding-left: 1.9rem;
+
+            > i.sidenav-link-icon {
+              position: absolute;
+              left: 0;
+              top: 0.18rem;
+            }
+          }
+        }
+      }
 
       li {
         a {
