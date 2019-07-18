@@ -9,8 +9,7 @@ $auth-sign-in-max-width: 500px !default;
 $auth-footer-color: #f0b64b !default;
 $auth-footer-bg-color: rgba(0, 0, 0, 0.5) !default;
 
-body.authentication {
-  background: $body-bg;
+body.authentication, .authentication {
 
   .background-image {
     width: 100vw;

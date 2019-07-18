@@ -8,7 +8,7 @@ html
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i' rel='stylesheet')
 
         link(rel='icon', href='data:;base64,=')
-    body.authentication
+    body
         script(src="/javascripts/jquery.min.js")
         script(src="/javascripts/bootstrap.bundle.js")
         script(src="/javascripts/bootstrap-select/bootstrap-select.js")
@@ -16,13 +16,15 @@ html
         script(src="/javascripts/app.js")
         script(src="/javascripts/demo.js")
 
-        .background-image
 
-        div.auth-content
-            block content
+        .authentication
+            .background-image
 
-        .footer
-            a(href="#") Bretelle Studio
-            a(href="#") {pandev}
-            a(href="#") Changelog
+            div.auth-content
+                block content
+
+            .footer
+                a(href="#") Bretelle Studio
+                a(href="#") {pandev}
+                a(href="#") Changelog
 
