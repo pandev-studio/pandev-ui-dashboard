@@ -52,9 +52,15 @@ function initPandevUI() {
     $('tr').on('click', function () {
         var rowLink = $(this).find('.row-link')[0];
 
-        if(rowLink) {
+        if (rowLink) {
             window.location.href = rowLink.href;
         }
+    });
+
+    $('.btn-loading').on('click', function () {
+        $(this).attr("disabled", "disabled");
+        $(this).addClass("disabled");
+        return false;
     })
 }
 
@@ -71,4 +77,14 @@ function singleImageUploader(file_input, trigger, preview_img) {
         $(file_input).trigger('click');
         return false;
     })
+}
+
+function toggleBtnLoading(selector) {
+    if ($(selector).attr("disabled")) {
+        $(this).removeAttr("disabled");
+        $(this).removeClass("disabled");
+    } else {
+        $(this).attr("disabled", "disabled");
+        $(this).addClass("disabled");
+    }
 }

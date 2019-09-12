@@ -27,3 +27,30 @@
     }
   }
 }
+
+.btn {
+  .spinner-border {
+    display: none;
+  }
+}
+
+.btn-loading {
+  .btn-loader {
+    @extend .spinner-border;
+    @extend .spinner-border-sm;
+  }
+
+  .spinner-border {
+    vertical-align: middle !important;
+  }
+
+  .btn-text {
+    margin-left: 0.5rem;
+  }
+
+  &.loading {
+    .spinner-border {
+      display: inline-block;
+    }
+  }
+}
