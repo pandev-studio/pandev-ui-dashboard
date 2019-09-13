@@ -57,11 +57,19 @@ function initPandevUI() {
         }
     });
 
-    $('.btn-loading').on('click', function () {
+    $('a.btn-loading').on('click', function () {
         $(this).attr("disabled", "disabled");
         $(this).addClass("disabled");
         $(this).find('i').hide();
         $(this).addClass('loading');
+    });
+
+    $('button.btn-loading, input.btn-loading').on('click', function () {
+        $(this).attr("disabled", "disabled");
+        $(this).addClass("disabled");
+        $(this).find('i').hide();
+        $(this).addClass('loading');
+        $(this).closest('form').submit();
     })
 }
 
