@@ -60,6 +60,8 @@ function initPandevUI() {
     $('.btn-loading').on('click', function () {
         $(this).attr("disabled", "disabled");
         $(this).addClass("disabled");
+        $(this).find('i').hide();
+        $(this).addClass('loading');
     })
 }
 
