@@ -69,7 +69,6 @@ function initPandevUI() {
         $(this).addClass("disabled");
         $(this).find('i').hide();
         $(this).addClass('loading');
-        $(this).closest('form').submit();
     })
 }
 
