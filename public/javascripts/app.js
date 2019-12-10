@@ -69,6 +69,10 @@ function initPandevUI() {
         $(this).addClass("disabled");
         $(this).find('i').hide();
         $(this).addClass('loading');
+    });
+
+    $('input.btn-loading:not(.skip-autosend), button.btn-loading:not(.skip-autosend)').on('click', function () {
+        this.closest('form').submit()
     })
 }
 
